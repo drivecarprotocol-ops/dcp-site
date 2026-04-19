@@ -133,10 +133,15 @@ export default function DCPWebsiteV1() {
             className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]"
           >
             <div>
-              <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/80 backdrop-blur">
-                <TrafficCone className="h-4 w-4 text-orange-400" />
-                Drive–CAR Protocol
-              </div>
+              <div className="mb-6">
+  <div className="text-3xl md:text-4xl font-semibold tracking-tight leading-none">
+    <span className="text-white">DRIVE</span>
+    <span className="text-blue-400 ml-2">CAR</span>
+  </div>
+  <div className="mt-1 text-sm md:text-base tracking-[0.22em] text-white/70 uppercase">
+    Protocol
+  </div>
+</div>
 
               <h1 className="max-w-4xl text-5xl font-semibold tracking-tight md:text-7xl">
                 Feel the emotion. <span className="text-orange-400">Choose the response.</span>
