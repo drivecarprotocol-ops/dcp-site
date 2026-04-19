@@ -89,6 +89,13 @@ const useCases = [
   "Personal behavioral correction",
 ];
 
+const futureDirectionPoints = [
+  "reflections",
+  "decisions",
+  "patterns",
+  "personal growth over time",
+];
+
 function SectionCard({ children, className = "" }) {
   return (
     <div className={`rounded-[1.75rem] border border-white/10 bg-white/[0.03] shadow-xl ${className}`}>
@@ -355,6 +362,92 @@ export default function DCPWebsiteV1() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-white/10 bg-white/[0.02]">
+        <div className="mx-auto max-w-7xl px-6 py-20 md:px-8">
+          <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+            <div>
+              <div className="text-sm uppercase tracking-[0.25em] text-white/45">Future Direction</div>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+                Where this could go — without changing what it is.
+              </h2>
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-white/70">
+                DCP is designed as a human-first behavioral framework. It does not depend on technology,
+                platforms, or systems to function. It can be applied immediately, anywhere, by anyone.
+              </p>
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-white/70">
+                At the same time, the structure behind DCP opens the door to future digital extensions.
+                One possible direction is a voluntary identity layer — a simple, self-owned way for individuals
+                to carry their behavioral framework across platforms, environments, and systems.
+              </p>
+            </div>
+
+            <div className="rounded-[2rem] border border-white/10 bg-black/50 p-6 shadow-2xl">
+              <div className="rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-6">
+                <div className="text-sm uppercase tracking-[0.25em] text-white/35">Principle</div>
+                <div className="mt-4 space-y-4 text-lg leading-8 text-white/80">
+                  <p>Not to track people. Not to reward behavior. Not to create status or hierarchy.</p>
+                  <p>But to preserve continuity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-10 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
+            <div className="rounded-[2rem] border border-white/10 bg-black/50 p-6 shadow-2xl">
+              <div className="text-sm uppercase tracking-[0.25em] text-white/35">A way to hold</div>
+              <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                {futureDirectionPoints.map((point) => (
+                  <div
+                    key={point}
+                    className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4 text-white/80"
+                  >
+                    {point}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-[2rem] border border-white/10 bg-black/50 p-6 shadow-2xl">
+              <div className="text-sm uppercase tracking-[0.25em] text-white/35">Guardrails</div>
+              <div className="mt-4 space-y-4 text-white/75">
+                <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4">
+                  This would not be financial.
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4">
+                  Not tradable.
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4">
+                  Not something to accumulate.
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4">
+                  One individual. One identity. Voluntary participation.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+            <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 shadow-2xl">
+              <p className="text-lg leading-8 text-white/75">
+                The purpose is not to measure people. It is to allow individuals to remain consistent with themselves —
+                across time, tools, and environments.
+              </p>
+              <p className="mt-5 text-lg leading-8 text-white/75">
+                In this model, technology does not define the system. The individual does.
+              </p>
+            </div>
+
+            <div className="rounded-[2rem] border border-orange-500/20 bg-orange-500/[0.06] p-8 shadow-2xl">
+              <div className="text-sm uppercase tracking-[0.25em] text-orange-300">Open direction</div>
+              <p className="mt-4 text-lg leading-8 text-white/80">
+                This is not a roadmap. It is an open direction. DCP remains complete as it is. Anything built from it
+                should preserve that simplicity.
+              </p>
             </div>
           </div>
         </div>
