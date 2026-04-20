@@ -1,192 +1,227 @@
 "use client";
 
-import { motion } from "framer-motion";
+import React from "react";
+import Link from "next/link";
+import { ChevronLeft, ExternalLink, Mail } from "lucide-react";
 
-export default function Home() {
+const futureCards = [
+  {
+    title: "3D Field of Awareness",
+    text: "A dynamic, zoomable environment where behavioral nodes and connections can be explored at both macro and micro levels.",
+  },
+  {
+    title: "Focused Node Interaction",
+    text: "Selecting a specific moment brings it forward while connected influences expand and unrelated patterns recede into the background.",
+  },
+  {
+    title: "2D CAR Layer",
+    text: "A grounded decision interface keeps the core questions visible: What is happening? What is my role? What is the best response?",
+  },
+  {
+    title: "Optional AI Integration",
+    text: "AI may support reflection, pattern recognition, and guidance without becoming a dependency or replacing personal awareness.",
+  },
+];
+
+export default function FuturePage() {
   return (
-    <main className="bg-black text-white">
-
+    <div className="min-h-screen bg-black text-white selection:bg-blue-500/25 selection:text-white">
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center px-6 md:px-20">
-
-        {/* BACKGROUND */}
+      <section className="relative overflow-hidden border-b border-white/10">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-80"
-          style={{ backgroundImage: "url('/images/hero-main.jpg')" }}
+          style={{ backgroundImage: "url('/images/backgrounds/section-future.jpg')" }}
         />
+        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_18%,rgba(59,130,246,0.16),transparent_28%),radial-gradient(circle_at_78%_18%,rgba(255,255,255,0.06),transparent_20%)]" />
 
-        {/* OVERLAY */}
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-8 md:py-28">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-white/65 transition hover:text-white"
+          >
+            <ChevronLeft className="h-4 w-4" />
+            Back
+          </Link>
 
-        {/* CONTENT */}
-        <div className="relative z-10 max-w-5xl">
-
-          <h1 className="text-5xl md:text-7xl font-bold">
-            DRIVE <span className="text-blue-400">CAR</span>
-          </h1>
-
-          <div className="text-sm tracking-[0.4em] mt-2 text-gray-400">
-            PROTOCOL
-          </div>
-
-          <p className="mt-6 text-lg text-gray-300 max-w-xl">
-            Human Decision Architecture (Applied in REAL TIME)
-          </p>
-
-          <h2 className="mt-8 text-4xl md:text-6xl font-bold">
-            Feel the emotion.<br />
-            <span className="text-orange-500">Choose the response.</span>
-          </h2>
-
-        </div>
-
-        {/* CONE */}
-        <img
-          src="/images/icons/cone.png"
-          className="absolute right-10 bottom-0 w-48 md:w-64 opacity-90 z-20"
-        />
-
-        {/* ROAD */}
-        <img
-          src="/images/icons/road-right.png"
-          className="absolute right-0 bottom-0 w-64 opacity-80"
-          style={{ transform: "translateX(20px)" }}
-        />
-
-      </section>
-
-      {/* CORE LOOP */}
-      <section className="py-20 px-6 md:px-20 text-center">
-
-        <h3 className="text-2xl md:text-3xl font-semibold mb-6">
-          Event → Emotion → Reaction → <span className="text-blue-400">CAR</span> → Response
-        </h3>
-
-        <p className="text-gray-400 max-w-xl mx-auto">
-          Reaction is automatic. Response is chosen.
-        </p>
-
-      </section>
-
-      {/* DEFAULT VS DCP */}
-      <section className="py-20 px-6 md:px-20 space-y-10">
-
-        <div className="bg-zinc-900 p-8 rounded-xl border border-zinc-800">
-          <div className="text-orange-400 text-sm mb-2">DEFAULT PATH</div>
-          <h4 className="text-xl mb-4">Emotion + Reaction → Action</h4>
-          <p className="text-gray-400">
-            You snap back. It escalates. You lose control of the moment.
-          </p>
-        </div>
-
-        <div className="bg-zinc-900 p-8 rounded-xl border border-zinc-800">
-          <div className="text-blue-400 text-sm mb-2">DCP PATH</div>
-          <h4 className="text-xl mb-4">
-            Emotion + Reaction → CAR → Response
-          </h4>
-
-          <ul className="text-gray-400 space-y-2">
-            <li>Consideration: What actually happened?</li>
-            <li>Accountability: What is my role?</li>
-            <li>Reason: What response gives the best outcome?</li>
-          </ul>
-        </div>
-
-      </section>
-
-      {/* CAR SECTION */}
-      <section className="relative py-24 px-6 md:px-20">
-
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-80"
-          style={{ backgroundImage: "url('/images/section-bg-texture.jpg')" }}
-        />
-
-        <div className="absolute inset-0 bg-black/70" />
-
-        <div className="relative z-10 max-w-4xl">
-
-          <h2 className="text-4xl font-bold mb-10 text-blue-400">
-            CAR
-          </h2>
-
-          <div className="space-y-6">
-
-            <div className="bg-white/10 p-6 rounded-xl">
-              <h4 className="text-lg font-semibold">What is happening?</h4>
-              <p className="text-gray-300">See the moment clearly before you act.</p>
+          <div className="mt-10 max-w-5xl">
+            <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+              Future Direction
             </div>
 
-            <div className="bg-white/10 p-6 rounded-xl">
-              <h4 className="text-lg font-semibold">What is my role?</h4>
-              <p className="text-gray-300">Own your part in what happens next.</p>
-            </div>
-
-            <div className="bg-white/10 p-6 rounded-xl">
-              <h4 className="text-lg font-semibold">What is the best response?</h4>
-              <p className="text-gray-300">Choose direction instead of impulse.</p>
-            </div>
-
-          </div>
-
-        </div>
-
-        {/* TRAFFIC LIGHT */}
-        <img
-          src="/images/traffic-light-angled.png"
-          className="absolute right-10 top-20 w-40 md:w-56 opacity-90"
-        />
-
-      </section>
-
-      {/* FUTURE */}
-      <section className="py-24 px-6 md:px-20">
-
-        <div
-          className="bg-cover bg-center p-10 rounded-xl"
-          style={{
-            backgroundImage: "url('/images/section-bg-future.jpg')",
-          }}
-        >
-
-          <div className="bg-black/70 p-10 rounded-xl">
-
-            <h2 className="text-4xl font-bold mb-4">
+            <h1 className="mt-4 text-5xl font-semibold tracking-tight md:text-7xl">
               DCP works without <span className="text-blue-400">technology</span>.
-            </h2>
+            </h1>
 
-            <p className="text-gray-300 max-w-2xl">
-              Future interfaces may make patterns more visible.
-              They do not replace awareness or responsibility.
+            <p className="mt-6 max-w-4xl text-lg leading-8 text-white/84 md:text-2xl">
+              Future interfaces may help make patterns more visible,
+              interactive, and easier to navigate. They do not replace
+              awareness, accountability, or responsibility. :contentReference[oaicite:12]{index=12}
             </p>
 
+            <div className="mt-8">
+              <a
+                href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-white/5 px-6 py-3 text-white transition hover:bg-white/10"
+              >
+                Read Full White Paper
+                <ExternalLink className="h-4 w-4" />
+              </a>
+            </div>
           </div>
-
         </div>
-
       </section>
 
-      {/* FOOTER */}
-      <footer className="py-10 text-center border-t border-zinc-800">
-
-        <div className="flex justify-center gap-6 mb-4">
-
-          <a href="mailto:drivecarprotocol@gmail.com">
-            <img src="/images/icon-gmail.png" className="w-6" />
-          </a>
-
-          <a href="https://x.com/D_C_Protocol" target="_blank">
-            <img src="/images/icon-x.png" className="w-6" />
-          </a>
-
+      {/* CONCEPT */}
+      <section className="mx-auto max-w-7xl px-6 py-20 md:px-8">
+        <div className="max-w-4xl">
+          <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+            Conceptual Direction
+          </div>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+            Visualization could amplify awareness.
+          </h2>
+          <p className="mt-5 text-lg leading-8 text-white/80">
+            One optional direction is a behavioral mapping layer that makes
+            events, emotions, reactions, CAR processing, responses, and
+            recurring patterns easier to see over time. :contentReference[oaicite:13]{index=13}
+          </p>
         </div>
 
-        <p className="text-gray-500 text-sm">
-          © 2026 DriveCar Protocol. All rights reserved.
-        </p>
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          {futureCards.map((card) => (
+            <div
+              key={card.title}
+              className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6"
+            >
+              <h3 className="text-xl font-medium">{card.title}</h3>
+              <p className="mt-3 leading-7 text-white/80">{card.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
+      {/* PRINCIPLE */}
+      <section className="border-y border-white/10 bg-white/[0.02]">
+        <div className="mx-auto max-w-7xl px-6 py-20 md:px-8">
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-[1.75rem] border border-blue-500/20 bg-blue-500/[0.08] p-8">
+              <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
+                Core Principle
+              </div>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+                The system still works without any of this.
+              </h2>
+              <p className="mt-5 text-lg leading-8 text-white/82">
+                DCP remains a direct, repeatable framework:
+              </p>
+              <div className="mt-6 text-2xl font-medium text-white md:text-3xl">
+                Feel the emotion. Choose the response.
+              </div>
+            </div>
+
+            <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-8">
+              <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+                Human First
+              </div>
+              <p className="mt-5 text-lg leading-8 text-white/82">
+                Technology does not define the system. The individual does. The
+                future layer is support, not replacement. :contentReference[oaicite:14]{index=14}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FRAMING */}
+      <section className="mx-auto max-w-7xl px-6 py-20 md:px-8">
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6">
+            <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+              Systems Lens
+            </div>
+            <p className="mt-4 text-lg leading-8 text-white/82">
+              Awareness of inputs → intentional control of outputs.
+            </p>
+          </div>
+
+          <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6">
+            <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+              Conceptual Framing
+            </div>
+            <p className="mt-4 text-lg leading-8 text-white/82">
+              A structure for better decisions within real conditions.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10 rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8">
+          <p className="max-w-5xl text-lg leading-8 text-white/82">
+            Future development may explore interactive mapping, structured
+            journaling, optional AI support, and continuity tools. The
+            foundation remains unchanged: DCP is a human decision architecture
+            applied in real time, and it improves with awareness alone. :contentReference[oaicite:15]{index=15}
+          </p>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-8">
+        <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8 md:p-10">
+          <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+            <div>
+              <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+                Contact / Follow
+              </div>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+                Stay close to the core.
+              </h2>
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
+                Optional extension is only useful if the foundation stays clean.
+              </p>
+            </div>
+
+            <div className="space-y-4 rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
+              <a
+                href="mailto:drivecarprotocol@gmail.com"
+                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
+              >
+                <Mail className="h-5 w-5 text-orange-300" />
+                <div>
+                  <div className="text-sm text-white/55">Email</div>
+                  <div className="text-white">drivecarprotocol@gmail.com</div>
+                </div>
+              </a>
+
+              <a
+                href="https://x.com/D_C_Protocol"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
+              >
+                <img
+                  src="/images/icons/icon-x.png"
+                  alt="X"
+                  className="h-5 w-5 object-contain"
+                />
+                <div>
+                  <div className="text-sm text-white/55">X</div>
+                  <div className="text-white">@D_C_Protocol</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className="border-t border-white/10 px-6 py-8 md:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
+          <div>© 2026 Drive CAR Protocol. All rights reserved.</div>
+          <div>DCP works without technology.</div>
+        </div>
       </footer>
-
-    </main>
+    </div>
   );
 }
