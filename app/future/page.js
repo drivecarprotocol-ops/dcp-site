@@ -26,7 +26,6 @@ const futureCards = [
 export default function FuturePage() {
   return (
     <div className="min-h-screen bg-black text-white selection:bg-blue-500/25 selection:text-white">
-      {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-80"
@@ -56,7 +55,7 @@ export default function FuturePage() {
             <p className="mt-6 max-w-4xl text-lg leading-8 text-white/84 md:text-2xl">
               Future interfaces may help make patterns more visible,
               interactive, and easier to navigate. They do not replace
-              awareness, accountability, or responsibility. :contentReference[oaicite:12]{index=12}
+              awareness, accountability, or responsibility.
             </p>
 
             <div className="mt-8">
@@ -74,7 +73,6 @@ export default function FuturePage() {
         </div>
       </section>
 
-      {/* CONCEPT */}
       <section className="mx-auto max-w-7xl px-6 py-20 md:px-8">
         <div className="max-w-4xl">
           <div className="text-sm uppercase tracking-[0.25em] text-white/45">
@@ -86,7 +84,7 @@ export default function FuturePage() {
           <p className="mt-5 text-lg leading-8 text-white/80">
             One optional direction is a behavioral mapping layer that makes
             events, emotions, reactions, CAR processing, responses, and
-            recurring patterns easier to see over time. :contentReference[oaicite:13]{index=13}
+            recurring patterns easier to see over time.
           </p>
         </div>
 
@@ -103,7 +101,6 @@ export default function FuturePage() {
         </div>
       </section>
 
-      {/* PRINCIPLE */}
       <section className="border-y border-white/10 bg-white/[0.02]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-8">
           <div className="grid gap-6 md:grid-cols-2">
@@ -128,14 +125,13 @@ export default function FuturePage() {
               </div>
               <p className="mt-5 text-lg leading-8 text-white/82">
                 Technology does not define the system. The individual does. The
-                future layer is support, not replacement. :contentReference[oaicite:14]{index=14}
+                future layer is support, not replacement.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FRAMING */}
       <section className="mx-auto max-w-7xl px-6 py-20 md:px-8">
         <div className="grid gap-6 md:grid-cols-2">
           <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6">
@@ -162,12 +158,11 @@ export default function FuturePage() {
             Future development may explore interactive mapping, structured
             journaling, optional AI support, and continuity tools. The
             foundation remains unchanged: DCP is a human decision architecture
-            applied in real time, and it improves with awareness alone. :contentReference[oaicite:15]{index=15}
+            applied in real time, and it improves with awareness alone.
           </p>
         </div>
       </section>
 
-      {/* CONTACT */}
       <section className="mx-auto max-w-7xl px-6 py-16 md:px-8">
         <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8 md:p-10">
           <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
