@@ -10,7 +10,7 @@ import {
   ArrowDownToLine,
 } from "lucide-react";
 
-const coreCards = [
+const carCards = [
   {
     title: "Consideration",
     subtitle: "What is happening?",
@@ -37,13 +37,16 @@ const practiceBullets = [
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-black text-white selection:bg-orange-500/30 selection:text-white">
+      {/* HERO */}
       <section className="relative isolate overflow-hidden border-b border-white/10">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-[0.16]"
-          style={{ backgroundImage: "url('/images/backgrounds/hero-main.jpg')" }}
-        />
-        <div className="absolute inset-0 bg-black/70" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_15%,rgba(59,130,246,0.14),transparent_28%),radial-gradient(circle_at_85%_20%,rgba(249,115,22,0.16),transparent_25%)]" />
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-80"
+            style={{ backgroundImage: "url('/images/backgrounds/hero-main.jpg')" }}
+          />
+          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_15%,rgba(59,130,246,0.12),transparent_28%),radial-gradient(circle_at_85%_20%,rgba(249,115,22,0.14),transparent_25%)]" />
+        </div>
 
         <img
           src="/images/icons/DCP-ID.png"
@@ -77,7 +80,7 @@ export default function HomePage() {
                   <img
                     src="/images/icons/road-right.png"
                     alt=""
-                    className="pointer-events-none absolute -bottom-5 left-0 z-0 h-8 w-[180px] object-contain opacity-90 md:-bottom-6 md:h-10 md:w-[230px]"
+                    className="pointer-events-none absolute -bottom-5 left-6 z-0 h-8 w-[180px] object-contain opacity-90 md:-bottom-6 md:left-8 md:h-10 md:w-[230px]"
                   />
                 </div>
               </div>
@@ -88,7 +91,7 @@ export default function HomePage() {
               <span className="text-orange-400">Choose the response.</span>
             </h1>
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/78 md:text-xl">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/85 md:text-xl">
               DCP is a real-time framework for structuring the moment between
               emotion and action.
             </p>
@@ -113,14 +116,14 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <div className="mt-14 max-w-3xl rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 backdrop-blur">
-              <div className="text-sm uppercase tracking-[0.24em] text-white/45">
+            <div className="mt-14 max-w-3xl rounded-[1.6rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur">
+              <div className="text-sm uppercase tracking-[0.24em] text-white/55">
                 Core loop
               </div>
-              <div className="mt-4 text-xl font-medium text-white/92 md:text-2xl">
+              <div className="mt-4 text-xl font-medium text-white md:text-2xl">
                 Event → Emotion → Reaction
               </div>
-              <div className="mt-3 text-white/70">
+              <div className="mt-3 text-white/80">
                 Reaction is automatic. Response is chosen.
               </div>
               <div className="mt-5 text-xl font-medium text-blue-300 md:text-2xl">
@@ -131,6 +134,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* WHAT DCP IS */}
       <section className="mx-auto max-w-7xl px-6 py-18 md:px-8 md:py-22">
         <div className="max-w-3xl">
           <div className="text-sm uppercase tracking-[0.25em] text-white/45">
@@ -140,7 +144,7 @@ export default function HomePage() {
             A structure for the exact moment where behavior can go automatic or
             intentional.
           </h2>
-          <p className="mt-5 text-lg leading-8 text-white/72">
+          <p className="mt-5 text-lg leading-8 text-white/82">
             DCP does not remove emotion. It organizes what happens next. The
             point is not to become emotionless. The point is to stop reaction
             from becoming immediate action.
@@ -148,40 +152,44 @@ export default function HomePage() {
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
-          <div className="rounded-[1.7rem] border border-white/10 bg-white/[0.03] p-6">
+          <div className="rounded-[1.7rem] border border-white/10 bg-white/[0.05] p-6">
             <div className="text-sm uppercase tracking-[0.22em] text-orange-300">
               Without structure
             </div>
             <div className="mt-3 text-2xl font-medium">
               Emotion + Reaction → Action
             </div>
-            <p className="mt-4 leading-7 text-white/70">
+            <p className="mt-4 leading-7 text-white/78">
               This is where conflict, escalation, and regret usually come from.
             </p>
           </div>
 
-          <div className="rounded-[1.7rem] border border-white/10 bg-white/[0.03] p-6">
+          <div className="rounded-[1.7rem] border border-white/10 bg-white/[0.05] p-6">
             <div className="text-sm uppercase tracking-[0.22em] text-blue-300">
               With structure
             </div>
             <div className="mt-3 text-2xl font-medium">
               Emotion + Reaction → CAR → Response
             </div>
-            <p className="mt-4 leading-7 text-white/70">
+            <p className="mt-4 leading-7 text-white/78">
               Same emotion. Different outcome.
             </p>
           </div>
         </div>
       </section>
 
+      {/* CAR */}
       <section className="relative isolate overflow-hidden border-y border-white/10">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-[0.13]"
-          style={{
-            backgroundImage: "url('/images/backgrounds/section-bg-texture.jpg')",
-          }}
-        />
-        <div className="absolute inset-0 bg-black/78" />
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-80"
+            style={{
+              backgroundImage:
+                "url('/images/backgrounds/section-bg-texture.jpg')",
+            }}
+          />
+          <div className="absolute inset-0 bg-black/45" />
+        </div>
 
         <div className="relative mx-auto max-w-7xl px-6 py-18 md:px-8 md:py-22">
           <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
@@ -192,7 +200,7 @@ export default function HomePage() {
               <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
                 The decision engine.
               </h2>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-white/72">
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-white/82">
                 CAR is the internal process that examines emotion before it
                 becomes action.
               </p>
@@ -205,10 +213,10 @@ export default function HomePage() {
                     className="h-14 w-14 object-contain"
                   />
                   <div>
-                    <div className="text-sm uppercase tracking-[0.22em] text-white/45">
+                    <div className="text-sm uppercase tracking-[0.22em] text-white/55">
                       Visual anchor
                     </div>
-                    <div className="mt-1 text-white/78">
+                    <div className="mt-1 text-white/82">
                       Red = Consideration · Yellow = Accountability · Green =
                       Reason
                     </div>
@@ -218,20 +226,20 @@ export default function HomePage() {
             </div>
 
             <div className="grid gap-5">
-              {coreCards.map((item, index) => (
+              {carCards.map((item, index) => (
                 <motion.div
                   key={item.title}
                   initial={{ opacity: 0, y: 8 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.25 }}
                   transition={{ duration: 0.28, delay: index * 0.04 }}
-                  className="rounded-[1.7rem] border border-white/10 bg-white/[0.035] p-6"
+                  className="rounded-[1.7rem] border border-white/10 bg-white/[0.06] p-6"
                 >
-                  <div className="text-sm uppercase tracking-[0.24em] text-white/40">
+                  <div className="text-sm uppercase tracking-[0.24em] text-white/45">
                     {item.title}
                   </div>
                   <h3 className="mt-2 text-2xl font-medium">{item.subtitle}</h3>
-                  <p className="mt-3 leading-7 text-white/70">{item.text}</p>
+                  <p className="mt-3 leading-7 text-white/80">{item.text}</p>
                 </motion.div>
               ))}
             </div>
@@ -239,6 +247,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* HOW IT WORKS */}
       <section className="mx-auto max-w-7xl px-6 py-18 md:px-8 md:py-22">
         <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
           <div>
@@ -248,13 +257,13 @@ export default function HomePage() {
             <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
               When emotion hits, do not suppress it. Do not act immediately.
             </h2>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/72">
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/82">
               Run CAR, then respond. This creates a brief pause where
               decision-making becomes intentional instead of automatic.
             </p>
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6">
+          <div className="rounded-[2rem] border border-white/10 bg-white/[0.05] p-6">
             <div className="flex items-start gap-4">
               <img
                 src="/images/icons/yield.png"
@@ -269,7 +278,7 @@ export default function HomePage() {
                   {practiceBullets.map((item) => (
                     <div
                       key={item}
-                      className="flex items-start gap-3 text-white/80"
+                      className="flex items-start gap-3 text-white/85"
                     >
                       <span className="mt-2 h-1.5 w-1.5 rounded-full bg-orange-400" />
                       <span>{item}</span>
@@ -282,6 +291,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* EXAMPLE */}
       <section className="border-y border-white/10 bg-white/[0.02]">
         <div className="mx-auto max-w-7xl px-6 py-18 md:px-8 md:py-22">
           <div className="max-w-3xl">
@@ -301,7 +311,7 @@ export default function HomePage() {
               <div className="mt-3 text-2xl font-medium">
                 Emotion + Reaction → Action
               </div>
-              <p className="mt-4 leading-7 text-white/72">
+              <p className="mt-4 leading-7 text-white/80">
                 You snap back. It escalates. You lose control of the moment.
               </p>
             </div>
@@ -313,12 +323,12 @@ export default function HomePage() {
               <div className="mt-3 text-2xl font-medium">
                 Emotion + Reaction → CAR → Response
               </div>
-              <div className="mt-4 space-y-3 text-white/72">
+              <div className="mt-4 space-y-3 text-white/80">
                 <p>Consideration: What actually happened?</p>
                 <p>Accountability: What is my role in what happens next?</p>
                 <p>Reason: What response gives the best outcome?</p>
               </div>
-              <p className="mt-5 text-white/85">
+              <p className="mt-5 text-white">
                 Possible response: speak calmly, disengage, or redirect.
               </p>
             </div>
@@ -326,15 +336,18 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* WHY IT MATTERS */}
       <section className="relative isolate overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-[0.16]"
-          style={{
-            backgroundImage:
-              "url('/images/backgrounds/section-bg-pressure.jpg')",
-          }}
-        />
-        <div className="absolute inset-0 bg-black/78" />
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-80"
+            style={{
+              backgroundImage:
+                "url('/images/backgrounds/section-bg-pressure.jpg')",
+            }}
+          />
+          <div className="absolute inset-0 bg-black/45" />
+        </div>
 
         <div className="relative mx-auto max-w-7xl px-6 py-18 md:px-8 md:py-22">
           <div className="max-w-3xl">
@@ -344,7 +357,7 @@ export default function HomePage() {
             <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
               The recognition gap is real.
             </h2>
-            <p className="mt-5 text-lg leading-8 text-white/74">
+            <p className="mt-5 text-lg leading-8 text-white/84">
               People often know something is wrong while it is happening and
               still proceed the same way. DCP provides structure during the
               moment, not after it.
@@ -352,21 +365,21 @@ export default function HomePage() {
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            <div className="rounded-[1.7rem] border border-white/10 bg-white/[0.035] p-6">
+            <div className="rounded-[1.7rem] border border-white/10 bg-white/[0.06] p-6">
               <div className="text-lg font-medium">Emotion is inevitable</div>
-              <p className="mt-3 leading-7 text-white/70">
+              <p className="mt-3 leading-7 text-white/80">
                 The system does not deny what is real.
               </p>
             </div>
-            <div className="rounded-[1.7rem] border border-white/10 bg-white/[0.035] p-6">
+            <div className="rounded-[1.7rem] border border-white/10 bg-white/[0.06] p-6">
               <div className="text-lg font-medium">Reaction is automatic</div>
-              <p className="mt-3 leading-7 text-white/70">
+              <p className="mt-3 leading-7 text-white/80">
                 Left alone, it tends to repeat itself.
               </p>
             </div>
-            <div className="rounded-[1.7rem] border border-white/10 bg-white/[0.035] p-6">
+            <div className="rounded-[1.7rem] border border-white/10 bg-white/[0.06] p-6">
               <div className="text-lg font-medium">Response is chosen</div>
-              <p className="mt-3 leading-7 text-white/70">
+              <p className="mt-3 leading-7 text-white/80">
                 Structure creates control under pressure.
               </p>
             </div>
@@ -374,8 +387,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* WHITE PAPER + CONTACT */}
       <section className="mx-auto max-w-7xl px-6 py-18 md:px-8 md:py-22">
-        <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.05] to-white/[0.02] p-8 md:p-10">
+        <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8 md:p-10">
           <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div>
               <div className="text-sm uppercase tracking-[0.25em] text-white/45">
@@ -384,7 +398,7 @@ export default function HomePage() {
               <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
                 Go deeper if you want the full architecture.
               </h2>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-white/72">
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-white/82">
                 The website is the QuickStart. The white paper holds the full
                 framing, structure, and broader context.
               </p>
@@ -414,7 +428,7 @@ export default function HomePage() {
             <div className="space-y-4 rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
               <a
                 href="mailto:drivecarprotocol@gmail.com"
-                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-4 transition hover:bg-white/[0.06]"
+                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
               >
                 <img
                   src="/images/icons/icon-gmail.png"
@@ -422,7 +436,7 @@ export default function HomePage() {
                   className="h-5 w-5 object-contain"
                 />
                 <div>
-                  <div className="text-sm text-white/50">Email</div>
+                  <div className="text-sm text-white/55">Email</div>
                   <div className="text-white">drivecarprotocol@gmail.com</div>
                 </div>
               </a>
@@ -431,7 +445,7 @@ export default function HomePage() {
                 href="https://x.com/D_C_Protocol"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-4 transition hover:bg-white/[0.06]"
+                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
               >
                 <img
                   src="/images/icons/icon-x.png"
@@ -439,7 +453,7 @@ export default function HomePage() {
                   className="h-5 w-5 object-contain"
                 />
                 <div>
-                  <div className="text-sm text-white/50">X</div>
+                  <div className="text-sm text-white/55">X</div>
                   <div className="text-white">@D_C_Protocol</div>
                 </div>
               </a>
@@ -449,7 +463,7 @@ export default function HomePage() {
       </section>
 
       <footer className="border-t border-white/10 px-6 py-8 md:px-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/45 md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
           <div>© 2026 Drive CAR Protocol. All rights reserved.</div>
           <div>Feel the emotion. Choose the response.</div>
         </div>
