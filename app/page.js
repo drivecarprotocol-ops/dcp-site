@@ -65,7 +65,7 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/cone.png"
                   alt=""
-                  className="pointer-events-none absolute left-[92%] top-[10px] z-20 w-14 opacity-95 md:left-[97%] md:top-[12px] md:w-20"
+                  className="pointer-events-none absolute left-[92%] top-[10px] z-20 w-14 opacity-95"
                 />
               </div>
 
@@ -82,7 +82,7 @@ export default function DCPWebsiteV2() {
               </div>
             </div>
 
-            <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight md:mt-5 md:text-7xl">
+            <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight md:mt-5 text-5xl md:text-7xl">
               Feel the emotion.{" "}
               <span className="text-orange-400">Choose the response.</span>
             </h1>
