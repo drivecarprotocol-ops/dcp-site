@@ -349,9 +349,7 @@ export default function DCPWebsiteV2() {
               >
                 <Mail className="h-5 w-5 text-orange-300" />
                 <div>
-                  <div className="text-sm text-white/55">Email</div>
                   <div className="text-white">drivecarprotocol@gmail.com</div>
-                </div>
               </a>
 
               <a
@@ -366,9 +364,7 @@ export default function DCPWebsiteV2() {
                   className="h-5 w-5 object-contain"
                 />
                 <div>
-                  <div className="text-sm text-white/55">X</div>
                   <div className="text-white">@D_C_Protocol</div>
-                </div>
               </a>
             </div>
           </div>
