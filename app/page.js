@@ -131,6 +131,56 @@ export default function DCPWebsiteV2() {
         />
         <div className="absolute inset-0 bg-black/62" />
 
+        <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
+          <div className="max-w-4xl">
+            <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
+              What DCP is
+            </div>
+
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+              The critical moment is between emotion and action.
+            </h2>
+
+            <p className="mt-5 text-lg leading-8 text-white/78">
+              DCP makes that moment visible and usable. Without structure,
+              behavior stays automatic. With structure, it becomes intentional.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 backdrop-blur">
+              <div className="text-sm uppercase tracking-[0.25em] text-orange-300">
+                Automatic
+              </div>
+
+              <div className="mt-3 text-2xl font-medium">
+                Reaction → Action
+              </div>
+
+              <p className="mt-4 leading-7 text-white/75">
+                The problem is not emotion itself. The problem is the lack of
+                structure when reaction turns into action.
+              </p>
+            </div>
+
+            <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 backdrop-blur">
+              <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
+                Intentional
+              </div>
+
+              <div className="mt-3 text-2xl font-medium">
+                Reaction → CAR → Response
+              </div>
+
+              <p className="mt-4 leading-7 text-white/75">
+                CAR does not remove reaction. It organizes it before it is
+                expressed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CAR */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
