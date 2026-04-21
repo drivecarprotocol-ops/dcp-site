@@ -129,7 +129,7 @@ export default function DCPWebsiteV2() {
   ↓
 </div>
 
-<div className="ml-[102px] mt-1 text-2xl font-medium text-blue-300 leading-tight">
+<div className="ml-[104px] mt-1 text-2xl font-medium text-blue-300 leading-tight">
   CAR → Response <span className="text-blue-200/70">(chosen)</span>
 </div>
 </div>
