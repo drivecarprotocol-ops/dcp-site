@@ -123,11 +123,15 @@ export default function DCPWebsiteV2() {
 
 {/* Mobile */}
 <div className="mt-5 md:hidden">
-  <div className="text-2xl font-medium text-white leading-tight">
+  <div className="text-xl font-medium text-white leading-tight">
     Event → Emotion → Reaction <span className="text-white/50">(automatic)</span>
   </div>
 
-  <div className="mt-3 text-blue-300 text-2xl font-medium leading-tight">
+  <div className="mt-2 ml-[92px] text-blue-300 text-xl leading-none">
+    ↓
+  </div>
+
+  <div className="ml-[76px] -mt-1 text-xl font-medium text-blue-300 leading-tight">
     CAR → Response <span className="text-blue-200/70">(chosen)</span>
   </div>
 </div>
