@@ -126,19 +126,19 @@ export default function DCPWebsiteV2() {
   </div>
 
   {/* VERTICAL STACK */}
-  <div className="mt-2 flex flex-col items-start text-blue-300 font-medium">
+  	<div className="mt-2 flex flex-col items-start text-blue-300 font-medium">
 
-  <div className="ml-[14px] leading-none -mt-1">↓</div>
+  	<div className="ml-[22px] leading-none -mt-1 text-xl">→</div>
 
-  <div className="ml-[10px] text-2xl">CAR</div>
+  	<div className="ml-[18px] text-2xl">CAR</div>
 
-  <div className="ml-[14px] leading-none -mt-1">↓</div>
+  	<div className="ml-[22px] leading-none -mt-1 text-xl">→</div>
 
-  <div className="ml-[10px] text-2xl">
-    Response <span className="text-blue-200/70">(chosen)</span>
-  </div>
+  	<div className="ml-[18px] text-2xl">
+    		Response <span className="text-blue-200/70">(chosen)</span>
+  	</div>
 
-</div>
+   </div>
 </div>
            
 </motion.div>
