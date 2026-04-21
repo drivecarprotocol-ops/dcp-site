@@ -65,7 +65,7 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/cone.png"
                   alt=""
-                  className="pointer-events-none absolute left-[92%] top-[10px] z-20 w-14 opacity-95"
+                  className="pointer-events-none absolute left-[85%] top-[8px] z-20 w-12 opacity-95 md:left-[92%] md:top-[10px] md:w-14"
                 />
               </div>
 
