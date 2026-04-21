@@ -65,24 +65,24 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/cone.png"
                   alt=""
-                  className="pointer-events-none absolute left-[85%] top-[8px] z-20 w-12 opacity-95 md:left-[92%] md:top-[10px] md:w-14"
+                  className="pointer-events-none absolute left-[92%] top-[10px] z-20 w-16 opacity-95 md:left-[97%] md:top-[14px] md:w-20"
                 />
               </div>
 
-              <div className="relative -mt-1">
-                <div className="relative z-9 pl-1 text-lg uppercase tracking-[0.34em] text-white/82 md:text-2xl">
+              <div className="relative mt-2">
+                <div className="relative z-9 pl-0 text-lg uppercase tracking-[0.34em] text-white/82 md:text-2xl">
                   PROTOCOL
                 </div>
 
                 <img
                   src="/images/icons/road-right.png"
                   alt=""
-                  className="pointer-events-none absolute left-[44%] top-[-11px] z-0 w-55 opacity-95 md:left-[47%] md:top-[-13px] md:w-66"
+                  className="pointer-events-none absolute left-[44%] top-[-11px] z-0 w-56 opacity-95 md:left-[47%] md:top-[-13px] md:w-67"
                 />
               </div>
             </div>
 
-            <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight md:mt-5 text-5xl md:text-7xl">
+            <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight md:mt-5 md:text-7xl">
               Feel the emotion.{" "}
               <span className="text-orange-400">Choose the response.</span>
             </h1>
@@ -123,16 +123,12 @@ export default function DCPWebsiteV2() {
 
 {/* Mobile */}
 <div className="mt-5 md:hidden">
-  <div className="text-xl font-medium text-white leading-tight">
-    Event → Emotion → Reaction
+  <div className="text-2xl font-medium text-white leading-tight">
+    Event → Emotion → Reaction <span className="text-white/50">(automatic)</span>
   </div>
 
-  <div className="-mt-2 ml-[80px] text-blue-300 text-xl leading-none">
-    ↓
-  </div>
-
-  <div className="ml-[78px] -mt-1 text-xl font-medium text-blue-300 leading-tight">
-    CAR → Response
+  <div className="mt-3 text-blue-300 text-2xl font-medium leading-tight">
+    CAR → Response <span className="text-blue-200/70">(chosen)</span>
   </div>
 </div>
 
@@ -150,7 +146,7 @@ export default function DCPWebsiteV2() {
     CAR → Response <span className="text-blue-200/70">(chosen)</span>
   </div>
 </div>
-</div>   
+ </div>   
 </motion.div>
         </div>
       </section>
