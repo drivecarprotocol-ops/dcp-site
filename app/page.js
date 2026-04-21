@@ -92,26 +92,6 @@ export default function DCPWebsiteV2() {
               time. It inserts structure between emotion and action.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-3 md:mt-8 md:gap-4">
-              <a
-                href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3 text-black transition hover:bg-white/90 md:px-6"
-              >
-                Read Full White Paper
-                <ExternalLink className="h-4 w-4" />
-              </a>
-
-              <Link
-                href="/future"
-                className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-transparent px-5 py-3 text-white transition hover:bg-white/10 md:px-6"
-              >
-                Future Direction
-                <ChevronRight className="h-4 w-4" />
-              </Link>
-            </div>
-
             <div className="mt-10 max-w-3xl rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-5 backdrop-blur md:mt-12 md:p-6">
               <div className="text-xs uppercase tracking-[0.25em] text-white/55 md:text-sm">
                 Core Behavioral Model
@@ -320,27 +300,34 @@ export default function DCPWebsiteV2() {
                 architecture, intent, and broader context.
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                  href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-2xl bg-orange-500 px-6 py-3 text-white transition hover:bg-orange-500/90"
-                >
-                  Read Full White Paper
-                  <ExternalLink className="h-4 w-4" />
-                </a>
+ <div className="mt-8 flex flex-wrap gap-4">
+  <a
+    href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 rounded-2xl bg-orange-500 px-6 py-3 text-white transition hover:bg-orange-500/90"
+  >
+    Read Full White Paper
+    <ExternalLink className="h-4 w-4" />
+  </a>
 
-                <a
-                  href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-                  download
-                  className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
-                >
-                  Download PDF
-                  <ArrowDownToLine className="h-4 w-4" />
-                </a>
-              </div>
-            </div>
+  <a
+    href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
+    download
+    className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
+  >
+    Download PDF
+    <ArrowDownToLine className="h-4 w-4" />
+  </a>
+
+  <Link
+    href="/future"
+    className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
+  >
+    Future Direction
+    <ChevronRight className="h-4 w-4" />
+  </Link>
+</div>            </div>
 
             <div className="space-y-4 rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
               <a
