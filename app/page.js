@@ -147,7 +147,7 @@ export default function DCPWebsiteV2() {
           </h2>
           <p className="mt-5 text-lg leading-8 text-white/78">
             DCP makes that moment visible and usable. Without structure, behavior
-            stays automatic. With structure, it becomes intentional. :contentReference[oaicite:3]{index=3}
+            stays automatic. With structure, it becomes intentional.
           </p>
         </div>
 
@@ -161,7 +161,7 @@ export default function DCPWebsiteV2() {
             </div>
             <p className="mt-4 leading-7 text-white/75">
               The problem is not emotion itself. The problem is the lack of
-              structure when reaction turns into action. :contentReference[oaicite:4]{index=4}
+              structure when reaction turns into action.
             </p>
           </div>
 
@@ -174,7 +174,7 @@ export default function DCPWebsiteV2() {
             </div>
             <p className="mt-4 leading-7 text-white/75">
               CAR does not remove reaction. It organizes it before it is
-              expressed. :contentReference[oaicite:5]{index=5}
+              expressed.
             </p>
           </div>
         </div>
@@ -203,7 +203,7 @@ export default function DCPWebsiteV2() {
               <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
                 CAR is the internal process used to examine emotion before
                 acting. Consideration creates awareness. Accountability
-                establishes ownership. Reason makes the decision. :contentReference[oaicite:6]{index=6}
+                establishes ownership. Reason makes the decision.
               </p>
 
               <div className="mt-8 rounded-[1.75rem] border border-white/10 bg-black/45 p-6">
@@ -273,7 +273,7 @@ export default function DCPWebsiteV2() {
               Emotion + Reaction → Action
             </h3>
             <p className="mt-5 text-lg leading-8 text-white/80">
-              You snap back. It escalates. You lose control of the moment. :contentReference[oaicite:7]{index=7}
+              You snap back. It escalates. You lose control of the moment.
             </p>
           </div>
 
@@ -293,7 +293,7 @@ export default function DCPWebsiteV2() {
               </p>
             </div>
             <p className="mt-5 text-xl text-white">
-              Same emotion. Different outcome. :contentReference[oaicite:8]{index=8}
+              Same emotion. Different outcome.
             </p>
           </div>
         </div>
@@ -321,7 +321,7 @@ export default function DCPWebsiteV2() {
             <p className="mt-5 text-lg leading-8 text-white/82">
               People often know something is wrong while it is happening and
               still proceed the same way. DCP provides structure to act during
-              the moment, not after it. :contentReference[oaicite:9]{index=9}
+              the moment, not after it.
             </p>
           </div>
 
@@ -329,7 +329,7 @@ export default function DCPWebsiteV2() {
             <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
               <div className="text-lg font-medium">Emotion is inevitable</div>
               <p className="mt-3 leading-7 text-white/80">
-                Emotion is natural. The issue is what happens next. :contentReference[oaicite:10]{index=10}
+                Emotion is natural. The issue is what happens next.
               </p>
             </div>
             <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
@@ -341,7 +341,7 @@ export default function DCPWebsiteV2() {
             <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
               <div className="text-lg font-medium">Response is chosen</div>
               <p className="mt-3 leading-7 text-white/80">
-                Structure creates control under real conditions. :contentReference[oaicite:11]{index=11}
+                Structure creates control under real conditions.
               </p>
             </div>
           </div>
