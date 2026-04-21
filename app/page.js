@@ -194,45 +194,32 @@ export default function DCPWebsiteV2() {
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-            
-            {/* LEFT SIDE */}
             <div>
               <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
                 C.A.R.
               </div>
 
-              <div className="mt-4">
-                <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">
-                  The Decision Engine
-                </h2>
-
-                <p className="mt-3 max-w-md text-lg leading-7 text-white/85 md:text-xl">
-                  sculpts{" "}
-                  <span className="text-blue-400 font-medium">emotion</span> into an{" "}
-                  <span className="text-orange-400 font-medium">
-                    intentional response
-                  </span>.
-                </p>
-
-                <p className="mt-4 max-w-md text-base leading-7 text-white/75 md:text-lg">
-                  When emotion is triggered, CAR engages—creating space to form an
-                  intentional response before it is expressed.
-                </p>
-              </div>
+<div className="mt-4">
+  <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">
+    The Decision Engine
+  </h2>
+  <p className="mt-3 max-w-md text-base leading-7 text-white/80 md:text-lg">
+    sculpts <span className="text-blue-300">emotion</span> into an{" "}
+  <span className="text-orange-400">intentional response</span>.</p>
+  <p className="mt-4 max-w-md text-base leading-7 text-white/75 md:text-lg">
+  When emotion is triggered, CAR engages—creating space to form an intentional response before       	it is expressed.
+	</p>
+</div>
             </div>
 
-            {/* RIGHT SIDE */}
             <div className="grid gap-5">
-              
               <div className="rounded-[1.75rem] border border-white/10 bg-black/45 p-6 backdrop-blur">
                 <div className="text-sm uppercase tracking-[0.25em]">
                   <span className="text-red-300">Consideration</span>
                   <span className="px-2 text-white">→</span>
                   <span className="text-white">Awareness</span>
                 </div>
-                <h3 className="mt-3 text-2xl font-medium">
-                  What is happening?
-                </h3>
+                <h3 className="mt-3 text-2xl font-medium">What is happening?</h3>
                 <p className="mt-4 text-lg leading-7 text-white/80">
                   See the moment clearly before you act.
                 </p>
@@ -244,9 +231,7 @@ export default function DCPWebsiteV2() {
                   <span className="px-2 text-white">→</span>
                   <span className="text-white">Ownership</span>
                 </div>
-                <h3 className="mt-3 text-2xl font-medium">
-                  What is my role?
-                </h3>
+                <h3 className="mt-3 text-2xl font-medium">What is my role?</h3>
                 <p className="mt-4 text-lg leading-7 text-white/80">
                   Own your part in what happens next.
                 </p>
@@ -258,14 +243,11 @@ export default function DCPWebsiteV2() {
                   <span className="px-2 text-white">→</span>
                   <span className="text-white">Direction</span>
                 </div>
-                <h3 className="mt-3 text-2xl font-medium">
-                  What is the best response?
-                </h3>
+                <h3 className="mt-3 text-2xl font-medium">What is the best response?</h3>
                 <p className="mt-4 text-lg leading-7 text-white/80">
                   Choose direction instead of defaulting to impulse.
                 </p>
               </div>
-
             </div>
           </div>
         </div>
