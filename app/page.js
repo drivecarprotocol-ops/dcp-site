@@ -71,18 +71,17 @@ export default function DCPWebsiteV2() {
               </div>
 
               <div className="relative mt-2">
-                className="relative z-10 pl-0 text-lg uppercase tracking-[0.34em] text-white/82 md:text-2xl"
-                  PROTOCOL
-                </div>
+  		<div className="relative z-10 pl-0 text-lg uppercase tracking-[0.34em] text-				white/82 md:text-2xl">
+    				PROTOCOL
+  		</div>
 
-                {/* Road shifted more right under CAR/Protocol */}
-                <img
-                  src="/images/icons/road-right.png"
-                  alt=""
-                  className="pointer-events-none absolute left-[38%] top-[-10px] z-0 w-72 opacity-95 md:left-[40%] md:top-[-14px] md:w-96"
-                />
-              </div>
-            </div>
+  		{/* Road shifted more right under CAR/Protocol */}
+  		<img
+    		src="/images/icons/road-right.png"
+    		alt=""
+    		className="pointer-events-none absolute left-[38%] top-[-10px] z-0 w-72 opacity-95 md:left-[40%] md:top-[-14px] md:w-96"
+  		/>
+		</div>
 
             <h1 className="mt-4 max-w-5xl text-5xl font-semibold tracking-tight md:mt-5 md:text-7xl">
               Feel the emotion.{" "}
