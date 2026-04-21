@@ -44,7 +44,7 @@ export default function DCPWebsiteV2() {
         <img
           src="/images/icons/DCP-ID.png"
           alt="DCP"
-          className="pointer-events-none absolute right-6 top-6 z-20 w-40 opacity-25 md:right-8 md:top-8 md:w-56"
+          className="pointer-events-none absolute right-6 top-6 z-20 w-32 opacity-25 md:right-8 md:top-8 md:w-44"
         />
 
         <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-8 md:py-28">
@@ -126,17 +126,20 @@ export default function DCPWebsiteV2() {
     Event → Emotion → Reaction <span className="text-white/50">(automatic)</span>
   </div>
 
-  <div className="mt-4 text-xl font-medium text-blue-300">
-    ↓ CAR
-  </div>
+  <div className="mt-4 text-center text-blue-300 text-xl font-medium">
+  ↓
+</div>
 
-  <div className="mt-2 text-base leading-7 text-blue-200/90">
-    Consideration → Accountability → Reason
-  </div>
+<div className="text-center text-blue-300 text-2xl font-medium">
+  CAR
+</div>
 
-  <div className="mt-4 text-2xl font-medium text-blue-300">
-    Response <span className="text-blue-200/70">(chosen)</span>
-  </div>
+<div className="mt-2 text-center text-blue-300 text-xl font-medium">
+  ↓
+</div>
+
+<div className="mt-2 text-center text-blue-300 text-2xl font-medium">
+  Response <span className="text-blue-200/70">(chosen)</span>
 </div> 
           </motion.div>
         </div>
