@@ -109,7 +109,7 @@ export default function DCPWebsiteV2() {
 
               <div className="mt-6">
                 <img
-                  src="/images/models/core-model.jpg"
+                  src="/images/models/core-model.png"
                   alt="Core Behavioral Model Diagram"
                   className="w-full max-w-2xl rounded-xl border border-white/10 bg-black/30 object-contain"
                 />
