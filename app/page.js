@@ -139,8 +139,7 @@ export default function DCPWebsiteV2() {
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-white/78">
-              DCP makes that moment visible and usable. Without structure,
-              behavior stays automatic. With structure, it becomes intentional.
+              Without structure, behavior stays automatic. With structure, it becomes intentional.
             </p>
           </div>
 
