@@ -169,8 +169,7 @@ export default function DCPWebsiteV2() {
               </div>
 
               <p className="mt-4 leading-7 text-white/75">
-                When emotion is triggered, CAR engages—creating space to form an
-                intentional response.
+                When emotion strikes, CAR engages creating a response.
               </p>
             </div>
           </div>
