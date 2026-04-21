@@ -207,7 +207,7 @@ export default function DCPWebsiteV2() {
     sculpts <span className="text-blue-300">emotion</span> into an{" "}
   <span className="text-orange-400">intentional response</span>.</p>
   <p className="mt-4 max-w-md text-base leading-7 text-white/75 md:text-lg">
-  When emotion is triggered, CAR engages—creating space to form an intentional response before       	it is expressed.
+  CAR engages within that brief space of time to form a better response before it is expressed.
 	</p>
 </div>
             </div>
