@@ -127,7 +127,7 @@ export default function DCPWebsiteV2() {
     Event → Emotion → Reaction
   </div>
 
-  <div className="-mt-3 ml-[78px] text-blue-300 text-xl leading-none">
+  <div className="-mt-2 ml-[80px] text-blue-300 text-xl leading-none">
     ↓
   </div>
 
