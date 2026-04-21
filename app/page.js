@@ -154,7 +154,7 @@ export default function DCPWebsiteV2() {
               </div>
 
               <p className="mt-4 leading-7 text-white/75">
-                Without structure, emotion moves directly toward reaction.
+                An event occurs, emotion moves directly toward reaction.
               </p>
             </div>
 
