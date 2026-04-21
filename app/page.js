@@ -69,7 +69,7 @@ export default function DCPWebsiteV2() {
                 />
               </div>
 
-              <div className="relative -mt-2">
+              <div className="relative mt-2">
                 <div className="relative z-9 pl-0 text-lg uppercase tracking-[0.34em] text-white/82 md:text-2xl">
                   PROTOCOL
                 </div>
@@ -77,7 +77,7 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/road-right.png"
                   alt=""
-                  className="pointer-events-none absolute left-[44%] top-[-10px] z-0 w-56 opacity-95 md:left-[46%] md:top-[-14px] md:w-72"
+                  className="pointer-events-none absolute left-[44%] top-[-11px] z-0 w-56 opacity-95 md:left-[47%] md:top-[-13px] md:w-67"
                 />
               </div>
             </div>
