@@ -121,10 +121,15 @@ export default function DCPWebsiteV2() {
     DCP operates within the existing sequence. It does not fight emotion or remove reaction.
     It inserts structure into what happens next.
   </p>
-	<div className="mt-12 max-w-3xl rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur">
+
+<div className="mt-12 max-w-3xl rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur">
   <div className="text-sm uppercase tracking-[0.25em] text-white/55">
     Core Behavioral Model
   </div>
+
+  <p className="mt-3 text-sm leading-6 text-white/70">
+    DCP operates within the existing sequence. It inserts structure into what happens next.
+  </p>
 
   <div className="mt-5 text-2xl font-medium text-white">
     Event → Emotion → Reaction <span className="text-white/50">(automatic)</span>
@@ -146,7 +151,8 @@ export default function DCPWebsiteV2() {
     Response <span className="text-blue-200/70">(chosen)</span>
   </div>
 </div>
-          </motion.div>
+
+</motion.div>
         </div>
       </section>
 
