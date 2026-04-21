@@ -30,11 +30,11 @@ const carCards = [
 
 export default function DCPWebsiteV2() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-orange-500/30 selection:text-white">
+    <div className="min-h-screen bg-black text-white selection:bg-orange-500/30 selection:text-white">
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div
-          className="absolute inset-0 bg-cover opacity-80 bg-[position:80%_center] md:bg-center"
+          className="absolute inset-0 bg-cover bg-center opacity-80"
           style={{ backgroundImage: "url('/images/backgrounds/hero-main.jpg')" }}
         />
         <div className="absolute inset-0 bg-black/55" />
@@ -44,10 +44,10 @@ export default function DCPWebsiteV2() {
         <img
           src="/images/icons/DCP-ID.png"
           alt="DCP"
-          className="pointer-events-none absolute right-4 top-4 z-20 w-24 opacity-25 md:right-8 md:top-8 md:w-44"
+          className="pointer-events-none absolute right-6 top-6 z-20 w-32 opacity-25 md:right-8 md:top-8 md:w-44"
         />
 
-        <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-28">
+        <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-8 md:py-28">
           <motion.div
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
@@ -55,9 +55,9 @@ export default function DCPWebsiteV2() {
             className="max-w-5xl"
           >
             {/* Logo block */}
-            <div className="relative inline-block max-w-full">
+            <div className="relative inline-block">
               <div className="relative">
-                <div className="relative z-10 text-4xl font-semibold leading-none tracking-tight sm:text-5xl md:text-7xl">
+                <div className="relative z-10 text-5xl font-semibold leading-none tracking-tight md:text-7xl">
                   <span className="text-white">DRIVE</span>
                   <span className="ml-2 text-blue-400">CAR</span>
                 </div>
@@ -65,39 +65,39 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/cone.png"
                   alt=""
-                  className="pointer-events-none absolute right-[-10px] top-[4px] z-20 w-10 opacity-95 sm:right-[-16px] sm:top-[6px] sm:w-12 md:right-[-28px] md:top-[12px] md:w-20"
+                  className="pointer-events-none absolute left-[92%] top-[10px] z-20 w-14 opacity-95 md:left-[97%] md:top-[12px] md:w-20"
                 />
               </div>
 
               <div className="relative mt-2">
-                <div className="relative z-10 text-sm uppercase tracking-[0.28em] text-white/82 sm:text-base md:text-2xl md:tracking-[0.34em]">
+                <div className="relative z-9 pl-0 text-lg uppercase tracking-[0.34em] text-white/82 md:text-2xl">
                   PROTOCOL
                 </div>
 
                 <img
                   src="/images/icons/road-right.png"
                   alt=""
-                  className="pointer-events-none absolute left-[42%] top-[-8px] z-0 w-28 opacity-95 sm:left-[44%] sm:w-36 md:left-[47%] md:top-[-13px] md:w-66"
+                  className="pointer-events-none absolute left-[44%] top-[-11px] z-0 w-55 opacity-95 md:left-[47%] md:top-[-13px] md:w-66"
                 />
               </div>
             </div>
 
-            <h1 className="mt-4 max-w-5xl text-3xl font-semibold tracking-tight sm:text-4xl md:mt-5 md:text-7xl">
+            <h1 className="mt-4 max-w-5xl text-5xl font-semibold tracking-tight md:mt-5 md:text-7xl">
               Feel the emotion.{" "}
               <span className="text-orange-400">Choose the response.</span>
             </h1>
 
-            <p className="mt-5 max-w-3xl text-base leading-7 text-white/82 sm:text-lg md:mt-6 md:text-2xl md:leading-8">
-              DRIVE CAR Protocol is a human decision architecture applied in real
-              time. It inserts structure between emotion and action.
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/82 md:text-2xl">
+              DRIVE CAR Protocol is a human decision architecture applied in real time.
+              It inserts structure between emotion and action.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-3 md:mt-8 md:gap-4">
+            <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3 text-black transition hover:bg-white/90 md:px-6"
+                className="inline-flex items-center gap-2 rounded-2xl bg-white px-6 py-3 text-black transition hover:bg-white/90"
               >
                 Read Full White Paper
                 <ExternalLink className="h-4 w-4" />
@@ -105,35 +105,32 @@ export default function DCPWebsiteV2() {
 
               <Link
                 href="/future"
-                className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-transparent px-5 py-3 text-white transition hover:bg-white/10 md:px-6"
+                className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
               >
                 Future Direction
                 <ChevronRight className="h-4 w-4" />
               </Link>
             </div>
 
-            <div className="mt-10 max-w-3xl rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-5 backdrop-blur md:mt-12 md:p-6">
-              <div className="text-xs uppercase tracking-[0.25em] text-white/55 md:text-sm">
+            <div className="mt-12 max-w-3xl rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur">
+              <div className="text-sm uppercase tracking-[0.25em] text-white/55">
                 Core Behavioral Model
               </div>
 
               <p className="mt-3 text-sm leading-6 text-white/70">
-                DCP operates within the existing sequence. It inserts structure
-                into what happens next.
+                DCP operates within the existing sequence. It inserts structure into what happens next.
               </p>
 
-              <div className="mt-5 text-lg font-medium text-white sm:text-xl md:text-2xl">
-                Event → Emotion → Reaction{" "}
-                <span className="text-white/50">(automatic)</span>
+              <div className="mt-5 text-2xl font-medium text-white">
+                Event → Emotion → Reaction <span className="text-white/50">(automatic)</span>
               </div>
 
-              <div className="mt-2 text-center text-xl leading-none text-blue-300 md:ml-[118px] md:-mt-2 md:text-left md:text-2xl">
+              <div className="-mt-2 ml-[118px] text-blue-300 text-2xl leading-none">
                 ↓
               </div>
 
-              <div className="mt-1 text-center text-lg font-medium leading-tight text-blue-300 sm:text-xl md:ml-[113px] md:text-left md:text-2xl">
-                CAR → Response{" "}
-                <span className="text-blue-200/70">(chosen)</span>
+              <div className="ml-[113px] mt-1 text-2xl font-medium text-blue-300 leading-tight">
+                CAR → Response <span className="text-blue-200/70">(chosen)</span>
               </div>
             </div>
           </motion.div>
@@ -141,7 +138,7 @@ export default function DCPWebsiteV2() {
       </section>
 
       {/* WHAT DCP IS */}
-      <section className="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
+      <section className="mx-auto max-w-7xl px-6 py-20 md:px-8">
         <div className="max-w-4xl">
           <div className="text-sm uppercase tracking-[0.25em] text-white/45">
             What DCP is
@@ -160,7 +157,9 @@ export default function DCPWebsiteV2() {
             <div className="text-sm uppercase tracking-[0.25em] text-orange-300">
               Automatic
             </div>
-            <div className="mt-3 text-2xl font-medium">Reaction → Action</div>
+            <div className="mt-3 text-2xl font-medium">
+              Reaction → Action
+            </div>
             <p className="mt-4 leading-7 text-white/75">
               The problem is not emotion itself. The problem is the lack of
               structure when reaction turns into action.
@@ -185,7 +184,7 @@ export default function DCPWebsiteV2() {
       {/* CAR */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
-          className="absolute inset-0 bg-cover opacity-80 bg-[position:20%_center] md:bg-center"
+          className="absolute inset-0 bg-cover bg-center opacity-80"
           style={{
             backgroundImage:
               "url('/images/backgrounds/section-bg-texture.jpg')",
@@ -193,7 +192,7 @@ export default function DCPWebsiteV2() {
         />
         <div className="absolute inset-0 bg-black/60" />
 
-        <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
+        <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-8">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div>
               <div className="text-sm uppercase tracking-[0.25em] text-white/45">
@@ -266,7 +265,7 @@ export default function DCPWebsiteV2() {
         />
         <div className="absolute inset-0 bg-black/62" />
 
-        <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
+        <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-8">
           <div className="max-w-4xl">
             <div className="text-sm uppercase tracking-[0.25em] text-white/45">
               Why It Matters
@@ -305,7 +304,7 @@ export default function DCPWebsiteV2() {
       </section>
 
       {/* FULL PDF + CONTACT */}
-      <section className="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
+      <section className="mx-auto max-w-7xl px-6 py-20 md:px-8">
         <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8 md:p-10">
           <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
             <div>
@@ -375,7 +374,7 @@ export default function DCPWebsiteV2() {
         </div>
       </section>
 
-      <footer className="border-t border-white/10 px-5 py-8 md:px-8">
+      <footer className="border-t border-white/10 px-6 py-8 md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
           <div>© 2026 Drive CAR Protocol. All rights reserved.</div>
           <div>Feel the emotion. Choose the response.</div>
