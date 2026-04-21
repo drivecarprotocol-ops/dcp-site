@@ -55,7 +55,7 @@ export default function DCPWebsiteV2() {
             className="max-w-5xl"
           >
             {/* Logo block */}
-            <div className="relative inline-block ml-20 md:ml-28">
+            <div className="relative inline-block">
               <div className="relative">
                 <div className="relative z-10 text-5xl font-semibold leading-none tracking-tight md:text-7xl">
                   <span className="text-white">DRIVE</span>
@@ -65,7 +65,7 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/cone.png"
                   alt=""
-                  className="pointer-events-none absolute left-[-88px] top-[2px] z-20 w-14 opacity-95 md:left-[-124px] md:top-[4px] md:w-20"
+                  className="pointer-events-none absolute left-[105%] top-[10px] z-20 w-16 opacity-95 md:left-[108%] md:top-[14px] md:w-20"
                 />
               </div>
 
