@@ -204,7 +204,8 @@ export default function DCPWebsiteV2() {
     The Decision Engine
   </h2>
   <p className="mt-3 max-w-md text-base leading-7 text-white/80 md:text-lg">
-    sculpts emotion into intentional response.
+    sculpts emotion into an{" "}
+  <span className="text-orange-400">intentional response</span>.
   </p>
 </div>
             </div>
