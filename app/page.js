@@ -125,13 +125,11 @@ export default function DCPWebsiteV2() {
     Event → Emotion → Reaction <span className="text-white/50">(automatic)</span>
   </div>
 
-  <div className="-mt-2 ml-[118px] text-blue-300 text-2xl leading-none">
-  ↓
-</div>
-
-<div className="ml-[113px] mt-1 text-2xl font-medium text-blue-300 leading-tight">
-  CAR → Response <span className="text-blue-200/70">(chosen)</span>
-</div>
+ <div className="mt-4 flex flex-col items-center text-blue-300">
+  <div className="text-2xl leading-none">↓</div>
+  <div className="mt-2 text-2xl font-medium text-center">
+    CAR → Response <span className="text-blue-200/70">(chosen)</span>
+  </div>
 </div>
            
 </motion.div>
