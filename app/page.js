@@ -13,16 +13,22 @@ import {
 const carCards = [
   {
     title: "Consideration",
+    outcome: "Awareness",
+    titleColor: "text-red-300",
     prompt: "What is happening?",
     text: "See the moment clearly before you act.",
   },
   {
     title: "Accountability",
+    outcome: "Ownership",
+    titleColor: "text-yellow-200",
     prompt: "What is my role?",
     text: "Own your part in what happens next.",
   },
   {
     title: "Reason",
+    outcome: "Direction",
+    titleColor: "text-green-300",
     prompt: "What is the best response?",
     text: "Choose direction instead of defaulting to impulse.",
   },
@@ -40,7 +46,6 @@ export default function DCPWebsiteV2() {
         <div className="absolute inset-0 bg-black/55" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(59,130,246,0.14),transparent_28%),radial-gradient(circle_at_75%_18%,rgba(249,115,22,0.16),transparent_24%)]" />
 
-        {/* Top-right DCP mark */}
         <img
           src="/images/icons/DCP-ID.png"
           alt="DCP"
@@ -107,13 +112,21 @@ export default function DCPWebsiteV2() {
                 <span className="text-white/50">(automatic)</span>
               </div>
 
-              <div className="mt-2 text-center text-xl leading-none text-blue-300 md:ml-[118px] md:-mt-2 md:text-left md:text-2xl">
+              <div className="mt-2 text-center text-xl leading-none text-blue-300 md:text-left md:text-2xl md:pl-[118px]">
                 ↓
               </div>
 
-              <div className="mt-1 text-center text-lg font-medium leading-tight text-blue-300 sm:text-xl md:ml-[113px] md:text-left md:text-2xl">
+              <div className="mt-1 text-center text-lg font-medium leading-tight text-blue-300 sm:text-xl md:text-left md:text-2xl md:pl-[113px]">
                 CAR → Response{" "}
                 <span className="text-blue-200/70">(chosen)</span>
+              </div>
+
+              <div className="mt-6">
+                <img
+                  src="/images/models/core-model.jpg"
+                  alt="Core Behavioral Model Diagram"
+                  className="w-full max-w-2xl rounded-xl border border-white/10 bg-black/30 object-contain"
+                />
               </div>
             </div>
           </motion.div>
@@ -125,8 +138,7 @@ export default function DCPWebsiteV2() {
         <div
           className="absolute inset-0 bg-cover opacity-85 bg-[position:22%_center] md:bg-[position:20%_center]"
           style={{
-            backgroundImage:
-              "url('/images/backgrounds/lit-cones.jpg')",
+            backgroundImage: "url('/images/backgrounds/lit-cones.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-black/62" />
@@ -154,12 +166,11 @@ export default function DCPWebsiteV2() {
               </div>
 
               <div className="mt-3 text-2xl font-medium">
-                Reaction → Action
+                Emotion → Reaction
               </div>
 
               <p className="mt-4 leading-7 text-white/75">
-                The problem is not emotion itself. The problem is the lack of
-                structure when reaction turns into action.
+                Without structure, emotion moves directly toward reaction.
               </p>
             </div>
 
@@ -169,12 +180,12 @@ export default function DCPWebsiteV2() {
               </div>
 
               <div className="mt-3 text-2xl font-medium">
-                Reaction → CAR → Response
+                CAR → Response
               </div>
 
               <p className="mt-4 leading-7 text-white/75">
-                CAR does not remove reaction. It organizes it before it is
-                expressed.
+                When emotion is triggered, CAR engages—creating space to form an
+                intentional response.
               </p>
             </div>
           </div>
@@ -186,8 +197,7 @@ export default function DCPWebsiteV2() {
         <div
           className="absolute inset-0 bg-cover opacity-90 bg-[position:78%_center] md:bg-[position:82%_center]"
           style={{
-            backgroundImage:
-              "url('/images/backgrounds/traffic-light-angled.jpg')",
+            backgroundImage: "url('/images/backgrounds/traffic-light-angled.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-black/35" />
@@ -199,55 +209,53 @@ export default function DCPWebsiteV2() {
                 C.A.R.
               </div>
 
-<div className="mt-4">
-  <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">
-    The Decision Engine
-  </h2>
-  <p className="mt-3 max-w-md text-base leading-7 text-white/80 md:text-lg">
-    sculpts <span className="text-blue-300">emotion</span> into an{" "}
-  <span className="text-orange-400">intentional response</span>.</p>
-  <p className="mt-4 max-w-md text-base leading-7 text-white/75 md:text-lg">
-  CAR engages within that brief space of time to form a better response before it is expressed.
-	</p>
-</div>
+              <div className="mt-4">
+                <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">
+                  The Decision Engine
+                </h2>
+
+                <p className="mt-3 max-w-md text-lg leading-7 text-white/85 md:text-xl">
+                  sculpts{" "}
+                  <span className="text-blue-400 font-medium">emotion</span> into an{" "}
+                  <span className="text-orange-400 font-medium">
+                    intentional response
+                  </span>.
+                </p>
+
+                <p className="mt-4 max-w-md text-base leading-7 text-white/75 md:text-lg">
+                  CAR engages within that brief space of time to form a better
+                  response before it is expressed.
+                </p>
+
+                <div className="mt-6">
+                  <img
+                    src="/images/models/car-aid.jpg"
+                    alt="CAR Aid Model"
+                    className="w-full max-w-sm rounded-xl border border-white/10 bg-black/30 object-contain"
+                  />
+                </div>
+              </div>
             </div>
 
             <div className="grid gap-5">
-              <div className="rounded-[1.75rem] border border-white/10 bg-black/45 p-6 backdrop-blur">
-                <div className="text-sm uppercase tracking-[0.25em]">
-                  <span className="text-red-300">Consideration</span>
-                  <span className="px-2 text-white">→</span>
-                  <span className="text-white">Awareness</span>
-                </div>
-                <h3 className="mt-3 text-2xl font-medium">What is happening?</h3>
-                <p className="mt-4 text-lg leading-7 text-white/80">
-                  See the moment clearly before you act.
-                </p>
-              </div>
+              {carCards.map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-[1.75rem] border border-white/10 bg-black/45 p-6 backdrop-blur"
+                >
+                  <div className="text-sm uppercase tracking-[0.25em]">
+                    <span className={item.titleColor}>{item.title}</span>
+                    <span className="px-2 text-white">→</span>
+                    <span className="text-white">{item.outcome}</span>
+                  </div>
 
-              <div className="rounded-[1.75rem] border border-white/10 bg-black/45 p-6 backdrop-blur">
-                <div className="text-sm uppercase tracking-[0.25em]">
-                  <span className="text-yellow-200">Accountability</span>
-                  <span className="px-2 text-white">→</span>
-                  <span className="text-white">Ownership</span>
-                </div>
-                <h3 className="mt-3 text-2xl font-medium">What is my role?</h3>
-                <p className="mt-4 text-lg leading-7 text-white/80">
-                  Own your part in what happens next.
-                </p>
-              </div>
+                  <h3 className="mt-3 text-2xl font-medium">{item.prompt}</h3>
 
-              <div className="rounded-[1.75rem] border border-white/10 bg-black/45 p-6 backdrop-blur">
-                <div className="text-sm uppercase tracking-[0.25em]">
-                  <span className="text-green-300">Reason</span>
-                  <span className="px-2 text-white">→</span>
-                  <span className="text-white">Direction</span>
+                  <p className="mt-4 text-lg leading-7 text-white/80">
+                    {item.text}
+                  </p>
                 </div>
-                <h3 className="mt-3 text-2xl font-medium">What is the best response?</h3>
-                <p className="mt-4 text-lg leading-7 text-white/80">
-                  Choose direction instead of defaulting to impulse.
-                </p>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -258,8 +266,7 @@ export default function DCPWebsiteV2() {
         <div
           className="absolute inset-0 bg-cover bg-center opacity-80"
           style={{
-            backgroundImage:
-              "url('/images/backgrounds/section-bg-pressure.jpg')",
+            backgroundImage: "url('/images/backgrounds/section-bg-pressure.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-black/62" />
@@ -269,9 +276,11 @@ export default function DCPWebsiteV2() {
             <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
               Why It Matters
             </div>
+
             <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
               The Recognition Gap
             </h2>
+
             <p className="mt-5 text-lg leading-8 text-white/82">
               People often know something is wrong while it is happening and
               still proceed the same way. DCP provides structure to act during
@@ -286,12 +295,14 @@ export default function DCPWebsiteV2() {
                 Emotion is natural. The issue is what happens next.
               </p>
             </div>
+
             <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
               <div className="text-lg font-medium">Reaction is automatic</div>
               <p className="mt-3 leading-7 text-white/80">
                 Without structure, reaction tends to repeat and reinforce itself.
               </p>
             </div>
+
             <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
               <div className="text-lg font-medium">Response is chosen</div>
               <p className="mt-3 leading-7 text-white/80">
@@ -310,66 +321,68 @@ export default function DCPWebsiteV2() {
               <div className="text-sm uppercase tracking-[0.25em] text-white/45">
                 Full White Paper
               </div>
+
               <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
                 Go deeper if you want the full framework.
               </h2>
+
               <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
                 The website is the QuickStart. The white paper holds the full
                 architecture, intent, and broader context.
               </p>
 
- <div className="mt-8 flex flex-wrap gap-4">
-  <a
-    href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-flex items-center gap-2 rounded-2xl bg-orange-500 px-6 py-3 text-white transition hover:bg-orange-500/90"
-  >
-    Read Full White Paper
-    <ExternalLink className="h-4 w-4" />
-  </a>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-2xl bg-orange-500 px-6 py-3 text-white transition hover:bg-orange-500/90"
+                >
+                  Read Full White Paper
+                  <ExternalLink className="h-4 w-4" />
+                </a>
 
-  <a
-    href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-    download
-    className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
-  >
-    Download PDF
-    <ArrowDownToLine className="h-4 w-4" />
-  </a>
+                <a
+                  href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
+                  download
+                  className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
+                >
+                  Download PDF
+                  <ArrowDownToLine className="h-4 w-4" />
+                </a>
 
-  <Link
-    href="/future"
-    className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
-  >
-    Future Direction
-    <ChevronRight className="h-4 w-4" />
-  </Link>
-</div>            </div>
+                <Link
+                  href="/future"
+                  className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
+                >
+                  Future Direction
+                  <ChevronRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </div>
 
             <div className="space-y-4 rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
               <a
-  href="mailto:drivecarprotocol@gmail.com"
-  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
->
-  <Mail className="h-5 w-5 text-orange-300" />
-  <div className="text-white">drivecarprotocol@gmail.com</div>
-</a>
+                href="mailto:drivecarprotocol@gmail.com"
+                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
+              >
+                <Mail className="h-5 w-5 text-orange-300" />
+                <div className="text-white">drivecarprotocol@gmail.com</div>
+              </a>
 
               <a
-  href="https://x.com/D_C_Protocol"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
->
-  <img
-    src="/images/icons/icon-x.png"
-    alt="X"
-    className="h-5 w-5 object-contain"
-  />
-  <div className="text-white">@D_C_Protocol</div>
-</a>
-
+                href="https://x.com/D_C_Protocol"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
+              >
+                <img
+                  src="/images/icons/icon-x.png"
+                  alt="X"
+                  className="h-5 w-5 object-contain"
+                />
+                <div className="text-white">@D_C_Protocol</div>
+              </a>
             </div>
           </div>
         </div>
