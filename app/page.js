@@ -66,7 +66,7 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/cone.png"
                   alt=""
-                  className="pointer-events-none absolute left-[-4%] top-[-6px] z-0 w-24 opacity-95 md:left-[-6%] md:top-[-10px] md:w-32"
+                  className="pointer-events-none absolute left-[-14px] top-[2px] z-20 w-14 opacity-95 md:left-[-18px] md:top-[4px] md:w-20"
                 />
               </div>
 
@@ -79,25 +79,20 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/road-right.png"
                   alt=""
-                  className="pointer-events-none absolute left-[36%] top-[-16px] z-0 w-72 opacity-95 md:left-[38%] md:top-[-20px] md:w-96"
+                  className="pointer-events-none absolute left-[22%] top-[-12px] z-0 w-72 opacity-95 md:left-[24%] md:top-[-16px] md:w-96"
                 />
               </div>
             </div>
 
-            <p className="mt-8 max-w-3xl text-lg leading-8 text-white/82 md:text-xl">
-  		<span className="block">Human Decision Architecture</span>
-  		<span className="block">(Applied in REAL time)</span>
-		</p>
-
-            <h1 className="mt-8 max-w-5xl text-5xl font-semibold tracking-tight md:text-7xl">
+            <h1 className="mt-4 max-w-5xl text-5xl font-semibold tracking-tight md:mt-5 md:text-7xl">
               Feel the emotion.{" "}
               <span className="text-orange-400">Choose the response.</span>
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/82 md:text-2xl">
-              DCP is a human decision architecture applied in real time. It
-              inserts structure between emotion and action.
-            </p>
+  		DRIVE CAR Protocol is a human decision architecture applied in real time.
+ 		 It inserts structure between emotion and action.
+		</p>>
 
             <div className="mt-8 flex flex-wrap gap-4">
               <a
