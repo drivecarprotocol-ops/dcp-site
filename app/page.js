@@ -199,14 +199,14 @@ export default function DCPWebsiteV2() {
                 C.A.R.
               </div>
 
-              <div className="mt-4 md:flex md:items-end md:gap-4">
-                <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">
-                  The Decision Engine
-                </h2>
-                <p className="mt-3 max-w-md text-base leading-7 text-white/80 md:mb-1 md:mt-0 md:text-lg">
-                  is used to structure emotion before acting.
-                </p>
-              </div>
+<div className="mt-4">
+  <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">
+    The Decision Engine
+  </h2>
+  <p className="mt-3 max-w-md text-base leading-7 text-white/80 md:text-lg">
+    is used to sculpt emotion into intention.
+  </p>
+</div>
             </div>
 
             <div className="grid gap-5">
