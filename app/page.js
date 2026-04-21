@@ -177,7 +177,7 @@ export default function DCPWebsiteV2() {
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div>
               <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
-                CAR
+                C.A.R.
               </div>
               <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-6xl">
                 The Decision Engine
