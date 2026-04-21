@@ -70,7 +70,7 @@ export default function DCPWebsiteV2() {
               </div>
 
               <div className="relative -mt-1">
-                <div className="relative z-9 pl-0 text-lg uppercase tracking-[0.34em] text-white/82 md:text-2xl">
+                <div className="relative z-9 pl-1 text-lg uppercase tracking-[0.34em] text-white/82 md:text-2xl">
                   PROTOCOL
                 </div>
 
