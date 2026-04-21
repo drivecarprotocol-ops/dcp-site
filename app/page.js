@@ -82,7 +82,7 @@ export default function DCPWebsiteV2() {
               </div>
             </div>
 
-            <h1 className="mt-4 max-w-5xl text-5xl font-semibold tracking-tight md:mt-5 md:text-7xl">
+            <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight md:mt-5 md:text-7xl">
               Feel the emotion.{" "}
               <span className="text-orange-400">Choose the response.</span>
             </h1>
