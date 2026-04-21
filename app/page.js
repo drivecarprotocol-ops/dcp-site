@@ -229,7 +229,7 @@ export default function DCPWebsiteV2() {
 
                 <div className="mt-6">
                   <img
-                    src="/images/models/car-aid.jpg"
+                    src="/images/models/car-aid.png"
                     alt="CAR Aid Model"
                     className="w-full max-w-sm rounded-xl border border-white/10 bg-black/30 object-contain"
                   />
