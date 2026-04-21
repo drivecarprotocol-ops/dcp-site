@@ -55,7 +55,7 @@ export default function DCPWebsiteV2() {
             className="max-w-5xl"
           >
             {/* Logo block */}
-            <div className="relative inline-block ml-10 md:ml-16">
+            <div className="relative inline-block ml-20 md:ml-28">
               <div className="relative">
                 <div className="relative z-10 text-5xl font-semibold leading-none tracking-tight md:text-7xl">
                   <span className="text-white">DRIVE</span>
@@ -66,12 +66,12 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/cone.png"
                   alt=""
-                  className="pointer-events-none absolute left-[-14px] top-[2px] z-20 w-14 opacity-95 md:left-[-18px] md:top-[4px] md:w-20"
+                  className="pointer-events-none absolute left-[-88px] top-[2px] z-20 w-14 opacity-95 md:left-[-124px] md:top-[4px] md:w-20"
                 />
               </div>
 
               <div className="relative mt-2">
-                <div className="relative z-10 pl-1 text-base uppercase tracking-[0.34em] text-white/82 md:text-xl">
+                className="relative z-10 pl-0 text-lg uppercase tracking-[0.34em] text-white/82 md:text-2xl"
                   PROTOCOL
                 </div>
 
@@ -79,7 +79,7 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/road-right.png"
                   alt=""
-                  className="pointer-events-none absolute left-[34%] top-[-10px] z-0 w-72 opacity-95 md:left-[36%] md:top-[-14px] md:w-96"
+                  className="pointer-events-none absolute left-[38%] top-[-10px] z-0 w-72 opacity-95 md:left-[40%] md:top-[-14px] md:w-96"
                 />
               </div>
             </div>
