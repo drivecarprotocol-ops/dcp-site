@@ -247,52 +247,6 @@ export default function DCPWebsiteV2() {
         </div>
       </section>
 
-      {/* REAL-WORLD EXAMPLE */}
-      <section className="mx-auto max-w-7xl px-6 py-20 md:px-8">
-        <div className="max-w-4xl">
-          <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-            Real-World Example
-          </div>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-            Someone disrespects you in front of other people.
-          </h2>
-        </div>
-
-        <div className="mt-12 max-w-5xl space-y-6">
-          <div className="rounded-[1.75rem] border border-white/10 bg-black/45 p-8">
-            <div className="text-sm uppercase tracking-[0.25em] text-orange-300">
-              Default Path
-            </div>
-            <h3 className="mt-3 text-3xl font-medium">
-              Emotion + Reaction → Action
-            </h3>
-            <p className="mt-5 text-lg leading-8 text-white/80">
-              You snap back. It escalates. You lose control of the moment.
-            </p>
-          </div>
-
-          <div className="rounded-[1.75rem] border border-white/10 bg-black/45 p-8">
-            <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
-              DCP Path
-            </div>
-            <h3 className="mt-3 text-3xl font-medium">
-              Emotion + Reaction → CAR → Response
-            </h3>
-            <div className="mt-5 space-y-3 text-lg leading-8 text-white/82">
-              <p>Consideration: What actually happened?</p>
-              <p>Accountability: What is my role in what happens next?</p>
-              <p>Reason: What response gives the best outcome?</p>
-              <p className="pt-2 text-white">
-                Possible response: speak calmly, disengage, or redirect.
-              </p>
-            </div>
-            <p className="mt-5 text-xl text-white">
-              Same emotion. Different outcome.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* WHY IT MATTERS */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
