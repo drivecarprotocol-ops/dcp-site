@@ -30,355 +30,159 @@ const carCards = [
 
 export default function DCPWebsiteV2() {
   return (
-    <div className="min-h-screen bg-black text-white selection:bg-orange-500/30 selection:text-white">
+    <div className="min-h-screen bg-black text-white">
+
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-80"
           style={{ backgroundImage: "url('/images/backgrounds/hero-main.jpg')" }}
         />
-        <div className="absolute inset-0 bg-black/55" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(59,130,246,0.14),transparent_28%),radial-gradient(circle_at_75%_18%,rgba(249,115,22,0.16),transparent_24%)]" />
+        <div className="absolute inset-0 bg-black/60" />
 
-        {/* Top-right DCP mark */}
-        <img
-          src="/images/icons/DCP-ID.png"
-          alt="DCP"
-          className="pointer-events-none absolute right-6 top-6 z-20 w-32 opacity-25 md:right-8 md:top-8 md:w-44"
-        />
+        <div className="relative mx-auto max-w-7xl px-6 py-24">
 
-        <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-8 md:py-28">
           <motion.div
-            initial={{ opacity: 0, y: 18 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45 }}
+            transition={{ duration: 0.4 }}
             className="max-w-5xl"
           >
-            {/* Logo block */}
-            <div className="relative inline-block">
-              <div className="relative">
-                <div className="relative z-10 text-5xl font-semibold leading-none tracking-tight md:text-7xl">
-                  <span className="text-white">DRIVE</span>
-                  <span className="ml-2 text-blue-400">CAR</span>
-                </div>
 
-                <img
-                  src="/images/icons/cone.png"
-                  alt=""
-                  className="pointer-events-none absolute left-[92%] top-[10px] z-20 w-16 opacity-95 md:left-[97%] md:top-[14px] md:w-20"
-                />
+            {/* LOGO */}
+            <div className="relative inline-block">
+              <div className="text-5xl md:text-7xl font-semibold tracking-tight">
+                <span>DRIVE</span>
+                <span className="ml-2 text-blue-400">CAR</span>
               </div>
 
-              <div className="relative mt-2">
-                <div className="relative z-10 pl-0 text-lg uppercase tracking-[0.34em] text-white/82 md:text-2xl">
-                  PROTOCOL
-                </div>
-
-                <img
-                  src="/images/icons/road-right.png"
-                  alt=""
-                  className="pointer-events-none absolute left-[44%] top-[-10px] z-0 w-56 opacity-95 md:left-[46%] md:top-[-14px] md:w-72"
-                />
+              <div className="mt-2 text-lg md:text-2xl uppercase tracking-[0.3em] text-white/80">
+                PROTOCOL
               </div>
             </div>
 
-            <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight md:mt-5 md:text-7xl">
+            {/* HEADLINE */}
+            <h1 className="mt-6 text-4xl md:text-7xl font-semibold">
               Feel the emotion.{" "}
               <span className="text-orange-400">Choose the response.</span>
             </h1>
 
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/82 md:text-2xl">
+            {/* SUBTEXT */}
+            <p className="mt-6 text-lg md:text-2xl text-white/80 max-w-3xl">
               DRIVE CAR Protocol is a human decision architecture applied in real time.
               It inserts structure between emotion and action.
             </p>
 
+            {/* CTA */}
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-2xl bg-white px-6 py-3 text-black transition hover:bg-white/90"
+                className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-black"
               >
                 Read Full White Paper
-                <ExternalLink className="h-4 w-4" />
+                <ExternalLink size={16} />
               </a>
 
               <Link
                 href="/future"
-                className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-6 py-3"
               >
                 Future Direction
-                <ChevronRight className="h-4 w-4" />
+                <ChevronRight size={16} />
               </Link>
             </div>
 
-<div className="mt-12 max-w-3xl rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur">
-  <div className="text-sm uppercase tracking-[0.25em] text-white/55">
-    Core Behavioral Model
-  </div>
+            {/* CORE MODEL */}
+            <div className="mt-12 max-w-3xl border border-white/10 bg-white/5 p-6 rounded-xl">
+              <div className="text-sm uppercase text-white/50">
+                Core Behavioral Model
+              </div>
 
-  <p className="mt-3 text-sm leading-6 text-white/70">
-    DCP operates within the existing sequence. It inserts structure into what happens next.
-  </p>
+              <div className="mt-4 text-xl">
+                Event → Emotion → Reaction
+              </div>
 
-  <div className="mt-5 text-2xl font-medium text-white">
-    Event → Emotion → Reaction <span className="text-white/50">(automatic)</span>
-  </div>
+              <div className="mt-3 text-center text-blue-400 text-xl">
+                ↓
+              </div>
 
- <div className="mt-4 flex flex-col items-center text-blue-300">
-  <div className="text-2xl leading-none">↓</div>
-  <div className="mt-2 text-2xl font-medium text-center">
-    CAR → Response <span className="text-blue-200/70">(chosen)</span>
-  </div>
-</div>
-           
-</motion.div>
+              <div className="text-xl text-center text-blue-300">
+                CAR → Response
+              </div>
+            </div>
+
+          </motion.div>
         </div>
       </section>
 
       {/* WHAT DCP IS */}
-      <section className="mx-auto max-w-7xl px-6 py-20 md:px-8">
-        <div className="max-w-4xl">
-          <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-            What DCP is
-          </div>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-            The critical moment is between emotion and action.
-          </h2>
-          <p className="mt-5 text-lg leading-8 text-white/78">
-            DCP makes that moment visible and usable. Without structure, behavior
-            stays automatic. With structure, it becomes intentional.
-          </p>
-        </div>
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <h2 className="text-3xl md:text-5xl font-semibold">
+          The critical moment is between emotion and action.
+        </h2>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
-          <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6">
-            <div className="text-sm uppercase tracking-[0.25em] text-orange-300">
-              Automatic
-            </div>
-            <div className="mt-3 text-2xl font-medium">
-              Reaction → Action
-            </div>
-            <p className="mt-4 leading-7 text-white/75">
-              The problem is not emotion itself. The problem is the lack of
-              structure when reaction turns into action.
-            </p>
+        <p className="mt-6 text-lg text-white/80 max-w-3xl">
+          DCP makes that moment visible and usable. Without structure, behavior stays automatic. With structure, it becomes intentional.
+        </p>
+
+        <div className="mt-12 grid md:grid-cols-2 gap-6">
+          <div className="border border-white/10 p-6 rounded-xl">
+            <div className="text-orange-300 text-sm uppercase">Automatic</div>
+            <div className="mt-3 text-xl">Reaction → Action</div>
           </div>
 
-          <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6">
-            <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
-              Intentional
-            </div>
-            <div className="mt-3 text-2xl font-medium">
-              Reaction → CAR → Response
-            </div>
-            <p className="mt-4 leading-7 text-white/75">
-              CAR does not remove reaction. It organizes it before it is
-              expressed.
-            </p>
+          <div className="border border-white/10 p-6 rounded-xl">
+            <div className="text-blue-300 text-sm uppercase">Intentional</div>
+            <div className="mt-3 text-xl">Reaction → CAR → Response</div>
           </div>
         </div>
       </section>
 
       {/* CAR */}
-      <section className="relative overflow-hidden border-y border-white/10">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-80"
-          style={{
-            backgroundImage:
-              "url('/images/backgrounds/section-bg-texture.jpg')",
-          }}
-        />
-        <div className="absolute inset-0 bg-black/60" />
+      <section className="border-y border-white/10 py-20">
+        <div className="max-w-7xl mx-auto px-6">
 
-        <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-8">
-          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-            <div>
-              <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-                CAR
-              </div>
-              <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-6xl">
-                The Decision Engine
-              </h2>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
-                CAR is the internal process used to examine emotion before
-                acting. Consideration creates awareness. Accountability
-                establishes ownership. Reason makes the decision.
-              </p>
+          <h2 className="text-4xl md:text-6xl font-semibold">
+            The Decision Engine
+          </h2>
 
-              <div className="mt-8 rounded-[1.75rem] border border-white/10 bg-black/45 p-6">
-                <div className="flex items-start gap-4">
-                  <img
-                    src="/images/icons/traffic-light-angled.png"
-                    alt="Traffic light"
-                    className="h-20 w-20 object-contain md:h-24 md:w-24"
-                  />
-                  <div>
-                    <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-                      Visual Anchor
-                    </div>
-                    <div className="mt-3 space-y-2 text-lg text-white/88">
-                      <div>
-                        <span className="text-red-300">Red</span> — Consider
-                      </div>
-                      <div>
-                        <span className="text-yellow-200">Yellow</span> — Account
-                      </div>
-                      <div>
-                        <span className="text-green-300">Green</span> — Reason
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <p className="mt-6 text-lg text-white/80 max-w-2xl">
+            CAR is the internal process used to examine emotion before acting.
+          </p>
 
-            <div className="grid gap-5">
-              {carCards.map((item) => (
-                <div
-                  key={item.title}
-                  className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6 backdrop-blur"
-                >
-                  <div className="text-sm uppercase tracking-[0.25em] text-white/50">
-                    {item.title}
-                  </div>
-                  <h3 className="mt-3 text-2xl font-medium">{item.prompt}</h3>
-                  <p className="mt-4 text-lg leading-7 text-white/80">
-                    {item.text}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* WHY IT MATTERS */}
-      <section className="relative overflow-hidden border-y border-white/10">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-80"
-          style={{
-            backgroundImage:
-              "url('/images/backgrounds/section-bg-pressure.jpg')",
-          }}
-        />
-        <div className="absolute inset-0 bg-black/62" />
-
-        <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-8">
-          <div className="max-w-4xl">
-            <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-              Why It Matters
-            </div>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-              The Recognition Gap
-            </h2>
-            <p className="mt-5 text-lg leading-8 text-white/82">
-              People often know something is wrong while it is happening and
-              still proceed the same way. DCP provides structure to act during
-              the moment, not after it.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
-              <div className="text-lg font-medium">Emotion is inevitable</div>
-              <p className="mt-3 leading-7 text-white/80">
-                Emotion is natural. The issue is what happens next.
-              </p>
-            </div>
-            <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
-              <div className="text-lg font-medium">Reaction is automatic</div>
-              <p className="mt-3 leading-7 text-white/80">
-                Without structure, reaction tends to repeat and reinforce itself.
-              </p>
-            </div>
-            <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
-              <div className="text-lg font-medium">Response is chosen</div>
-              <p className="mt-3 leading-7 text-white/80">
-                Structure creates control under real conditions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FULL PDF + CONTACT */}
-      <section className="mx-auto max-w-7xl px-6 py-20 md:px-8">
-        <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8 md:p-10">
-          <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
-            <div>
-              <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-                Full White Paper
-              </div>
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-                Go deeper if you want the full framework.
-              </h2>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
-                The website is the QuickStart. The white paper holds the full
-                architecture, intent, and broader context.
-              </p>
-
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                  href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-2xl bg-orange-500 px-6 py-3 text-white transition hover:bg-orange-500/90"
-                >
-                  Read Full White Paper
-                  <ExternalLink className="h-4 w-4" />
-                </a>
-
-                <a
-                  href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-                  download
-                  className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
-                >
-                  Download PDF
-                  <ArrowDownToLine className="h-4 w-4" />
-                </a>
-              </div>
-            </div>
-
-            <div className="space-y-4 rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
-              <a
-                href="mailto:drivecarprotocol@gmail.com"
-                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
+          <div className="mt-12 grid gap-6">
+            {carCards.map((item) => (
+              <div
+                key={item.title}
+                className="border border-white/10 p-6 rounded-xl"
               >
-                <Mail className="h-5 w-5 text-orange-300" />
-                <div>
-                  <div className="text-sm text-white/55">Email</div>
-                  <div className="text-white">drivecarprotocol@gmail.com</div>
+                <div className="text-sm text-white/50 uppercase">
+                  {item.title}
                 </div>
-              </a>
 
-              <a
-                href="https://x.com/D_C_Protocol"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
-              >
-                <img
-                  src="/images/icons/icon-x.png"
-                  alt="X"
-                  className="h-5 w-5 object-contain"
-                />
-                <div>
-                  <div className="text-sm text-white/55">X</div>
-                  <div className="text-white">@D_C_Protocol</div>
+                <div className="mt-3 text-xl">
+                  {item.prompt}
                 </div>
-              </a>
-            </div>
+
+                <p className="mt-3 text-white/80">
+                  {item.text}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <footer className="border-t border-white/10 px-6 py-8 md:px-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
-          <div>© 2026 Drive CAR Protocol. All rights reserved.</div>
+      {/* FOOTER */}
+      <footer className="border-t border-white/10 px-6 py-8">
+        <div className="max-w-7xl mx-auto text-sm text-white/50 flex justify-between">
+          <div>© 2026 Drive CAR Protocol</div>
           <div>Feel the emotion. Choose the response.</div>
         </div>
       </footer>
+
     </div>
   );
 }
