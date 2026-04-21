@@ -111,6 +111,7 @@ export default function DCPWebsiteV2() {
                 <ChevronRight className="h-4 w-4" />
               </Link>
             </div>
+
 <div className="mt-12 max-w-3xl rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur">
   <div className="text-sm uppercase tracking-[0.25em] text-white/55">
     Core Behavioral Model
@@ -120,15 +121,17 @@ export default function DCPWebsiteV2() {
     DCP operates within the existing sequence. It inserts structure into what happens next.
   </p>
 
-  {/* FLOW */}
   <div className="mt-5 text-2xl font-medium text-white">
     Event → Emotion → Reaction <span className="text-white/50">(automatic)</span>
   </div>
 
-  <div className="mt-5 text-2xl font-medium text-blue-300">
+  <div className="mt-2 ml-[170px] text-blue-300 text-2xl leading-none">
+    ↓
+  </div>
+
+  <div className="ml-[154px] mt-2 text-2xl font-medium text-blue-300">
     CAR → Response <span className="text-blue-200/70">(chosen)</span>
   </div>
-  
 </div>
            
 </motion.div>
