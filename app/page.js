@@ -344,28 +344,27 @@ export default function DCPWebsiteV2() {
 
             <div className="space-y-4 rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
               <a
-                href="mailto:drivecarprotocol@gmail.com"
-                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
-              >
-                <Mail className="h-5 w-5 text-orange-300" />
-                <div>
-                  <div className="text-white">drivecarprotocol@gmail.com</div>
-              </a>
+  href="mailto:drivecarprotocol@gmail.com"
+  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
+>
+  <Mail className="h-5 w-5 text-orange-300" />
+  <div className="text-white">drivecarprotocol@gmail.com</div>
+</a>
 
               <a
-                href="https://x.com/D_C_Protocol"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
-              >
-                <img
-                  src="/images/icons/icon-x.png"
-                  alt="X"
-                  className="h-5 w-5 object-contain"
-                />
-                <div>
-                  <div className="text-white">@D_C_Protocol</div>
-              </a>
+  href="https://x.com/D_C_Protocol"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
+>
+  <img
+    src="/images/icons/icon-x.png"
+    alt="X"
+    className="h-5 w-5 object-contain"
+  />
+  <div className="text-white">@D_C_Protocol</div>
+</a>
+
             </div>
           </div>
         </div>
