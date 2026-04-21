@@ -93,8 +93,7 @@ export default function DCPWebsiteV2() {
             </h1>
 
             <p className="mt-5 max-w-3xl text-base leading-7 text-white/82 sm:text-lg md:mt-6 md:text-2xl md:leading-8">
-              DRIVE CAR Protocol is a human decision architecture applied in real
-              time. It inserts structure between emotion and action.
+              A human decision architecture applied in REAL time
             </p>
 
             <div className="mt-10 max-w-3xl rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-5 backdrop-blur md:mt-12 md:p-6">
