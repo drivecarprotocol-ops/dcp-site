@@ -130,7 +130,6 @@ export default function DCPWebsiteV2() {
   </div>
   
 </div>
-</div>
            
 </motion.div>
         </div>
