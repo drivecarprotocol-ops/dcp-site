@@ -120,24 +120,24 @@ export default function DCPWebsiteV2() {
     DCP operates within the existing sequence. It inserts structure into what happens next.
   </p>
 
+  {/* FLOW */}
   <div className="mt-5 text-2xl font-medium text-white">
     Event → Emotion → Reaction <span className="text-white/50">(automatic)</span>
   </div>
 
-  <div className="mt-4 flex justify-center text-blue-300 text-xl font-medium">
-    ↓
-  </div>
+  {/* VERTICAL STACK */}
+  <div className="mt-3 flex flex-col items-start text-blue-300 font-medium">
 
-  <div className="flex justify-center text-blue-300 text-2xl font-medium">
-    CAR
-  </div>
+    <div className="ml-[6px] leading-none">↓</div>
 
-  <div className="mt-2 flex justify-center text-blue-300 text-xl font-medium">
-    ↓
-  </div>
+    <div className="ml-[2px] text-2xl">CAR</div>
 
-  <div className="mt-2 flex justify-center text-blue-300 text-2xl font-medium">
-    Response <span className="text-blue-200/70">(chosen)</span>
+    <div className="ml-[6px] leading-none">↓</div>
+
+    <div className="ml-[2px] text-2xl">
+      Response <span className="text-blue-200/70">(chosen)</span>
+    </div>
+
   </div>
 </div>
            
