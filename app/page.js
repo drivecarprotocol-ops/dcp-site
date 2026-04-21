@@ -65,7 +65,7 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/cone.png"
                   alt=""
-                  className="pointer-events-none absolute left-[92%] top-[10px] z-20 w-16 opacity-95 md:left-[97%] md:top-[14px] md:w-20"
+                  className="pointer-events-none absolute left-[92%] top-[10px] z-20 w-14 opacity-95 md:left-[97%] md:top-[12px] md:w-20"
                 />
               </div>
 
@@ -77,7 +77,7 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/road-right.png"
                   alt=""
-                  className="pointer-events-none absolute left-[44%] top-[-11px] z-0 w-56 opacity-95 md:left-[47%] md:top-[-13px] md:w-67"
+                  className="pointer-events-none absolute left-[44%] top-[-11px] z-0 w-55 opacity-95 md:left-[47%] md:top-[-13px] md:w-66"
                 />
               </div>
             </div>
