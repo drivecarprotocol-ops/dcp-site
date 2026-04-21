@@ -123,59 +123,24 @@ export default function DCPWebsiteV2() {
       {/* WHAT DCP IS */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
-          className="absolute inset-0 bg-cover opacity-80 bg-[position:20%_center] md:bg-center"
+          className="absolute inset-0 bg-cover opacity-85 bg-[position:22%_center] md:bg-[position:20%_center]"
           style={{
             backgroundImage:
-              "url('/images/backgrounds/section-bg-texture.jpg')",
+              "url('/images/backgrounds/lit-cones.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-black/62" />
 
-        <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
-          <div className="max-w-4xl">
-            <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
-              What DCP is
-            </div>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-              The critical moment is between emotion and action.
-            </h2>
-            <p className="mt-5 text-lg leading-8 text-white/78">
-              DCP makes that moment visible and usable. Without structure, behavior
-              stays automatic. With structure, it becomes intentional.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
-            <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 backdrop-blur">
-              <div className="text-sm uppercase tracking-[0.25em] text-orange-300">
-                Automatic
-              </div>
-              <div className="mt-3 text-2xl font-medium">Reaction → Action</div>
-              <p className="mt-4 leading-7 text-white/75">
-                The problem is not emotion itself. The problem is the lack of
-                structure when reaction turns into action.
-              </p>
-            </div>
-
-            <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 backdrop-blur">
-              <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
-                Intentional
-              </div>
-              <div className="mt-3 text-2xl font-medium">
-                Reaction → CAR → Response
-              </div>
-              <p className="mt-4 leading-7 text-white/75">
-                CAR does not remove reaction. It organizes it before it is
-                expressed.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CAR */}
-      <section className="relative overflow-hidden border-y border-white/10 bg-black">
-        <div className="absolute inset-0 bg-black/55" />
+      <section className="relative overflow-hidden border-y border-white/10">
+        <div
+          className="absolute inset-0 bg-cover opacity-90 bg-[position:78%_center] md:bg-[position:82%_center]"
+          style={{
+            backgroundImage:
+              "url('/images/backgrounds/traffic-light-angled.jpg')",
+          }}
+        />
+        <div className="absolute inset-0 bg-black/35" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
@@ -188,55 +153,47 @@ export default function DCPWebsiteV2() {
                 <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">
                   The Decision Engine
                 </h2>
-                <p className="mt-3 text-base leading-7 text-white/80 md:mb-1 md:mt-0 md:text-lg">
+                <p className="mt-3 max-w-md text-base leading-7 text-white/80 md:mb-1 md:mt-0 md:text-lg">
                   is used to structure emotion before acting.
                 </p>
               </div>
             </div>
 
-            <div className="relative">
-              <img
-                src="/images/icons/traffic-light-angled.png"
-                alt="Traffic light"
-                className="pointer-events-none absolute -left-36 top-1/2 z-0 hidden h-[430px] w-auto -translate-y-1/2 opacity-[0.85] lg:block"
-              />
-
-              <div className="relative z-10 grid gap-5">
-                <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6 backdrop-blur">
-                  <div className="text-sm uppercase tracking-[0.25em]">
-                    <span className="text-red-300">Consideration</span>
-                    <span className="px-2 text-white">→</span>
-                    <span className="text-white">Awareness</span>
-                  </div>
-                  <h3 className="mt-3 text-2xl font-medium">What is happening?</h3>
-                  <p className="mt-4 text-lg leading-7 text-white/80">
-                    See the moment clearly before you act.
-                  </p>
+            <div className="grid gap-5">
+              <div className="rounded-[1.75rem] border border-white/10 bg-black/45 p-6 backdrop-blur">
+                <div className="text-sm uppercase tracking-[0.25em]">
+                  <span className="text-red-300">Consideration</span>
+                  <span className="px-2 text-white">→</span>
+                  <span className="text-white">Awareness</span>
                 </div>
+                <h3 className="mt-3 text-2xl font-medium">What is happening?</h3>
+                <p className="mt-4 text-lg leading-7 text-white/80">
+                  See the moment clearly before you act.
+                </p>
+              </div>
 
-                <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6 backdrop-blur">
-                  <div className="text-sm uppercase tracking-[0.25em]">
-                    <span className="text-yellow-200">Accountability</span>
-                    <span className="px-2 text-white">→</span>
-                    <span className="text-white">Ownership</span>
-                  </div>
-                  <h3 className="mt-3 text-2xl font-medium">What is my role?</h3>
-                  <p className="mt-4 text-lg leading-7 text-white/80">
-                    Own your part in what happens next.
-                  </p>
+              <div className="rounded-[1.75rem] border border-white/10 bg-black/45 p-6 backdrop-blur">
+                <div className="text-sm uppercase tracking-[0.25em]">
+                  <span className="text-yellow-200">Accountability</span>
+                  <span className="px-2 text-white">→</span>
+                  <span className="text-white">Ownership</span>
                 </div>
+                <h3 className="mt-3 text-2xl font-medium">What is my role?</h3>
+                <p className="mt-4 text-lg leading-7 text-white/80">
+                  Own your part in what happens next.
+                </p>
+              </div>
 
-                <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6 backdrop-blur">
-                  <div className="text-sm uppercase tracking-[0.25em]">
-                    <span className="text-green-300">Reason</span>
-                    <span className="px-2 text-white">→</span>
-                    <span className="text-white">Direction</span>
-                  </div>
-                  <h3 className="mt-3 text-2xl font-medium">What is the best response?</h3>
-                  <p className="mt-4 text-lg leading-7 text-white/80">
-                    Choose direction instead of defaulting to impulse.
-                  </p>
+              <div className="rounded-[1.75rem] border border-white/10 bg-black/45 p-6 backdrop-blur">
+                <div className="text-sm uppercase tracking-[0.25em]">
+                  <span className="text-green-300">Reason</span>
+                  <span className="px-2 text-white">→</span>
+                  <span className="text-white">Direction</span>
                 </div>
+                <h3 className="mt-3 text-2xl font-medium">What is the best response?</h3>
+                <p className="mt-4 text-lg leading-7 text-white/80">
+                  Choose direction instead of defaulting to impulse.
+                </p>
               </div>
             </div>
           </div>
