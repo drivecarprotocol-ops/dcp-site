@@ -146,7 +146,7 @@ export default function DCPWebsiteV2() {
     CAR → Response <span className="text-blue-200/70">(chosen)</span>
   </div>
 </div>
-    
+</div>   
 </motion.div>
         </div>
       </section>
