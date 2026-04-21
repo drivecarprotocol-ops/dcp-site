@@ -121,32 +121,19 @@ export default function DCPWebsiteV2() {
     DCP operates within the existing sequence. It inserts structure into what happens next.
   </p>
 
-{/* Mobile */}
-<div className="mt-5 md:hidden">
-  <div className="text-2xl font-medium text-white leading-tight">
-    Event → Emotion → Reaction <span className="text-white/50">(automatic)</span>
-  </div>
-
-  <div className="mt-3 text-blue-300 text-2xl font-medium leading-tight">
-    CAR → Response <span className="text-blue-200/70">(chosen)</span>
-  </div>
-</div>
-
-{/* Desktop */}
-<div className="hidden md:block">
   <div className="mt-5 text-2xl font-medium text-white">
     Event → Emotion → Reaction <span className="text-white/50">(automatic)</span>
   </div>
 
   <div className="-mt-2 ml-[118px] text-blue-300 text-2xl leading-none">
-    ↓
-  </div>
-
-  <div className="ml-[113px] mt-1 text-2xl font-medium text-blue-300 leading-tight">
-    CAR → Response <span className="text-blue-200/70">(chosen)</span>
-  </div>
+  ↓
 </div>
- </div>   
+
+<div className="ml-[113px] mt-1 text-2xl font-medium text-blue-300 leading-tight">
+  CAR → Response <span className="text-blue-200/70">(chosen)</span>
+</div>
+</div>
+           
 </motion.div>
         </div>
       </section>
