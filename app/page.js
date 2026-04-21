@@ -135,7 +135,7 @@ export default function DCPWebsiteV2() {
             </div>
 
             <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-              The critical moment is between emotion and action.
+              The critical moment between emotion and action.
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-white/78">
