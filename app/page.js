@@ -77,7 +77,7 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/road-right.png"
                   alt=""
-                  className="pointer-events-none absolute left-[38%] top-[-10px] z-0 w-72 opacity-95 md:left-[40%] md:top-[-14px] md:w-96"
+                  className="pointer-events-none absolute left-[38%] top-[-10px] z-0 w-56 opacity-95 md:left-[40%] md:top-[-14px] md:w-72"
                 />
               </div>
             </div>
