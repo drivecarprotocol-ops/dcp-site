@@ -175,16 +175,6 @@ export default function DCPWebsiteV2() {
 
       {/* CAR */}
       <section className="relative overflow-hidden border-y border-white/10 bg-black">
-        <div
-          className="pointer-events-none absolute inset-0"
-          style={{
-            backgroundImage: "url('/images/icons/traffic-light-angled.png')",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "left center",
-            backgroundSize: "260px auto",
-            opacity: 0.85,
-          }}
-        />
         <div className="absolute inset-0 bg-black/55" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
@@ -193,57 +183,61 @@ export default function DCPWebsiteV2() {
               <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
                 C.A.R.
               </div>
-              <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-6xl">
-                The Decision Engine
-              </h2>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
-                CAR is the internal process used to examine emotion before
-                acting. Consideration creates awareness. Accountability
-                establishes ownership. Reason makes the decision.
-              </p>
 
-              <div className="mt-8 rounded-[1.75rem] border border-white/10 bg-black/45 p-6">
-                <div className="flex items-start gap-4">
-                  <img
-                    src="/images/icons/traffic-light-angled.png"
-                    alt="Traffic light"
-                    className="h-20 w-20 object-contain md:h-24 md:w-24"
-                  />
-                  <div>
-                    <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-                      Visual Anchor
-                    </div>
-                    <div className="mt-3 space-y-2 text-lg text-white/88">
-                      <div>
-                        <span className="text-red-300">Red</span> — Consider
-                      </div>
-                      <div>
-                        <span className="text-yellow-200">Yellow</span> — Account
-                      </div>
-                      <div>
-                        <span className="text-green-300">Green</span> — Reason
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className="mt-4 md:flex md:items-end md:gap-4">
+                <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">
+                  The Decision Engine
+                </h2>
+                <p className="mt-3 text-base leading-7 text-white/80 md:mb-1 md:mt-0 md:text-lg">
+                  is used to structure emotion before acting.
+                </p>
               </div>
             </div>
 
-            <div className="grid gap-5">
-              {carCards.map((item) => (
-                <div
-                  key={item.title}
-                  className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6 backdrop-blur"
-                >
-                  <div className="text-sm uppercase tracking-[0.25em] text-white/50">
-                    {item.title}
+            <div className="relative">
+              <img
+                src="/images/icons/traffic-light-angled.png"
+                alt="Traffic light"
+                className="pointer-events-none absolute -left-36 top-1/2 z-0 hidden h-[430px] w-auto -translate-y-1/2 opacity-[0.85] lg:block"
+              />
+
+              <div className="relative z-10 grid gap-5">
+                <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6 backdrop-blur">
+                  <div className="text-sm uppercase tracking-[0.25em]">
+                    <span className="text-red-300">Consideration</span>
+                    <span className="px-2 text-white">→</span>
+                    <span className="text-white">Awareness</span>
                   </div>
-                  <h3 className="mt-3 text-2xl font-medium">{item.prompt}</h3>
+                  <h3 className="mt-3 text-2xl font-medium">What is happening?</h3>
                   <p className="mt-4 text-lg leading-7 text-white/80">
-                    {item.text}
+                    See the moment clearly before you act.
                   </p>
                 </div>
-              ))}
+
+                <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6 backdrop-blur">
+                  <div className="text-sm uppercase tracking-[0.25em]">
+                    <span className="text-yellow-200">Accountability</span>
+                    <span className="px-2 text-white">→</span>
+                    <span className="text-white">Ownership</span>
+                  </div>
+                  <h3 className="mt-3 text-2xl font-medium">What is my role?</h3>
+                  <p className="mt-4 text-lg leading-7 text-white/80">
+                    Own your part in what happens next.
+                  </p>
+                </div>
+
+                <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6 backdrop-blur">
+                  <div className="text-sm uppercase tracking-[0.25em]">
+                    <span className="text-green-300">Reason</span>
+                    <span className="px-2 text-white">→</span>
+                    <span className="text-white">Direction</span>
+                  </div>
+                  <h3 className="mt-3 text-2xl font-medium">What is the best response?</h3>
+                  <p className="mt-4 text-lg leading-7 text-white/80">
+                    Choose direction instead of defaulting to impulse.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
