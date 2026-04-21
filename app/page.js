@@ -123,7 +123,7 @@ export default function DCPWebsiteV2() {
       {/* WHAT DCP IS */}
       <section className="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
         <div className="max-w-4xl">
-          <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+          <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
             What DCP is
           </div>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
@@ -176,7 +176,7 @@ export default function DCPWebsiteV2() {
         <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div>
-              <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+              <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
                 CAR
               </div>
               <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-6xl">
@@ -248,7 +248,7 @@ export default function DCPWebsiteV2() {
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
           <div className="max-w-4xl">
-            <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+            <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
               Why It Matters
             </div>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
