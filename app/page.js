@@ -66,7 +66,7 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/cone.png"
                   alt=""
-                  className="pointer-events-none absolute left-[78%] top-[-4px] z-0 w-16 opacity-95 md:left-[80%] md:top-[-8px] md:w-20"
+                  className="pointer-events-none absolute left-[63%] top-[-12px] z-0 w-16 opacity-95 md:left-[65%] md:top-[-16px] md:w-20"
                 />
               </div>
 
@@ -79,14 +79,15 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/road-right.png"
                   alt=""
-                  className="pointer-events-none absolute left-[32%] top-[-10px] z-0 w-72 opacity-95 md:left-[34%] md:top-[-14px] md:w-96"
+                  className="pointer-events-none absolute left-[36%] top-[-16px] z-0 w-72 opacity-95 md:left-[38%] md:top-[-20px] md:w-96"
                 />
               </div>
             </div>
 
             <p className="mt-8 max-w-3xl text-lg leading-8 text-white/82 md:text-xl">
-              Human Decision Architecture (Applied in REAL TIME)
-            </p>
+  		<span className="block">Human Decision Architecture</span>
+  		<span className="block">(Applied in REAL time)</span>
+		</p>
 
             <h1 className="mt-8 max-w-5xl text-5xl font-semibold tracking-tight md:text-7xl">
               Feel the emotion.{" "}
