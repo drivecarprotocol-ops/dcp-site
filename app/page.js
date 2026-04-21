@@ -44,7 +44,7 @@ export default function DCPWebsiteV2() {
         <img
           src="/images/icons/DCP-ID.png"
           alt="DCP"
-          className="pointer-events-none absolute right-6 top-6 z-20 w-24 opacity-70 md:right-8 md:top-8 md:w-32"
+          className="pointer-events-none absolute right-6 top-6 z-20 w-40 opacity-25 md:right-8 md:top-8 md:w-56"
         />
 
         <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-8 md:py-28">
@@ -59,19 +59,19 @@ export default function DCPWebsiteV2() {
               <div className="relative">
                 <div className="relative z-10 text-5xl font-semibold leading-none tracking-tight md:text-7xl">
                   <span className="text-white">DRIVE</span>
-                  <span className="ml-3 text-blue-400">CAR</span>
+                  <span className="ml-2 text-blue-400">CAR</span>
                 </div>
 
                 {/* Cone sits more deliberately behind/right of CAR */}
                 <img
                   src="/images/icons/cone.png"
                   alt=""
-                  className="pointer-events-none absolute left-[78%] top-[-8px] z-0 w-16 opacity-95 md:left-[81%] md:top-[-14px] md:w-20"
+                  className="pointer-events-none absolute left-[70%] top-[-6px] z-0 w-16 opacity-95 md:left-[72%] md:top-[-10px] md:w-20"
                 />
               </div>
 
               <div className="relative mt-2">
-                <div className="relative z-10 pl-1 text-base uppercase tracking-[0.34em] text-white/82 md:text-xl">
+                <div className="relative z-10 pl-1 text-lg uppercase tracking-[0.34em] text-white/82 md:text-2xl">
                   PROTOCOL
                 </div>
 
@@ -79,7 +79,7 @@ export default function DCPWebsiteV2() {
                 <img
                   src="/images/icons/road-right.png"
                   alt=""
-                  className="pointer-events-none absolute left-10 top-3 z-0 w-44 opacity-95 md:left-16 md:top-4 md:w-60"
+                  className="pointer-events-none absolute left-[55%] top-2 z-0 w-64 opacity-95 md:left-[58%] md:top-3 md:w-80"
                 />
               </div>
             </div>
