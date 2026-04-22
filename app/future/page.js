@@ -173,7 +173,8 @@ export default function FuturePage() {
               </div>
 
               <h2 className="mt-4 text-5xl font-semibold leading-[0.98] tracking-tight">
-                <span className="text-orange-400">Visualization</span> could amplify awareness.
+                <span className="text-orange-400">Visualization</span> could
+                amplify awareness.
               </h2>
 
               <p className="mt-5 max-w-5xl text-xl leading-8 text-white/80">
@@ -308,11 +309,8 @@ export default function FuturePage() {
                         className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
                       >
                         <Mail className="h-5 w-5 text-orange-300" />
-                        <div>
-                          <div className="text-sm text-white/55">Email</div>
-                          <div className="text-white">
-                            drivecarprotocol@gmail.com
-                          </div>
+                        <div className="text-white">
+                          drivecarprotocol@gmail.com
                         </div>
                       </a>
 
@@ -327,10 +325,7 @@ export default function FuturePage() {
                           alt="X"
                           className="h-5 w-5 object-contain"
                         />
-                        <div>
-                          <div className="text-sm text-white/55">X</div>
-                          <div className="text-white">@D_C_Protocol</div>
-                        </div>
+                        <div className="text-white">@D_C_Protocol</div>
                       </a>
                     </div>
                   </div>
@@ -340,12 +335,12 @@ export default function FuturePage() {
                       href="/"
                       className="inline-flex items-center gap-3 rounded-2xl border border-orange-400/40 px-6 py-3 text-orange-400 transition hover:bg-orange-400/10"
                     >
-                      Return to QuickStart
                       <img
                         src="/images/icons/3arrow-scroller.png"
                         alt=""
-                        className="h-6 w-auto object-contain"
+                        className="h-6 w-auto rotate-180 object-contain"
                       />
+                      Return to QuickStart
                     </Link>
                   </div>
                 </div>
