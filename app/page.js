@@ -41,7 +41,7 @@ const [scrollDirection, setScrollDirection] = useState("down");
 useEffect(() => {
   let lastScrollY = window.scrollY;
 
-  const handleScroll = () => {
+  const updateCue = (mouseY = null) => {
     const scrollTop = window.scrollY;
     const docHeight =
       document.documentElement.scrollHeight - window.innerHeight;
@@ -54,33 +54,58 @@ useEffect(() => {
 
     lastScrollY = scrollTop;
 
-    if (docHeight <= 0) {
-      setScrollCueOpacity(0);
-      return;
+    const viewportHeight = window.innerHeight;
+
+    // show cue earlier after only a tiny amount of scroll
+    const scrolledEnough = scrollTop > viewportHeight * 0.03;
+
+    // earlier sensitivity field on screen
+    const lowerZoneStart = viewportHeight * 0.66;
+    const upperBufferZone = viewportHeight * 0.52;
+
+    let targetOpacity = 0;
+
+    if (mouseY !== null) {
+      if (mouseY >= lowerZoneStart) {
+        targetOpacity = 0.55;
+      } else if (mouseY >= upperBufferZone) {
+        const zoneProgress =
+          (mouseY - upperBufferZone) / (lowerZoneStart - upperBufferZone);
+        targetOpacity = Math.max(0.18, zoneProgress * 0.55);
+      }
     }
 
-    const progress = scrollTop / docHeight;
+    // if user has started scrolling, keep it faintly visible
+    if (scrolledEnough && targetOpacity < 0.22) {
+      targetOpacity = 0.22;
+    }
 
-if (progress < 0.03) {
-  setScrollCueOpacity(0);
-} else if (progress < 0.16) {
-  const fadeIn = (progress - 0.03) / (0.16 - 0.03);
-  setScrollCueOpacity(Math.min(fadeIn * 0.35, 0.35));
-} else if (progress < 0.9) {
-  setScrollCueOpacity(0.35);
-} else {
-  const fadeOut = 1 - (progress - 0.9) / 0.1;
-  setScrollCueOpacity(Math.max(fadeOut * 0.35, 0));
-}
+    // fade near bottom of page
+    if (docHeight > 0) {
+      const progress = scrollTop / docHeight;
+      if (progress > 0.92) {
+        const fadeOut = 1 - (progress - 0.92) / 0.08;
+        targetOpacity = Math.min(targetOpacity, Math.max(fadeOut * 0.55, 0));
+      }
+    }
+
+    setScrollCueOpacity(targetOpacity);
   };
 
-  handleScroll();
+  const handleScroll = () => updateCue();
+  const handleResize = () => updateCue();
+  const handleMouseMove = (e) => updateCue(e.clientY);
+
+  updateCue();
+
   window.addEventListener("scroll", handleScroll, { passive: true });
-  window.addEventListener("resize", handleScroll);
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("mousemove", handleMouseMove);
 
   return () => {
     window.removeEventListener("scroll", handleScroll);
-    window.removeEventListener("resize", handleScroll);
+    window.removeEventListener("resize", handleResize);
+    window.removeEventListener("mousemove", handleMouseMove);
   };
 }, []);
 
