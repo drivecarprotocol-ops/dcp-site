@@ -57,35 +57,16 @@ export default function DCPWebsiteV2() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45 }}
-            className="max-w-5xl"
-          >
-            {/* Logo block */}
-            <div className="relative inline-block max-w-full">
-              <div className="relative">
-                <div className="relative z-10 text-4xl font-semibold leading-none tracking-tight sm:text-5xl md:text-7xl">
-                  <span className="text-white">DRIVE</span>
-                  <span className="ml-2 text-blue-400">CAR</span>
-                </div>
+            className="max-w-5xl">
 
-                <img
-                  src="/images/icons/cone.png"
-                  alt=""
-                  className="pointer-events-none absolute right-[-10px] top-[4px] z-20 w-10 opacity-95 sm:right-[-16px] sm:top-[6px] sm:w-12 md:right-[-28px] md:top-[12px] md:w-20"
-                />
-              </div>
+        <div className="mb-6">
+  <img
+    src="/images/dcp-logo.png"
+    alt="Drive CAR Protocol Logo"
+    className="h-16 md:h-20 w-auto"
+  />
+</div>
 
-              <div className="relative mt-2">
-                <div className="relative z-10 text-sm uppercase tracking-[0.28em] text-white/82 sm:text-base md:text-2xl md:tracking-[0.34em]">
-                  PROTOCOL
-                </div>
-
-                <img
-                  src="/images/icons/road-right.png"
-                  alt=""
-                  className="pointer-events-none absolute left-[42%] top-[-8px] z-0 w-28 opacity-95 sm:left-[44%] sm:w-36 md:left-[47%] md:top-[-13px] md:w-66"
-                />
-              </div>
-            </div>
 
             <h1 className="mt-4 max-w-5xl text-3xl font-semibold tracking-tight sm:text-4xl md:mt-5 md:text-7xl">
               Feel the emotion.{" "}
