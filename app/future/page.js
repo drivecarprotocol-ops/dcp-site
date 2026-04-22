@@ -97,97 +97,49 @@ export default function FuturePage() {
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-blue-500/25 selection:text-white">
-      {/* HERO */}
-      <section className="relative overflow-hidden border-b border-white/10">
-        <div
-          className="absolute inset-0 bg-cover opacity-80 bg-[position:68%_center] md:bg-center"
-          style={{
-            backgroundImage: "url('/images/backgrounds/DCP-coming-soon.jpg')",
-          }}
-        />
-        <div className="absolute inset-0 bg-black/55" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_18%,rgba(59,130,246,0.16),transparent_28%),radial-gradient(circle_at_78%_18%,rgba(255,255,255,0.06),transparent_20%)]" />
+ 
+{/* HERO */}
+<section className="relative border-b border-white/10 bg-black">
+  <div className="flex justify-center">
+    <img
+      src="/images/backgrounds/DCP-coming-soon.jpg"
+      alt="DCP Future"
+      className="w-full max-w-5xl object-contain"
+    />
+  </div>
 
-        <img
-          src="/images/icons/DCP-ID.png"
-          alt="DCP"
-          className="pointer-events-none absolute right-4 top-4 z-20 w-24 opacity-25 md:right-8 md:top-8 md:w-44"
-        />
+  <div className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
+    <Link
+      href="/"
+      className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-white/65 transition hover:text-white"
+    >
+      <ChevronLeft className="h-4 w-4" />
+      Back
+    </Link>
 
-        <div className="relative mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-white/65 transition hover:text-white"
-          >
-            <ChevronLeft className="h-4 w-4" />
-            Back
-          </Link>
+    <div className="mt-10 max-w-5xl">
+      <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+        Future Direction
+      </div>
 
-          <div className="mt-10 max-w-5xl">
-            <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-              Future Direction
-            </div>
+      <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl md:text-7xl">
+        DCP is independent from{" "}
+        <span className="text-blue-400">technology</span>.
+      </h1>
+    </div>
+  </div>
+</section>
 
-            <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl md:text-7xl">
-              DCP is independent from{" "}
-              <span className="text-blue-400">technology</span>.
-            </h1>
-
-            <p className="mt-5 max-w-4xl text-base leading-7 text-white/84 sm:text-lg md:mt-6 md:text-2xl md:leading-8">
-              Future interfaces may help make patterns more visible,
-              interactive, and easier to navigate. They do not replace
-              awareness, accountability, or responsibility.
-            </p>
-
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a
-                href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-white/5 px-6 py-3 text-white transition hover:bg-white/10"
-              >
-                Read Full White Paper
-                <ExternalLink className="h-4 w-4" />
-              </a>
-
-              <Link
-                href="/"
-                className="inline-flex items-center rounded-2xl border border-blue-400/40 px-6 py-3 text-blue-300 transition hover:bg-blue-400/10"
-              >
-                Return to QuickStart
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* OTTER IMAGE SECTION */}
-      <section className="relative overflow-hidden border-y border-white/10">
-        <div
-          className="absolute inset-0 bg-cover opacity-80 bg-center"
-          style={{
-            backgroundImage: "url('/images/backgrounds/otter.jpg')",
-          }}
-        />
-        <div className="absolute inset-0 bg-black/55" />
-
-        <div className="relative mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
-          <div className="max-w-3xl">
-            <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-              Natural Signal
-            </div>
-
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-              Stay aware of what is crossing in front of you.
-            </h2>
-
-            <p className="mt-5 text-lg leading-8 text-white/80">
-              Future development should remain grounded in pattern recognition,
-              timing, attention, and response within real conditions.
-            </p>
-          </div>
-        </div>
-      </section>
+{/* OTTER IMAGE */}
+<section className="bg-black py-12 md:py-16">
+  <div className="flex justify-center">
+    <img
+      src="/images/backgrounds/otter.jpg"
+      alt="Otter crossing"
+      className="w-full max-w-5xl object-contain"
+    />
+  </div>
+</section>
 
       {/* CONCEPTUAL DIRECTION */}
       <section className="relative overflow-hidden border-y border-white/10">
