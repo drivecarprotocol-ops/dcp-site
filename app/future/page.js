@@ -79,27 +79,26 @@ export default function FuturePage() {
       <div className="fixed inset-0 z-0 pointer-events-none bg-black">
         {/* TOP IMAGE */}
         <div
-          className="absolute inset-x-0 top-0 h-1/2 bg-no-repeat opacity-[0.95]"
+          className="absolute inset-x-0 top-0 h-1/2 bg-no-repeat opacity-95"
           style={{
             backgroundImage: "url('/images/backgrounds/DCP-coming-soon.jpg')",
-            backgroundSize: "105% auto",
-            backgroundPosition: "center center",
+            backgroundSize: "90% auto",
+            backgroundPosition: "center 46%",
           }}
         />
-        <div className="absolute inset-x-0 top-0 h-1/2 bg-black/56" />
+        <div className="absolute inset-x-0 top-0 h-1/2 bg-black/54" />
 
         {/* BOTTOM IMAGE */}
         <div
-          className="absolute inset-x-0 bottom-0 h-1/2 bg-no-repeat opacity-[0.95]"
+          className="absolute inset-x-0 bottom-0 h-1/2 bg-no-repeat opacity-95"
           style={{
             backgroundImage: "url('/images/backgrounds/otter.jpg')",
-            backgroundSize: "105% auto",
-            backgroundPosition: "center center",
+            backgroundSize: "90% auto",
+            backgroundPosition: "center 54%",
           }}
         />
-        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-black/56" />
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-black/54" />
 
-        {/* GLOBAL ATMOSPHERE */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_16%,rgba(59,130,246,0.14),transparent_24%),radial-gradient(circle_at_78%_18%,rgba(255,255,255,0.05),transparent_18%)]" />
       </div>
 
@@ -110,11 +109,10 @@ export default function FuturePage() {
         className="pointer-events-none fixed right-8 top-8 z-20 w-44 opacity-25"
       />
 
-      {/* SCROLLING CONTENT */}
       <div className="relative z-10">
-        {/* HERO + NATURAL SIGNAL */}
+        {/* HERO + NATURAL SIGNAL OVER STAGE */}
         <section className="relative border-b border-white/10">
-          <div className="min-h-[155vh]">
+          <div className="min-h-[118vh]">
             {/* TOP COPY */}
             <div className="mx-auto max-w-7xl px-8 pt-12">
               <div className="mb-6">
@@ -132,7 +130,7 @@ export default function FuturePage() {
                   Future Direction
                 </div>
 
-                <h1 className="mt-4 text-7xl font-semibold tracking-tight leading-[0.95]">
+                <h1 className="mt-4 text-7xl font-semibold leading-[0.95] tracking-tight">
                   DCP is independent from{" "}
                   <span className="text-blue-400">technology</span>.
                 </h1>
@@ -164,17 +162,17 @@ export default function FuturePage() {
               </div>
             </div>
 
-            {/* TIGHTER SPACER */}
-            <div className="h-[34vh]" />
+            {/* TIGHT GAP TO SECOND IMAGE */}
+            <div className="h-[12vh]" />
 
-            {/* BOTTOM COPY */}
-            <div className="mx-auto max-w-7xl px-8 pb-20">
-              <div className="max-w-5xl">
-                <div className="text-sm uppercase tracking-[0.25em] text-white/50">
+            {/* NATURAL SIGNAL */}
+            <div className="mx-auto max-w-7xl px-8 pb-12">
+              <div className="max-w-5xl rounded-[2rem] border border-white/10 bg-black/28 p-8 backdrop-blur-[2px]">
+                <div className="text-sm uppercase tracking-[0.25em] text-white/55">
                   Natural Signal
                 </div>
 
-                <h2 className="mt-4 text-6xl font-semibold tracking-tight leading-[0.98]">
+                <h2 className="mt-4 text-6xl font-semibold leading-[0.98] tracking-tight">
                   Stay aware of what is crossing in front of you.
                 </h2>
 
@@ -189,27 +187,25 @@ export default function FuturePage() {
         </section>
 
         {/* CONCEPTUAL DIRECTION */}
-        <section className="relative overflow-hidden border-b border-white/10 bg-black/90 backdrop-blur-sm">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(59,130,246,0.12),transparent_24%),radial-gradient(circle_at_82%_78%,rgba(255,255,255,0.04),transparent_20%)]" />
-
-          <div className="relative mx-auto max-w-7xl px-8 py-14">
-            <div className="max-w-4xl">
+        <section className="relative px-8 pt-10 pb-8">
+          <div className="mx-auto max-w-7xl">
+            <div className="max-w-5xl">
               <div className="text-sm uppercase tracking-[0.25em] text-white/45">
                 Conceptual Direction
               </div>
 
-              <h2 className="mt-4 text-6xl font-semibold tracking-tight leading-[0.98]">
+              <h2 className="mt-4 text-6xl font-semibold leading-[0.98] tracking-tight">
                 Visualization could amplify awareness.
               </h2>
 
-              <p className="mt-5 text-xl leading-8 text-white/80">
+              <p className="mt-5 max-w-5xl text-xl leading-8 text-white/80">
                 One optional direction is a behavioral mapping layer that makes
                 events, emotions, reactions, CAR processing, responses, and
                 recurring patterns easier to see over time.
               </p>
             </div>
 
-            <div className="mt-10 grid gap-6 grid-cols-2">
+            <div className="mt-10 grid grid-cols-2 gap-6">
               {futureCards.map((card) => (
                 <div
                   key={card.title}
@@ -224,11 +220,9 @@ export default function FuturePage() {
         </section>
 
         {/* CORE PRINCIPLE */}
-        <section className="relative overflow-hidden border-b border-white/10 bg-black/92 backdrop-blur-sm">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.16),transparent_30%)]" />
-
-          <div className="relative mx-auto max-w-7xl px-8 py-14">
-            <div className="grid gap-6 grid-cols-2">
+        <section className="relative px-8 pt-8 pb-8">
+          <div className="mx-auto max-w-7xl">
+            <div className="grid grid-cols-2 gap-6">
               <div className="rounded-[1.75rem] border border-blue-500/20 bg-blue-500/[0.08] p-8">
                 <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
                   Core Principle
@@ -262,9 +256,9 @@ export default function FuturePage() {
         </section>
 
         {/* FRAMING */}
-        <section className="bg-black/94 backdrop-blur-sm">
-          <div className="mx-auto max-w-7xl px-8 py-14">
-            <div className="grid gap-6 grid-cols-2">
+        <section className="relative px-8 pt-8 pb-12">
+          <div className="mx-auto max-w-7xl">
+            <div className="grid grid-cols-2 gap-6">
               <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6">
                 <div className="text-sm uppercase tracking-[0.25em] text-white/45">
                   Systems Lens
@@ -297,9 +291,9 @@ export default function FuturePage() {
         </section>
 
         {/* CONTACT */}
-        <section className="mx-auto max-w-7xl px-8 py-14">
+        <section className="mx-auto max-w-7xl px-8 py-12">
           <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8">
-            <div className="grid gap-8 grid-cols-[1.15fr_0.85fr] items-center">
+            <div className="grid grid-cols-[1.15fr_0.85fr] items-center gap-8">
               <div>
                 <div className="text-sm uppercase tracking-[0.25em] text-white/45">
                   Contact / Follow
@@ -358,18 +352,16 @@ export default function FuturePage() {
           <img
             src="/images/icons/3arrow-scroller.png"
             alt=""
-            className={`w-12 object-contain transition-transform duration-300 md:w-16 ${
+            className={`w-12 object-contain transition-transform duration-300 ${
               scrollDirection === "up" ? "rotate-180" : "rotate-0"
             }`}
           />
         </div>
 
         <footer className="border-t border-white/10 px-8 py-8">
-          <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/50">
-            <div>
-              © 2026 Drive CAR Protocol. /// DCP is independent from
-              technology. /// All rights reserved.
-            </div>
+          <div className="mx-auto max-w-7xl text-sm text-white/50">
+            © 2026 Drive CAR Protocol. /// DCP is independent from technology.
+            /// All rights reserved.
           </div>
         </footer>
       </div>
