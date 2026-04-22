@@ -97,9 +97,9 @@ export default function FuturePage() {
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-blue-500/25 selection:text-white">
-      {/* HERO IMAGE */}
-      <section className="border-b border-white/10 bg-black pt-6 md:pt-8">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
+      {/* HERO COPY */}
+      <section className="border-b border-white/10 bg-black">
+        <div className="mx-auto max-w-7xl px-5 py-10 md:px-8 md:py-14">
           <div className="mb-6">
             <Link
               href="/"
@@ -110,19 +110,6 @@ export default function FuturePage() {
             </Link>
           </div>
 
-          <div className="flex justify-center">
-            <img
-              src="/images/backgrounds/DCP-coming-soon.jpg"
-              alt="DCP Future"
-              className="w-full max-w-6xl object-contain"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* HERO COPY */}
-      <section className="border-b border-white/10 bg-black">
-        <div className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-16">
           <div className="max-w-5xl">
             <div className="text-sm uppercase tracking-[0.25em] text-white/45">
               Future Direction
@@ -161,16 +148,14 @@ export default function FuturePage() {
         </div>
       </section>
 
-      {/* OTTER IMAGE */}
-      <section className="border-b border-white/10 bg-black py-10 md:py-14">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <div className="flex justify-center">
-            <img
-              src="/images/backgrounds/otter.jpg"
-              alt="Otter crossing"
-              className="w-full max-w-6xl object-contain"
-            />
-          </div>
+      {/* HERO IMAGE */}
+      <section className="border-b border-white/10 bg-black">
+        <div className="w-full overflow-hidden">
+          <img
+            src="/images/backgrounds/DCP-coming-soon.jpg"
+            alt="DCP Future"
+            className="block w-full h-auto"
+          />
         </div>
       </section>
 
@@ -191,6 +176,17 @@ export default function FuturePage() {
               timing, attention, and response within real conditions.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* OTTER IMAGE */}
+      <section className="border-b border-white/10 bg-black">
+        <div className="w-full overflow-hidden">
+          <img
+            src="/images/backgrounds/otter.jpg"
+            alt="Otter crossing"
+            className="block w-full h-auto"
+          />
         </div>
       </section>
 
