@@ -30,7 +30,7 @@ export default function FuturePage() {
   useEffect(() => {
     let lastScrollY = window.scrollY;
 
-    const updateCue = (mouseY = null) => {
+    const updateCue = () => {
       const scrollTop = window.scrollY;
       const docHeight =
         document.documentElement.scrollHeight - window.innerHeight;
@@ -43,26 +43,7 @@ export default function FuturePage() {
 
       lastScrollY = scrollTop;
 
-      const viewportHeight = window.innerHeight;
-      const scrolledEnough = scrollTop > viewportHeight * 0.03;
-      const lowerZoneStart = viewportHeight * 0.66;
-      const upperBufferZone = viewportHeight * 0.52;
-
-      let targetOpacity = 0;
-
-      if (mouseY !== null) {
-        if (mouseY >= lowerZoneStart) {
-          targetOpacity = 0.55;
-        } else if (mouseY >= upperBufferZone) {
-          const zoneProgress =
-            (mouseY - upperBufferZone) / (lowerZoneStart - upperBufferZone);
-          targetOpacity = Math.max(0.18, zoneProgress * 0.55);
-        }
-      }
-
-      if (scrolledEnough && targetOpacity < 0.22) {
-        targetOpacity = 0.22;
-      }
+      let targetOpacity = scrollTop > window.innerHeight * 0.03 ? 0.22 : 0;
 
       if (docHeight > 0) {
         const progress = scrollTop / docHeight;
@@ -80,18 +61,15 @@ export default function FuturePage() {
 
     const handleScroll = () => updateCue();
     const handleResize = () => updateCue();
-    const handleMouseMove = (e) => updateCue(e.clientY);
 
     updateCue();
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     window.addEventListener("resize", handleResize);
-    window.addEventListener("mousemove", handleMouseMove);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResize);
-      window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
@@ -99,26 +77,29 @@ export default function FuturePage() {
     <div className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-blue-500/25 selection:text-white">
       {/* FIXED BACKGROUND STAGE */}
       <div className="fixed inset-0 z-0 pointer-events-none bg-black">
+        {/* TOP IMAGE */}
         <div
-          className="absolute inset-x-0 top-0 h-1/2 bg-no-repeat opacity-[0.85]"
+          className="absolute inset-x-0 top-0 h-1/2 bg-no-repeat opacity-[0.95]"
           style={{
             backgroundImage: "url('/images/backgrounds/DCP-coming-soon.jpg')",
-            backgroundSize: "contain",
-            backgroundPosition: "calc(50% - 10px) center",
-          }}
-        />
-        <div className="absolute inset-x-0 top-0 h-1/2 bg-black/58" />
-
-        <div
-          className="absolute inset-x-0 bottom-0 h-1/2 bg-no-repeat opacity-[0.85]"
-          style={{
-            backgroundImage: "url('/images/backgrounds/otter.jpg')",
-            backgroundSize: "contain",
+            backgroundSize: "105% auto",
             backgroundPosition: "center center",
           }}
         />
-        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-black/58" />
+        <div className="absolute inset-x-0 top-0 h-1/2 bg-black/56" />
 
+        {/* BOTTOM IMAGE */}
+        <div
+          className="absolute inset-x-0 bottom-0 h-1/2 bg-no-repeat opacity-[0.95]"
+          style={{
+            backgroundImage: "url('/images/backgrounds/otter.jpg')",
+            backgroundSize: "105% auto",
+            backgroundPosition: "center center",
+          }}
+        />
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-black/56" />
+
+        {/* GLOBAL ATMOSPHERE */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_16%,rgba(59,130,246,0.14),transparent_24%),radial-gradient(circle_at_78%_18%,rgba(255,255,255,0.05),transparent_18%)]" />
       </div>
 
@@ -126,15 +107,16 @@ export default function FuturePage() {
       <img
         src="/images/icons/DCP-ID.png"
         alt="DCP"
-        className="pointer-events-none fixed right-4 top-4 z-20 w-24 opacity-25 md:right-8 md:top-8 md:w-44"
+        className="pointer-events-none fixed right-8 top-8 z-20 w-44 opacity-25"
       />
 
       {/* SCROLLING CONTENT */}
       <div className="relative z-10">
-        {/* HERO + NATURAL SIGNAL CONTENT */}
+        {/* HERO + NATURAL SIGNAL */}
         <section className="relative border-b border-white/10">
-          <div className="min-h-[200vh]">
-            <div className="mx-auto max-w-7xl px-5 pt-8 md:px-8 md:pt-12">
+          <div className="min-h-[155vh]">
+            {/* TOP COPY */}
+            <div className="mx-auto max-w-7xl px-8 pt-12">
               <div className="mb-6">
                 <Link
                   href="/"
@@ -150,12 +132,12 @@ export default function FuturePage() {
                   Future Direction
                 </div>
 
-                <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl md:text-7xl">
+                <h1 className="mt-4 text-7xl font-semibold tracking-tight leading-[0.95]">
                   DCP is independent from{" "}
                   <span className="text-blue-400">technology</span>.
                 </h1>
 
-                <p className="mt-5 max-w-4xl text-base leading-7 text-white/84 sm:text-lg md:mt-6 md:text-2xl md:leading-8">
+                <p className="mt-6 max-w-4xl text-2xl leading-8 text-white/84">
                   Future interfaces may help make patterns more visible,
                   interactive, and easier to navigate. They do not replace
                   awareness, accountability, or responsibility.
@@ -182,50 +164,52 @@ export default function FuturePage() {
               </div>
             </div>
 
-            <div className="h-[55vh] md:h-[62vh] lg:h-[70vh]" />
+            {/* TIGHTER SPACER */}
+            <div className="h-[34vh]" />
 
-            <div className="mx-auto max-w-7xl px-5 pb-24 md:px-8 md:pb-32">
-              <div className="max-w-4xl">
+            {/* BOTTOM COPY */}
+            <div className="mx-auto max-w-7xl px-8 pb-20">
+              <div className="max-w-5xl">
                 <div className="text-sm uppercase tracking-[0.25em] text-white/50">
                   Natural Signal
                 </div>
 
-                <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+                <h2 className="mt-4 text-6xl font-semibold tracking-tight leading-[0.98]">
                   Stay aware of what is crossing in front of you.
                 </h2>
 
-                <p className="mt-5 max-w-4xl text-lg leading-8 text-white/82">
+                <p className="mt-5 max-w-4xl text-xl leading-8 text-white/82">
                   Future development should remain grounded in pattern
                   recognition, timing, attention, and response within real
-                  conditions. Always moving. Always flowing.
+                  conditions.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* CONTENT BELOW THE STAGE */}
-        <section className="relative overflow-hidden border-b border-white/10 bg-black/88 backdrop-blur-sm">
+        {/* CONCEPTUAL DIRECTION */}
+        <section className="relative overflow-hidden border-b border-white/10 bg-black/90 backdrop-blur-sm">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(59,130,246,0.12),transparent_24%),radial-gradient(circle_at_82%_78%,rgba(255,255,255,0.04),transparent_20%)]" />
 
-          <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
+          <div className="relative mx-auto max-w-7xl px-8 py-14">
             <div className="max-w-4xl">
               <div className="text-sm uppercase tracking-[0.25em] text-white/45">
                 Conceptual Direction
               </div>
 
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+              <h2 className="mt-4 text-6xl font-semibold tracking-tight leading-[0.98]">
                 Visualization could amplify awareness.
               </h2>
 
-              <p className="mt-5 text-lg leading-8 text-white/80">
+              <p className="mt-5 text-xl leading-8 text-white/80">
                 One optional direction is a behavioral mapping layer that makes
                 events, emotions, reactions, CAR processing, responses, and
                 recurring patterns easier to see over time.
               </p>
             </div>
 
-            <div className="mt-12 grid gap-6 md:grid-cols-2">
+            <div className="mt-10 grid gap-6 grid-cols-2">
               {futureCards.map((card) => (
                 <div
                   key={card.title}
@@ -239,17 +223,18 @@ export default function FuturePage() {
           </div>
         </section>
 
+        {/* CORE PRINCIPLE */}
         <section className="relative overflow-hidden border-b border-white/10 bg-black/92 backdrop-blur-sm">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.16),transparent_30%)]" />
 
-          <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
-            <div className="grid gap-6 md:grid-cols-2">
+          <div className="relative mx-auto max-w-7xl px-8 py-14">
+            <div className="grid gap-6 grid-cols-2">
               <div className="rounded-[1.75rem] border border-blue-500/20 bg-blue-500/[0.08] p-8">
                 <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
                   Core Principle
                 </div>
 
-                <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+                <h2 className="mt-4 text-5xl font-semibold tracking-tight">
                   The system still works without any of this.
                 </h2>
 
@@ -257,7 +242,7 @@ export default function FuturePage() {
                   DCP remains a direct, repeatable framework:
                 </p>
 
-                <div className="mt-6 text-2xl font-medium text-white md:text-3xl">
+                <div className="mt-6 text-3xl font-medium text-white">
                   Feel the emotion. Choose the response.
                 </div>
               </div>
@@ -276,9 +261,10 @@ export default function FuturePage() {
           </div>
         </section>
 
+        {/* FRAMING */}
         <section className="bg-black/94 backdrop-blur-sm">
-          <div className="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
-            <div className="grid gap-6 md:grid-cols-2">
+          <div className="mx-auto max-w-7xl px-8 py-14">
+            <div className="grid gap-6 grid-cols-2">
               <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6">
                 <div className="text-sm uppercase tracking-[0.25em] text-white/45">
                   Systems Lens
@@ -310,15 +296,16 @@ export default function FuturePage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-5 py-16 md:px-8">
-          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8 md:p-10">
-            <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+        {/* CONTACT */}
+        <section className="mx-auto max-w-7xl px-8 py-14">
+          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8">
+            <div className="grid gap-8 grid-cols-[1.15fr_0.85fr] items-center">
               <div>
                 <div className="text-sm uppercase tracking-[0.25em] text-white/45">
                   Contact / Follow
                 </div>
 
-                <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+                <h2 className="mt-4 text-5xl font-semibold tracking-tight">
                   Stay close to the core.
                 </h2>
 
@@ -377,8 +364,8 @@ export default function FuturePage() {
           />
         </div>
 
-        <footer className="border-t border-white/10 px-5 py-8 md:px-8">
-          <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
+        <footer className="border-t border-white/10 px-8 py-8">
+          <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/50">
             <div>
               © 2026 Drive CAR Protocol. /// DCP is independent from
               technology. /// All rights reserved.
