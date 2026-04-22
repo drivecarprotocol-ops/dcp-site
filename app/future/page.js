@@ -138,30 +138,40 @@ export default function FuturePage() {
                 <span className="text-orange-400">DCP</span> is independent from{" "}
                 <span className="text-blue-400">technology</span>.
               </h1>
-
-              <p className="mt-6 max-w-4xl text-2xl leading-8 text-white/84">
-                Future interfaces may help make patterns more visible,
-                interactive, and easier to navigate. They do not replace
-                awareness, accountability, or responsibility.
-              </p>
             </div>
 
             <div className="h-[10vh]" />
 
-            <div className="max-w-5xl rounded-[2rem] border border-orange-400/20 bg-orange-500/[0.08] p-8 backdrop-blur-[2px]">
-              <div className="text-sm uppercase tracking-[0.25em] text-orange-400">
-                Natural Signal
+            <div className="mt-8 rounded-[1.75rem] border border-orange-400/20 bg-orange-500/[0.08] p-8">
+              <div className="grid grid-cols-[1fr_0.9fr] gap-10">
+                <div>
+                  <div className="text-sm uppercase tracking-[0.25em] text-orange-400">
+                    Natural Signal
+                  </div>
+
+                  <h2 className="mt-4 text-5xl font-semibold tracking-tight">
+                    Awareness of what crosses your path.
+                  </h2>
+
+                  <p className="mt-5 text-lg leading-8 text-white/82">
+                    Future development should remain grounded in pattern
+                    recognition, timing, attention, and response within real
+                    conditions.
+                  </p>
+                </div>
+
+                <div>
+                  <div className="text-sm uppercase tracking-[0.25em] text-white/55">
+                    What May Come
+                  </div>
+
+                  <p className="mt-5 text-lg leading-8 text-white/82">
+                    Future interfaces may help make patterns more visible,
+                    interactive, and easier to navigate. They do not replace
+                    awareness, accountability, or responsibility.
+                  </p>
+                </div>
               </div>
-
-              <h2 className="mt-4 text-5xl font-semibold leading-[0.98] tracking-tight">
-                Stay aware of what is crossing in front of you.
-              </h2>
-
-              <p className="mt-5 max-w-4xl text-xl leading-8 text-white/82">
-                Future development should remain grounded in pattern
-                recognition, timing, attention, and response within real
-                conditions.
-              </p>
             </div>
           </section>
 
