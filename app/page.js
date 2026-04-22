@@ -35,79 +35,76 @@ const carCards = [
 ];
 
 export default function DCPWebsiteV2() {
-const [scrollCueOpacity, setScrollCueOpacity] = useState(0);
-const [scrollDirection, setScrollDirection] = useState("down");
+  const [scrollCueOpacity, setScrollCueOpacity] = useState(0);
+  const [scrollDirection, setScrollDirection] = useState("down");
 
-useEffect(() => {
-  let lastScrollY = window.scrollY;
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
 
-  const updateCue = (mouseY = null) => {
-    const scrollTop = window.scrollY;
-    const docHeight =
-      document.documentElement.scrollHeight - window.innerHeight;
+    const updateCue = (mouseY = null) => {
+      const scrollTop = window.scrollY;
+      const docHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
 
-    if (scrollTop > lastScrollY) {
-      setScrollDirection("down");
-    } else if (scrollTop < lastScrollY) {
-      setScrollDirection("up");
-    }
-
-    lastScrollY = scrollTop;
-
-    const viewportHeight = window.innerHeight;
-
-    // show cue earlier after only a tiny amount of scroll
-    const scrolledEnough = scrollTop > viewportHeight * 0.03;
-
-    // earlier sensitivity field on screen
-    const lowerZoneStart = viewportHeight * 0.66;
-    const upperBufferZone = viewportHeight * 0.52;
-
-    let targetOpacity = 0;
-
-    if (mouseY !== null) {
-      if (mouseY >= lowerZoneStart) {
-        targetOpacity = 0.55;
-      } else if (mouseY >= upperBufferZone) {
-        const zoneProgress =
-          (mouseY - upperBufferZone) / (lowerZoneStart - upperBufferZone);
-        targetOpacity = Math.max(0.18, zoneProgress * 0.55);
+      if (scrollTop > lastScrollY) {
+        setScrollDirection("down");
+      } else if (scrollTop < lastScrollY) {
+        setScrollDirection("up");
       }
-    }
 
-    // if user has started scrolling, keep it faintly visible
-    if (scrolledEnough && targetOpacity < 0.22) {
-      targetOpacity = 0.22;
-    }
+      lastScrollY = scrollTop;
 
-    // fade near bottom of page
-    if (docHeight > 0) {
-      const progress = scrollTop / docHeight;
-      if (progress > 0.92) {
-        const fadeOut = 1 - (progress - 0.92) / 0.08;
-        targetOpacity = Math.min(targetOpacity, Math.max(fadeOut * 0.55, 0));
+      const viewportHeight = window.innerHeight;
+      const scrolledEnough = scrollTop > viewportHeight * 0.03;
+      const lowerZoneStart = viewportHeight * 0.66;
+      const upperBufferZone = viewportHeight * 0.52;
+
+      let targetOpacity = 0;
+
+      if (mouseY !== null) {
+        if (mouseY >= lowerZoneStart) {
+          targetOpacity = 0.55;
+        } else if (mouseY >= upperBufferZone) {
+          const zoneProgress =
+            (mouseY - upperBufferZone) / (lowerZoneStart - upperBufferZone);
+          targetOpacity = Math.max(0.18, zoneProgress * 0.55);
+        }
       }
-    }
 
-    setScrollCueOpacity(targetOpacity);
-  };
+      if (scrolledEnough && targetOpacity < 0.22) {
+        targetOpacity = 0.22;
+      }
 
-  const handleScroll = () => updateCue();
-  const handleResize = () => updateCue();
-  const handleMouseMove = (e) => updateCue(e.clientY);
+      if (docHeight > 0) {
+        const progress = scrollTop / docHeight;
+        if (progress > 0.92) {
+          const fadeOut = 1 - (progress - 0.92) / 0.08;
+          targetOpacity = Math.min(
+            targetOpacity,
+            Math.max(fadeOut * 0.55, 0)
+          );
+        }
+      }
 
-  updateCue();
+      setScrollCueOpacity(targetOpacity);
+    };
 
-  window.addEventListener("scroll", handleScroll, { passive: true });
-  window.addEventListener("resize", handleResize);
-  window.addEventListener("mousemove", handleMouseMove);
+    const handleScroll = () => updateCue();
+    const handleResize = () => updateCue();
+    const handleMouseMove = (e) => updateCue(e.clientY);
 
-  return () => {
-    window.removeEventListener("scroll", handleScroll);
-    window.removeEventListener("resize", handleResize);
-    window.removeEventListener("mousemove", handleMouseMove);
-  };
-}, []);
+    updateCue();
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-orange-500/30 selection:text-white">
@@ -115,7 +112,9 @@ useEffect(() => {
       <section className="relative overflow-hidden border-b border-white/10">
         <div
           className="absolute inset-0 bg-cover opacity-80 bg-[position:80%_center] md:bg-center"
-          style={{ backgroundImage: "url('/images/backgrounds/hero-main.jpg')" }}
+          style={{
+            backgroundImage: "url('/images/backgrounds/hero-main.jpg')",
+          }}
         />
         <div className="absolute inset-0 bg-black/55" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(59,130,246,0.14),transparent_28%),radial-gradient(circle_at_75%_18%,rgba(249,115,22,0.16),transparent_24%)]" />
@@ -131,16 +130,15 @@ useEffect(() => {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45 }}
-            className="max-w-5xl">
-
-        <div className="mb-6">
-  <img
-    src="/images/dcp-logo.png"
-    alt="Drive CAR Protocol Logo"
-    className="h-20 md:h-24 w-auto"
-  />
-</div>
-
+            className="max-w-5xl"
+          >
+            <div className="mb-6">
+              <img
+                src="/images/dcp-logo.png"
+                alt="Drive CAR Protocol Logo"
+                className="h-20 w-auto md:h-24"
+              />
+            </div>
 
             <h1 className="mt-4 max-w-5xl text-3xl font-semibold tracking-tight sm:text-4xl md:mt-5 md:text-7xl">
               Feel the emotion.{" "}
@@ -194,7 +192,8 @@ useEffect(() => {
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-white/78">
-              Without structure, behavior stays automatic. With structure, it becomes intentional.
+              Without structure, behavior stays automatic. With structure, it
+              becomes intentional.
             </p>
           </div>
 
@@ -218,9 +217,7 @@ useEffect(() => {
                 Intentional
               </div>
 
-              <div className="mt-3 text-2xl font-medium">
-                CAR → Response
-              </div>
+              <div className="mt-3 text-2xl font-medium">CAR → Response</div>
 
               <p className="mt-4 leading-7 text-white/75">
                 When emotion strikes, CAR engages creating a response.
@@ -233,7 +230,7 @@ useEffect(() => {
       {/* CAR */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
-          className="absolute inset-0 bg-cover opacity-90 bg-[position:78%_center] md:bg-[position:82%_center]"
+          className="absolute inset-0 bg-cover opacity-90 bg-[position:78%_34%] md:bg-[position:82%_36%]"
           style={{
             backgroundImage: "url('/images/backgrounds/traffic-light-angled.jpg')",
           }}
@@ -254,10 +251,12 @@ useEffect(() => {
 
                 <p className="mt-3 max-w-md text-lg leading-7 text-white/85 md:text-xl">
                   sculpts{" "}
-                  <span className="text-blue-400 font-medium">emotion</span> into an{" "}
-                  <span className="text-orange-400 font-medium">
+                  <span className="font-medium text-blue-400/80">emotion</span>{" "}
+                  into an{" "}
+                  <span className="font-medium text-orange-400/80">
                     intentional response
-                  </span>.
+                  </span>
+                  .
                 </p>
 
                 <p className="mt-4 max-w-md text-base leading-7 text-white/75 md:text-lg">
@@ -269,7 +268,7 @@ useEffect(() => {
                   <img
                     src="/images/models/car-aid.png"
                     alt="CAR Aid Model"
-                    className="w-full max-w-sm rounded-xl border border-white/10 bg-black/30 object-contain"
+                    className="w-full max-w-sm rounded-xl border border-white/10 bg-black/30 object-contain opacity-[0.74]"
                   />
                 </div>
               </div>
@@ -304,7 +303,8 @@ useEffect(() => {
         <div
           className="absolute inset-0 bg-cover bg-center opacity-80"
           style={{
-            backgroundImage: "url('/images/backgrounds/section-bg-pressure.jpg')",
+            backgroundImage:
+              "url('/images/backgrounds/section-bg-pressure.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-black/62" />
@@ -337,7 +337,8 @@ useEffect(() => {
             <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
               <div className="text-lg font-medium">Reaction is automatic</div>
               <p className="mt-3 leading-7 text-white/80">
-                Without structure, reaction tends to repeat and reinforce itself.
+                Without structure, reaction tends to repeat and reinforce
+                itself.
               </p>
             </div>
 
@@ -413,8 +414,7 @@ useEffect(() => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
-    
-          >
+              >
                 <img
                   src="/images/icons/icon-x.png"
                   alt="X"
@@ -431,18 +431,21 @@ useEffect(() => {
         className="pointer-events-none fixed bottom-6 left-1/2 z-40 -translate-x-1/2 transition-opacity duration-300"
         style={{ opacity: scrollCueOpacity }}
       >
-<img
-  src="/images/icons/3arrow-scroller.png"
-  alt=""
-  className={`w-12 md:w-16 object-contain transition-transform duration-300 ${
-    scrollDirection === "up" ? "rotate-180" : "rotate-0"
-  }`}
-/>
-      </div>      
-<footer className="border-t border-white/10 px-5 py-8 md:px-8">
+        <img
+          src="/images/icons/3arrow-scroller.png"
+          alt=""
+          className={`w-12 object-contain transition-transform duration-300 md:w-16 ${
+            scrollDirection === "up" ? "rotate-180" : "rotate-0"
+          }`}
+        />
+      </div>
+
+      <footer className="border-t border-white/10 px-5 py-8 md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
-          <div>© 2026 Drive CAR Protocol. /// Feel the emotion. Choose the response. /// All rights reserved.</div>
-          
+          <div>
+            © 2026 Drive CAR Protocol. /// Feel the emotion. Choose the
+            response. /// All rights reserved.
+          </div>
         </div>
       </footer>
     </div>
