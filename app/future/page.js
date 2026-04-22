@@ -295,7 +295,7 @@ export default function FuturePage() {
                       <img
                         src="/images/icons/3arrow-scroller.png"
                         alt=""
-                        className="h-6 w-auto object-contain"
+                        className="h-6 w-auto object-contain invert brightness-0"
                       />
                     </a>
                   </div>
