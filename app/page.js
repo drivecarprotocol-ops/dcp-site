@@ -372,8 +372,16 @@ export default function DCPWebsiteV2() {
           <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
             <div>
               <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-                Full White Paper<div className="mt-8 flex flex-col gap-4">
-  <div className="flex flex-wrap gap-4">
+                Full White Paper
+              </div>
+
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+                Go deeper if you want the full framework.
+              </h2>
+
+<div className="mt-8 flex flex-col gap-4">
+  {/* ROW 1 — PRIMARY */}
+  <div>
     <a
       href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
       target="_blank"
@@ -383,38 +391,31 @@ export default function DCPWebsiteV2() {
       Read Full White Paper
       <ExternalLink className="h-4 w-4" />
     </a>
+  </div>
 
+  {/* ROW 2 — SECONDARY */}
+  <div className="flex flex-wrap items-center gap-4">
     <a
       href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
       download
-      className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
+      className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
     >
       Download PDF
+    </a>
+
+    <Link
+      href="/future"
+      className="inline-flex items-center gap-3 rounded-2xl border border-blue-400/40 text-blue-300 px-6 py-3 transition hover:bg-blue-400/10"
+    >
+      Future Direction
       <img
         src="/images/icons/3arrow-scroller.png"
         alt=""
         className="h-4 w-auto object-contain"
       />
-    </a>
-  </div>
-
-  <div>
-    <Link
-      href="/future"
-      className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
-    >
-      Future Direction
-      <ChevronRight className="h-4 w-4" />
     </Link>
   </div>
 </div>
-              </div>
-
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-                Go deeper if you want the full framework.
-              </h2>
-
-
             </div>
 
             <div className="space-y-4 rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
