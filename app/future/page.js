@@ -83,7 +83,7 @@ export default function FuturePage() {
           style={{
             backgroundImage: "url('/images/backgrounds/DCP-coming-soon.jpg')",
             backgroundSize: "50% auto",
-            backgroundPosition: "center 46%",
+            backgroundPosition: "center 49%",
           }}
         />
         <div className="absolute inset-x-0 top-0 h-1/2 bg-black/54" />
