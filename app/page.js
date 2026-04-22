@@ -398,7 +398,7 @@ export default function DCPWebsiteV2() {
                   </div>
 
                   {/* ROW 2 — SECONDARY */}
-                  <div className="flex flex-wrap items-center gap-4">
+                  <div className="flex w-full items-center justify-between">
                     <a
                       href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
                       download
