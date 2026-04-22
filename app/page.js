@@ -155,8 +155,8 @@ export default function DCPWebsiteV2() {
               </div>
 
               <p className="mt-3 text-sm leading-6 text-white/70">
-                DCP operates within the existing sequence. Called-in when there is an awareness of emotion
-                into what happens next.
+                DCP operates within the existing sequence. 
+Called-in when there is an awareness of emotion.
               </p>
 
               <div className="mt-6">
