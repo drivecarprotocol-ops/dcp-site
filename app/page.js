@@ -361,72 +361,96 @@ export default function DCPWebsiteV2() {
         </div>
       </section>
 
-      {/* FULL PDF + CONTACT */}
-      <section className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
-        <div
-          className="absolute inset-0 bg-cover opacity-[0.85] bg-[position:calc(50%-316px)_center]"
-          style={{
-            backgroundImage: "url('/images/backgrounds/futures.jpg')",
-          }}
-        />
-        <div className="absolute inset-0 bg-black/70" />
+     {/* FULL PDF + CONTACT */}
+<section className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
+  <div
+    className="absolute inset-0 bg-cover opacity-[0.85] bg-[position:calc(50%-316px)_center]"
+    style={{
+      backgroundImage: "url('/images/backgrounds/futures.jpg')",
+    }}
+  />
+  <div className="absolute inset-0 bg-black/70" />
 
-        <div className="relative z-10">
-          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8 md:p-10">
-            <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
-              <div>
-                <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-                  Full White Paper
-                </div>
+  <div className="relative z-10">
+    <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8 md:p-10">
+      <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+        <div>
+          <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+            Full White Paper
+          </div>
 
-                <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-                  Go deeper if you want the full framework.
-                </h2>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+            Go deeper if you want the full framework.
+          </h2>
 
-                <div className="mt-8 flex flex-col gap-4">
-                  {/* ROW 1 — PRIMARY */}
-                  <div>
-                    <a
-                      href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 rounded-2xl bg-orange-500 px-6 py-3 text-white transition hover:bg-orange-500/90"
-                    >
-                      Read Full White Paper
-                      <ExternalLink className="h-4 w-4" />
-                    </a>
-                  </div>
+          <div className="mt-8">
+            <a
+              href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-2xl bg-orange-500 px-6 py-3 text-white transition hover:bg-orange-500/90"
+            >
+              Read Full White Paper
+              <ExternalLink className="h-4 w-4" />
+            </a>
+          </div>
+        </div>
 
-                  {/* ROW 2 — SECONDARY */}
-                  <div className="flex w-full items-center justify-between">
-                    <a
-                      href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-                      download
-                      className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
-                    >
-                      Download PDF
-                      <img
-                        src="/images/icons/3arrow-scroller.png"
-                        alt=""
-                        className="h-4 w-auto object-contain brightness-0 invert"
-                      />
-                    </a>
+        <div className="space-y-4 self-start rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
+          <a
+            href="mailto:drivecarprotocol@gmail.com"
+            className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
+          >
+            <Mail className="h-5 w-5 text-orange-300" />
+            <div className="text-white">drivecarprotocol@gmail.com</div>
+          </a>
 
-                    <Link
-                      href="/future"
-                      className="inline-flex items-center gap-3 rounded-2xl border border-blue-400/40 px-6 py-3 text-blue-300 transition hover:bg-blue-400/10"
-                    >
-                      Future Direction
-                      <img
-                        src="/images/icons/3arrow-scroller.png"
-                        alt=""
-                        className="h-4 w-auto object-contain -rotate-90 brightness-0 saturate-100 [filter:invert(59%)_sepia(89%)_saturate(1991%)_hue-rotate(196deg)_brightness(103%)_contrast(101%)]"
-                      />
-                    </Link>
-                  </div>
-                </div>
-              </div>
+          <a
+            href="https://x.com/D_C_Protocol"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
+          >
+            <img
+              src="/images/icons/icon-x.png"
+              alt="X"
+              className="h-5 w-5 object-contain"
+            />
+            <div className="text-white">@D_C_Protocol</div>
+          </a>
+        </div>
+      </div>
 
+      {/* FULL-WIDTH BUTTON ROW */}
+      <div className="mt-8 flex w-full items-center justify-between">
+        <a
+          href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
+          download
+          className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
+        >
+          Download PDF
+          <img
+            src="/images/icons/3arrow-scroller.png"
+            alt=""
+            className="h-4 w-auto object-contain brightness-0 invert"
+          />
+        </a>
+
+        <Link
+          href="/future"
+          className="inline-flex items-center gap-3 rounded-2xl border border-blue-400/40 px-6 py-3 text-blue-300 transition hover:bg-blue-400/10"
+        >
+          Future Direction
+          <img
+            src="/images/icons/3arrow-scroller.png"
+            alt=""
+            className="h-4 w-auto object-contain -rotate-90 brightness-0 saturate-100 [filter:invert(59%)_sepia(89%)_saturate(1991%)_hue-rotate(196deg)_brightness(103%)_contrast(101%)]"
+          />
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
               <div className="space-y-4 self-start rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
                 <a
                   href="mailto:drivecarprotocol@gmail.com"
