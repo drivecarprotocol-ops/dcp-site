@@ -301,7 +301,7 @@ export default function FuturePage() {
                   </div>
                 </div>
 
-                <div className="space-y-4">
+                <div className="flex flex-col justify-between h-full">
                   <div className="rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
                     <div className="space-y-4">
                       <a
