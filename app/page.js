@@ -35,43 +35,54 @@ const carCards = [
 ];
 
 export default function DCPWebsiteV2() {
-  const [scrollCueOpacity, setScrollCueOpacity] = useState(0);
+const [scrollCueOpacity, setScrollCueOpacity] = useState(0);
+const [scrollDirection, setScrollDirection] = useState("down");
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const docHeight =
-        document.documentElement.scrollHeight - window.innerHeight;
+useEffect(() => {
+  let lastScrollY = window.scrollY;
 
-      if (docHeight <= 0) {
-        setScrollCueOpacity(0);
-        return;
-      }
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    const docHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
 
-      const progress = scrollTop / docHeight;
+    if (scrollTop > lastScrollY) {
+      setScrollDirection("down");
+    } else if (scrollTop < lastScrollY) {
+      setScrollDirection("up");
+    }
 
-      if (progress < 0.18) {
-        setScrollCueOpacity(0);
-      } else if (progress < 0.45) {
-        const fadeIn = (progress - 0.18) / (0.45 - 0.18);
-        setScrollCueOpacity(Math.min(fadeIn * 0.35, 0.35));
-      } else if (progress < 0.9) {
-        setScrollCueOpacity(0.35);
-      } else {
-        const fadeOut = 1 - (progress - 0.9) / 0.1;
-        setScrollCueOpacity(Math.max(fadeOut * 0.35, 0));
-      }
-    };
+    lastScrollY = scrollTop;
 
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    window.addEventListener("resize", handleScroll);
+    if (docHeight <= 0) {
+      setScrollCueOpacity(0);
+      return;
+    }
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleScroll);
-    };
-  }, []);
+    const progress = scrollTop / docHeight;
+
+    if (progress < 0.18) {
+      setScrollCueOpacity(0);
+    } else if (progress < 0.45) {
+      const fadeIn = (progress - 0.18) / (0.45 - 0.18);
+      setScrollCueOpacity(Math.min(fadeIn * 0.35, 0.35));
+    } else if (progress < 0.9) {
+      setScrollCueOpacity(0.35);
+    } else {
+      const fadeOut = 1 - (progress - 0.9) / 0.1;
+      setScrollCueOpacity(Math.max(fadeOut * 0.35, 0));
+    }
+  };
+
+  handleScroll();
+  window.addEventListener("scroll", handleScroll, { passive: true });
+  window.addEventListener("resize", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+    window.removeEventListener("resize", handleScroll);
+  };
+}, []);
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-orange-500/30 selection:text-white">
