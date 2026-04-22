@@ -97,53 +97,105 @@ export default function FuturePage() {
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-blue-500/25 selection:text-white">
- 
-{/* HERO */}
-<section className="relative border-b border-white/10 bg-black">
-  <div className="flex justify-center">
-    <img
-      src="/images/backgrounds/DCP-coming-soon.jpg"
-      alt="DCP Future"
-      className="w-full max-w-5xl object-contain"
-    />
-  </div>
+      {/* HERO IMAGE */}
+      <section className="border-b border-white/10 bg-black pt-6 md:pt-8">
+        <div className="mx-auto max-w-7xl px-5 md:px-8">
+          <div className="mb-6">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-white/65 transition hover:text-white"
+            >
+              <ChevronLeft className="h-4 w-4" />
+              Back
+            </Link>
+          </div>
 
-  <div className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
-    <Link
-      href="/"
-      className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-white/65 transition hover:text-white"
-    >
-      <ChevronLeft className="h-4 w-4" />
-      Back
-    </Link>
+          <div className="flex justify-center">
+            <img
+              src="/images/backgrounds/DCP-coming-soon.jpg"
+              alt="DCP Future"
+              className="w-full max-w-6xl object-contain"
+            />
+          </div>
+        </div>
+      </section>
 
-    <div className="mt-10 max-w-5xl">
-      <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-        Future Direction
-      </div>
+      {/* HERO COPY */}
+      <section className="border-b border-white/10 bg-black">
+        <div className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-16">
+          <div className="max-w-5xl">
+            <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+              Future Direction
+            </div>
 
-      <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl md:text-7xl">
-        DCP is independent from{" "}
-        <span className="text-blue-400">technology</span>.
-      </h1>
-    </div>
-  </div>
-</section>
+            <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl md:text-7xl">
+              DCP is independent from{" "}
+              <span className="text-blue-400">technology</span>.
+            </h1>
 
-{/* OTTER IMAGE */}
-<section className="bg-black py-12 md:py-16">
-  <div className="flex justify-center">
-    <img
-      src="/images/backgrounds/otter.jpg"
-      alt="Otter crossing"
-      className="w-full max-w-5xl object-contain"
-    />
-  </div>
-</section>
+            <p className="mt-5 max-w-4xl text-base leading-7 text-white/84 sm:text-lg md:mt-6 md:text-2xl md:leading-8">
+              Future interfaces may help make patterns more visible,
+              interactive, and easier to navigate. They do not replace
+              awareness, accountability, or responsibility.
+            </p>
+
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <a
+                href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-white/5 px-6 py-3 text-white transition hover:bg-white/10"
+              >
+                Read Full White Paper
+                <ExternalLink className="h-4 w-4" />
+              </a>
+
+              <Link
+                href="/"
+                className="inline-flex items-center rounded-2xl border border-blue-400/40 px-6 py-3 text-blue-300 transition hover:bg-blue-400/10"
+              >
+                Return to QuickStart
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* OTTER IMAGE */}
+      <section className="border-b border-white/10 bg-black py-10 md:py-14">
+        <div className="mx-auto max-w-7xl px-5 md:px-8">
+          <div className="flex justify-center">
+            <img
+              src="/images/backgrounds/otter.jpg"
+              alt="Otter crossing"
+              className="w-full max-w-6xl object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* NATURAL SIGNAL COPY */}
+      <section className="border-b border-white/10 bg-black">
+        <div className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-16">
+          <div className="max-w-4xl">
+            <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+              Natural Signal
+            </div>
+
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+              Stay aware of what is crossing in front of you.
+            </h2>
+
+            <p className="mt-5 text-lg leading-8 text-white/80">
+              Future development should remain grounded in pattern recognition,
+              timing, attention, and response within real conditions.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* CONCEPTUAL DIRECTION */}
-      <section className="relative overflow-hidden border-y border-white/10">
-        <div className="absolute inset-0 bg-black" />
+      <section className="relative overflow-hidden border-b border-white/10 bg-black">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(59,130,246,0.12),transparent_24%),radial-gradient(circle_at_82%_78%,rgba(255,255,255,0.04),transparent_20%)]" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
@@ -178,7 +230,7 @@ export default function FuturePage() {
       </section>
 
       {/* CORE PRINCIPLE */}
-      <section className="relative overflow-hidden border-y border-white/10 bg-white/[0.02]">
+      <section className="relative overflow-hidden border-b border-white/10 bg-white/[0.02]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.16),transparent_30%)]" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
@@ -216,34 +268,36 @@ export default function FuturePage() {
       </section>
 
       {/* FRAMING */}
-      <section className="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
-        <div className="grid gap-6 md:grid-cols-2">
-          <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6">
-            <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-              Systems Lens
+      <section className="bg-black">
+        <div className="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6">
+              <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+                Systems Lens
+              </div>
+              <p className="mt-4 text-lg leading-8 text-white/82">
+                Awareness of inputs → intentional control of outputs.
+              </p>
             </div>
-            <p className="mt-4 text-lg leading-8 text-white/82">
-              Awareness of inputs → intentional control of outputs.
-            </p>
+
+            <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6">
+              <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+                Conceptual Framing
+              </div>
+              <p className="mt-4 text-lg leading-8 text-white/82">
+                A structure for better decisions within real conditions.
+              </p>
+            </div>
           </div>
 
-          <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6">
-            <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-              Conceptual Framing
-            </div>
-            <p className="mt-4 text-lg leading-8 text-white/82">
-              A structure for better decisions within real conditions.
+          <div className="mt-10 rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8">
+            <p className="max-w-5xl text-lg leading-8 text-white/82">
+              Future development may explore interactive mapping, structured
+              journaling, optional AI support, and continuity tools. The
+              foundation remains unchanged: DCP is a human decision architecture
+              applied in real time, and it improves with awareness alone.
             </p>
           </div>
-        </div>
-
-        <div className="mt-10 rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8">
-          <p className="max-w-5xl text-lg leading-8 text-white/82">
-            Future development may explore interactive mapping, structured
-            journaling, optional AI support, and continuity tools. The
-            foundation remains unchanged: DCP is a human decision architecture
-            applied in real time, and it improves with awareness alone.
-          </p>
         </div>
       </section>
 
