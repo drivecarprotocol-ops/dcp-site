@@ -23,6 +23,18 @@ const futureCards = [
   },
 ];
 
+// VISUAL ALIGNMENT CONTROLS
+const TOP_IMAGE_SIZE = "50% auto";
+const BOTTOM_IMAGE_SIZE = "50% auto";
+
+// Nudge this left/right only.
+// Negative = left, positive = right.
+const TOP_IMAGE_X_OFFSET = -18;
+
+// Keep vertical anchors as you already had them.
+const TOP_IMAGE_Y = "49%";
+const BOTTOM_IMAGE_Y = "54%";
+
 export default function FuturePage() {
   const [scrollCueOpacity, setScrollCueOpacity] = useState(0);
   const [scrollDirection, setScrollDirection] = useState("down");
@@ -82,8 +94,8 @@ export default function FuturePage() {
           className="absolute inset-x-0 top-0 h-1/2 bg-no-repeat opacity-95"
           style={{
             backgroundImage: "url('/images/backgrounds/DCP-coming-soon.jpg')",
-            backgroundSize: "50% auto",
-            backgroundPosition: "center 49%",
+            backgroundSize: TOP_IMAGE_SIZE,
+            backgroundPosition: `calc(50% + ${TOP_IMAGE_X_OFFSET}px) ${TOP_IMAGE_Y}`,
           }}
         />
         <div className="absolute inset-x-0 top-0 h-1/2 bg-black/54" />
@@ -93,8 +105,8 @@ export default function FuturePage() {
           className="absolute inset-x-0 bottom-0 h-1/2 bg-no-repeat opacity-95"
           style={{
             backgroundImage: "url('/images/backgrounds/otter.jpg')",
-            backgroundSize: "50% auto",
-            backgroundPosition: "center 54%",
+            backgroundSize: BOTTOM_IMAGE_SIZE,
+            backgroundPosition: `center ${BOTTOM_IMAGE_Y}`,
           }}
         />
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-black/54" />
