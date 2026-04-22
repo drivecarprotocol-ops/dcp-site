@@ -369,7 +369,7 @@ export default function DCPWebsiteV2() {
 {/* FULL PDF + CONTACT */}
 <section className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
   <div
-    className="absolute inset-0 bg-cover opacity-[0.85] bg-[position:calc(50%-350px)_center]"
+    className="absolute inset-0 bg-cover opacity-[0.85] bg-[position:calc(50%-325px)_center]"
     style={{
       backgroundImage: "url('/images/backgrounds/futures.jpg')",
     }}
