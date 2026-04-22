@@ -189,7 +189,8 @@ export default function DCPWebsiteV2() {
 
             <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
               The critical moment between emotion and action.
-            </h2>
+   n event occurs
+         </h2>
 
             <p className="mt-5 text-lg leading-8 text-white/78">
               Without structure, behavior stays automatic. With structure, it
@@ -208,7 +209,7 @@ export default function DCPWebsiteV2() {
               </div>
 
               <p className="mt-4 leading-7 text-white/75">
-                An event occurs, emotion moves directly toward reaction.
+                When an event occurs, emotion moves directly towards reaction.
               </p>
             </div>
 
