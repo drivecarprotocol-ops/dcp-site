@@ -285,67 +285,69 @@ export default function FuturePage() {
                       <ExternalLink className="h-4 w-4" />
                     </a>
 
-                    <div className="flex items-center gap-6">
-                      <a
-                        href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-                        download
-                        className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
-                      >
-                        Download PDF
-                        <img
-                          src="/images/icons/3arrow-scroller.png"
-                          alt=""
-                          className="h-4 w-auto object-contain"
-                        />
-                      </a>
-
-                      <div className="flex items-center gap-3">
-                        <img
-                          src="/images/icons/3arrow-scroller.png"
-                          alt=""
-                          className="h-6 w-auto object-contain rotate-180"
-                        />
-                        <Link
-                          href="/"
-                          className="inline-flex items-center rounded-2xl border border-orange-400/40 px-6 py-3 text-orange-400 transition hover:bg-orange-400/10"
-                        >
-                          Return to QuickStart
-                        </Link>
-                      </div>
-                    </div>
+                    <a
+                      href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
+                      download
+                      className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
+                    >
+                      Download PDF
+                      <img
+                        src="/images/icons/3arrow-scroller.png"
+                        alt=""
+                        className="h-4 w-auto object-contain"
+                      />
+                    </a>
                   </div>
                 </div>
 
-                <div className="space-y-4 rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
-                  <a
-                    href="mailto:drivecarprotocol@gmail.com"
-                    className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
-                  >
-                    <Mail className="h-5 w-5 text-orange-300" />
-                    <div>
-                      <div className="text-sm text-white/55">Email</div>
-                      <div className="text-white">
-                        drivecarprotocol@gmail.com
-                      </div>
-                    </div>
-                  </a>
+                <div className="space-y-4">
+                  <div className="rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
+                    <div className="space-y-4">
+                      <a
+                        href="mailto:drivecarprotocol@gmail.com"
+                        className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
+                      >
+                        <Mail className="h-5 w-5 text-orange-300" />
+                        <div>
+                          <div className="text-sm text-white/55">Email</div>
+                          <div className="text-white">
+                            drivecarprotocol@gmail.com
+                          </div>
+                        </div>
+                      </a>
 
-                  <a
-                    href="https://x.com/D_C_Protocol"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
-                  >
-                    <img
-                      src="/images/icons/icon-x.png"
-                      alt="X"
-                      className="h-5 w-5 object-contain"
-                    />
-                    <div>
-                      <div className="text-sm text-white/55">X</div>
-                      <div className="text-white">@D_C_Protocol</div>
+                      <a
+                        href="https://x.com/D_C_Protocol"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
+                      >
+                        <img
+                          src="/images/icons/icon-x.png"
+                          alt="X"
+                          className="h-5 w-5 object-contain"
+                        />
+                        <div>
+                          <div className="text-sm text-white/55">X</div>
+                          <div className="text-white">@D_C_Protocol</div>
+                        </div>
+                      </a>
                     </div>
-                  </a>
+                  </div>
+
+                  <div className="flex justify-end">
+                    <Link
+                      href="/"
+                      className="inline-flex items-center gap-3 rounded-2xl border border-orange-400/40 px-6 py-3 text-orange-400 transition hover:bg-orange-400/10"
+                    >
+                      Return to QuickStart
+                      <img
+                        src="/images/icons/3arrow-scroller.png"
+                        alt=""
+                        className="h-6 w-auto object-contain"
+                      />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
