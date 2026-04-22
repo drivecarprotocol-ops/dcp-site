@@ -52,7 +52,7 @@ export default function DCPWebsiteV2() {
           className="pointer-events-none absolute right-4 top-4 z-20 w-24 opacity-25 md:right-8 md:top-8 md:w-44"
         />
 
-        <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-28">
+        <div className="relative mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
           <motion.div
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
