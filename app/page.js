@@ -395,25 +395,35 @@ export default function DCPWebsiteV2() {
 
   {/* ROW 2 — SECONDARY */}
   <div className="flex flex-wrap items-center gap-4">
+    {/* DOWNLOAD (WITH ARROWS) */}
     <a
       href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
       download
-      className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
+      className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
     >
       Download PDF
-    </a>
-
-    <Link
-      href="/future"
-      className="inline-flex items-center gap-3 rounded-2xl border border-blue-400/40 text-blue-300 px-6 py-3 transition hover:bg-blue-400/10"
-    >
-      Future Direction
       <img
         src="/images/icons/3arrow-scroller.png"
         alt=""
         className="h-4 w-auto object-contain"
       />
-    </Link>
+    </a>
+
+    {/* FUTURE + RIGHT ARROWS */}
+    <div className="flex items-center gap-3">
+      <Link
+        href="/future"
+        className="inline-flex items-center rounded-2xl border border-blue-400/40 text-blue-300 px-6 py-3 transition hover:bg-blue-400/10"
+      >
+        Future Direction
+      </Link>
+
+      <img
+        src="/images/icons/3arrow-scroller.png"
+        alt=""
+        className="h-6 w-auto object-contain -rotate-90"
+      />
+    </div>
   </div>
 </div>
             </div>
