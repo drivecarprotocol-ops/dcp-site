@@ -338,7 +338,7 @@ export default function FuturePage() {
                       <img
                         src="/images/icons/3arrow-scroller.png"
                         alt=""
-                        className="h-6 w-auto -rotate- -180 object-contain"
+                        className="h-6 w-auto -rotate-180 object-contain"
                       />
                       Return to QuickStart
                     </Link>
