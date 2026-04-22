@@ -97,96 +97,100 @@ export default function FuturePage() {
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-blue-500/25 selection:text-white">
-      {/* HERO COPY */}
-      <section className="border-b border-white/10 bg-black">
-        <div className="mx-auto max-w-7xl px-5 py-10 md:px-8 md:py-14">
-          <div className="mb-6">
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-white/65 transition hover:text-white"
-            >
-              <ChevronLeft className="h-4 w-4" />
-              Back
-            </Link>
-          </div>
+      {/* COMBINED HERO + NATURAL SIGNAL VISUAL STACK */}
+      <section className="relative overflow-hidden border-b border-white/10 bg-black">
+        {/* TOP IMAGE */}
+        <div
+          className="absolute left-0 top-0 h-1/2 w-full bg-cover bg-center opacity-[0.85]"
+          style={{
+            backgroundImage: "url('/images/backgrounds/DCP-coming-soon.jpg')",
+          }}
+        />
+        <div className="absolute left-0 top-0 h-1/2 w-full bg-black/58" />
 
-          <div className="max-w-5xl">
-            <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-              Future Direction
-            </div>
+        {/* BOTTOM IMAGE */}
+        <div
+          className="absolute bottom-0 left-0 h-1/2 w-full bg-cover bg-center opacity-[0.85]"
+          style={{
+            backgroundImage: "url('/images/backgrounds/otter.jpg')",
+          }}
+        />
+        <div className="absolute bottom-0 left-0 h-1/2 w-full bg-black/60" />
 
-            <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl md:text-7xl">
-              DCP is independent from{" "}
-              <span className="text-blue-400">technology</span>.
-            </h1>
+        {/* GLOBAL VIGNETTE */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_18%,rgba(59,130,246,0.14),transparent_26%),radial-gradient(circle_at_78%_20%,rgba(255,255,255,0.06),transparent_18%)]" />
 
-            <p className="mt-5 max-w-4xl text-base leading-7 text-white/84 sm:text-lg md:mt-6 md:text-2xl md:leading-8">
-              Future interfaces may help make patterns more visible,
-              interactive, and easier to navigate. They do not replace
-              awareness, accountability, or responsibility.
-            </p>
-
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a
-                href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-white/5 px-6 py-3 text-white transition hover:bg-white/10"
-              >
-                Read Full White Paper
-                <ExternalLink className="h-4 w-4" />
-              </a>
-
+        <div className="relative z-10">
+          {/* TOP COPY */}
+          <div className="mx-auto max-w-7xl px-5 pt-10 pb-28 md:px-8 md:pt-14 md:pb-40">
+            <div className="mb-8">
               <Link
                 href="/"
-                className="inline-flex items-center rounded-2xl border border-blue-400/40 px-6 py-3 text-blue-300 transition hover:bg-blue-400/10"
+                className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-white/70 transition hover:text-white"
               >
-                Return to QuickStart
+                <ChevronLeft className="h-4 w-4" />
+                Back
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* HERO IMAGE */}
-      <section className="border-b border-white/10 bg-black">
-        <div className="w-full overflow-hidden">
-          <img
-            src="/images/backgrounds/DCP-coming-soon.jpg"
-            alt="DCP Future"
-            className="block w-full h-auto"
-          />
-        </div>
-      </section>
+            <div className="max-w-5xl">
+              <div className="text-sm uppercase tracking-[0.25em] text-white/50">
+                Future Direction
+              </div>
 
-      {/* NATURAL SIGNAL COPY */}
-      <section className="border-b border-white/10 bg-black">
-        <div className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-16">
-          <div className="max-w-4xl">
-            <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-              Natural Signal
+              <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl md:text-7xl">
+                DCP is independent from{" "}
+                <span className="text-blue-400">technology</span>.
+              </h1>
+
+              <p className="mt-5 max-w-4xl text-base leading-7 text-white/84 sm:text-lg md:mt-6 md:text-2xl md:leading-8">
+                Future interfaces may help make patterns more visible,
+                interactive, and easier to navigate. They do not replace
+                awareness, accountability, or responsibility.
+              </p>
+
+              <div className="mt-8 flex flex-wrap items-center gap-4">
+                <a
+                  href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-white/5 px-6 py-3 text-white transition hover:bg-white/10"
+                >
+                  Read Full White Paper
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+
+                <Link
+                  href="/"
+                  className="inline-flex items-center rounded-2xl border border-blue-400/40 px-6 py-3 text-blue-300 transition hover:bg-blue-400/10"
+                >
+                  Return to QuickStart
+                </Link>
+              </div>
             </div>
-
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-              Stay aware of what is crossing in front of you.
-            </h2>
-
-            <p className="mt-5 text-lg leading-8 text-white/80">
-              Future development should remain grounded in pattern recognition,
-              timing, attention, and response within real conditions.
-            </p>
           </div>
-        </div>
-      </section>
 
-      {/* OTTER IMAGE */}
-      <section className="border-b border-white/10 bg-black">
-        <div className="w-full overflow-hidden">
-          <img
-            src="/images/backgrounds/otter.jpg"
-            alt="Otter crossing"
-            className="block w-full h-auto"
-          />
+          {/* SPACER TO LET TOP IMAGE BREATHE */}
+          <div className="h-48 md:h-72" />
+
+          {/* BOTTOM COPY */}
+          <div className="mx-auto max-w-7xl px-5 pt-16 pb-20 md:px-8 md:pt-24 md:pb-28">
+            <div className="max-w-4xl">
+              <div className="text-sm uppercase tracking-[0.25em] text-white/50">
+                Natural Signal
+              </div>
+
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+                Stay aware of what is crossing in front of you.
+              </h2>
+
+              <p className="mt-5 max-w-4xl text-lg leading-8 text-white/82">
+                Future development should remain grounded in pattern
+                recognition, timing, attention, and response within real
+                conditions.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -290,8 +294,9 @@ export default function FuturePage() {
             <p className="max-w-5xl text-lg leading-8 text-white/82">
               Future development may explore interactive mapping, structured
               journaling, optional AI support, and continuity tools. The
-              foundation remains unchanged: DCP is a human decision architecture
-              applied in real time, and it improves with awareness alone.
+              foundation remains unchanged: DCP is a human decision
+              architecture applied in real time, and it improves with awareness
+              alone.
             </p>
           </div>
         </div>
