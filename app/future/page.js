@@ -150,7 +150,7 @@ export default function FuturePage() {
                   </div>
 
                   <h2 className="mt-4 text-5xl font-semibold tracking-tight">
-                    Stay aware of what is crossing in front of you.
+                    Awareness of what crosses in front of you.
                   </h2>
 
                   <p className="mt-5 text-lg leading-8 text-white/82">
