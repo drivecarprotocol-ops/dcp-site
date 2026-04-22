@@ -102,7 +102,7 @@ export default function FuturePage() {
         <div
           className="absolute inset-0 bg-cover opacity-80 bg-[position:68%_center] md:bg-center"
           style={{
-            backgroundImage: "url('/images/backgrounds/section-future.jpg')",
+            backgroundImage: "url('/images/backgrounds/DCP-coming-soon.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-black/55" />
@@ -157,6 +157,36 @@ export default function FuturePage() {
                 Return to QuickStart
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+</section>
+
+      {/* OTTER IMAGE SECTION */}
+      <section className="relative overflow-hidden border-y border-white/10">
+        <div
+          className="absolute inset-0 bg-cover opacity-80 bg-center"
+          style={{
+            backgroundImage: "url('/images/backgrounds/otter.jpg')",
+          }}
+        />
+        <div className="absolute inset-0 bg-black/55" />
+
+        <div className="relative mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
+          <div className="max-w-3xl">
+            <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+              Natural Signal
+            </div>
+
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+              Stay aware of what is crossing in front of you.
+            </h2>
+
+            <p className="mt-5 text-lg leading-8 text-white/80">
+              Future development should remain grounded in pattern recognition,
+              timing, attention, and response within real conditions.
+            </p>
           </div>
         </div>
       </section>
