@@ -295,7 +295,7 @@ export default function FuturePage() {
                       <img
                         src="/images/icons/3arrow-scroller.png"
                         alt=""
-                        className="h-6 w-auto object-contain invert brightness-0"
+                        className="h-4 w-auto object-contain invert brightness-0"
                       />
                     </a>
                   </div>
@@ -338,7 +338,7 @@ export default function FuturePage() {
                       <img
                         src="/images/icons/3arrow-scroller.png"
                         alt=""
-                        className="h-6 w-auto rotate-90 object-contain"
+                        className="h-4 w-auto rotate-90 object-contain"
                       />
                       Return to QuickStart
                     </Link>
