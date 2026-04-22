@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
@@ -35,6 +35,44 @@ const carCards = [
 ];
 
 export default function DCPWebsiteV2() {
+  const [scrollCueOpacity, setScrollCueOpacity] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const docHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+
+      if (docHeight <= 0) {
+        setScrollCueOpacity(0);
+        return;
+      }
+
+      const progress = scrollTop / docHeight;
+
+      if (progress < 0.18) {
+        setScrollCueOpacity(0);
+      } else if (progress < 0.45) {
+        const fadeIn = (progress - 0.18) / (0.45 - 0.18);
+        setScrollCueOpacity(Math.min(fadeIn * 0.35, 0.35));
+      } else if (progress < 0.9) {
+        setScrollCueOpacity(0.35);
+      } else {
+        const fadeOut = 1 - (progress - 0.9) / 0.1;
+        setScrollCueOpacity(Math.max(fadeOut * 0.35, 0));
+      }
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-orange-500/30 selection:text-white">
       {/* HERO */}
@@ -352,7 +390,17 @@ export default function DCPWebsiteV2() {
         </div>
       </section>
 
-      <footer className="border-t border-white/10 px-5 py-8 md:px-8">
+      <div
+        className="pointer-events-none fixed bottom-6 left-1/2 z-40 -translate-x-1/2 transition-opacity duration-300"
+        style={{ opacity: scrollCueOpacity }}
+      >
+        <img
+          src="/images/icons/3arrow-scroller.png"
+          alt=""
+          className="w-12 md:w-16 object-contain"
+        />
+      </div>      
+<footer className="border-t border-white/10 px-5 py-8 md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
           <div>© 2026 Drive CAR Protocol. /// Feel the emotion. Choose the response. /// All rights reserved.</div>
           
