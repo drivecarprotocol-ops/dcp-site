@@ -319,7 +319,7 @@ if (progress < 0.03) {
             <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
               <div className="text-lg font-medium">Response is chosen</div>
               <p className="mt-3 leading-7 text-white/80">
-                Structure creates control under real conditions.
+                Reaction is processed into a choice you own.
               </p>
             </div>
           </div>
