@@ -235,7 +235,7 @@ export default function DCPWebsiteV2() {
           style={{
             backgroundImage: "url('/images/backgrounds/traffic-light-mobile.jpg')",
             backgroundSize: "95%",
-            backgroundPosition: "center 75%",
+            backgroundPosition: "center 90%",
           }}
         />
 
