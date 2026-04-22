@@ -26,7 +26,7 @@ const futureCards = [
 // VISUAL ALIGNMENT CONTROLS
 const TOP_IMAGE_SIZE = "50% auto";
 const BOTTOM_IMAGE_SIZE = "50% auto";
-const TOP_IMAGE_X_OFFSET = -10;
+const TOP_IMAGE_X_OFFSET = -9;
 const TOP_IMAGE_Y = "49%";
 const BOTTOM_IMAGE_Y = "54%";
 
