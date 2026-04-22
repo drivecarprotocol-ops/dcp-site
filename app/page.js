@@ -61,18 +61,17 @@ useEffect(() => {
 
     const progress = scrollTop / docHeight;
 
-    if (progress < 0.18) {
-      setScrollCueOpacity(0);
-    } else if (progress < 0.45) {
-      const fadeIn = (progress - 0.18) / (0.45 - 0.18);
-      setScrollCueOpacity(Math.min(fadeIn * 0.35, 0.35));
-    } else if (progress < 0.9) {
-      setScrollCueOpacity(0.35);
-    } else {
-      const fadeOut = 1 - (progress - 0.9) / 0.1;
-      setScrollCueOpacity(Math.max(fadeOut * 0.35, 0));
-    }
-  };
+    if (progress < 0.03) {
+  setScrollCueOpacity(0);
+} else if (progress < 0.16) {
+  const fadeIn = (progress - 0.03) / (0.16 - 0.03);
+  setScrollCueOpacity(Math.min(fadeIn * 0.35, 0.35));
+} else if (progress < 0.9) {
+  setScrollCueOpacity(0.35);
+} else {
+  const fadeOut = 1 - (progress - 0.9) / 0.1;
+  setScrollCueOpacity(Math.max(fadeOut * 0.35, 0));
+};
 
   handleScroll();
   window.addEventListener("scroll", handleScroll, { passive: true });
