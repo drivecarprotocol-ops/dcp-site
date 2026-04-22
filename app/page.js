@@ -234,7 +234,7 @@ export default function DCPWebsiteV2() {
           className="absolute inset-0 bg-no-repeat opacity-90 md:hidden"
           style={{
             backgroundImage: "url('/images/backgrounds/traffic-light-mobile.jpg')",
-            backgroundSize: "85%",
+            backgroundSize: "90%",
             backgroundPosition: "center 75%",
           }}
         />
