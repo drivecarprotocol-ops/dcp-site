@@ -140,9 +140,9 @@ export default function FuturePage() {
               </h1>
             </div>
 
-            <div className="h-[10vh]" />
+            <div className="h-[6vh]" />
 
-            <div className="mt-8 rounded-[1.75rem] border border-orange-400/20 bg-orange-500/[0.08] p-8">
+            <div className="mt-0 rounded-[1.75rem] border border-orange-400/20 bg-orange-500/[0.08] p-8">
               <div className="grid grid-cols-[1fr_0.9fr] gap-10">
                 <div>
                   <div className="text-sm uppercase tracking-[0.25em] text-orange-400">
@@ -150,7 +150,7 @@ export default function FuturePage() {
                   </div>
 
                   <h2 className="mt-4 text-5xl font-semibold tracking-tight">
-                    Awareness of what crosses your path.
+                    Stay aware of what is crossing in front of you.
                   </h2>
 
                   <p className="mt-5 text-lg leading-8 text-white/82">

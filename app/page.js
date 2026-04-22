@@ -226,7 +226,7 @@ export default function DCPWebsiteV2() {
       {/* CAR */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
-          className="absolute inset-0 bg-no-repeat opacity-90 md:hidden"
+          className="absolute inset-0 bg-no-repeat opacity-60 md:hidden"
           style={{
             backgroundImage: "url('/images/backgrounds/traffic-light-mobile.jpg')",
             backgroundSize: "105%",
@@ -235,7 +235,7 @@ export default function DCPWebsiteV2() {
         />
 
         <div
-          className="absolute inset-0 hidden bg-cover opacity-90 md:block"
+          className="absolute inset-0 hidden bg-cover opacity-60 md:block"
           style={{
             backgroundImage: "url('/images/backgrounds/traffic-light-angled.jpg')",
             backgroundPosition: "82% 36%",
