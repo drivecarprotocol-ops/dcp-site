@@ -379,11 +379,6 @@ export default function DCPWebsiteV2() {
                 Go deeper if you want the full framework.
               </h2>
 
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
-                The website is the QuickStart. The white paper holds the full
-                architecture, intent, and broader context.
-              </p>
-
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
                   href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
