@@ -405,11 +405,13 @@ useEffect(() => {
         className="pointer-events-none fixed bottom-6 left-1/2 z-40 -translate-x-1/2 transition-opacity duration-300"
         style={{ opacity: scrollCueOpacity }}
       >
-        <img
-          src="/images/icons/3arrow-scroller.png"
-          alt=""
-          className="w-12 md:w-16 object-contain"
-        />
+<img
+  src="/images/icons/3arrow-scroller.png"
+  alt=""
+  className={`w-12 md:w-16 object-contain transition-transform duration-300 ${
+    scrollDirection === "up" ? "rotate-180" : "rotate-0"
+  }`}
+/>
       </div>      
 <footer className="border-t border-white/10 px-5 py-8 md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
