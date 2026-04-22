@@ -354,8 +354,8 @@ export default function DCPWebsiteV2() {
 
       <footer className="border-t border-white/10 px-5 py-8 md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
-          <div>© 2026 Drive CAR Protocol. All rights reserved.</div>
-          <div>Feel the emotion. Choose the response.</div>
+          <div>© 2026 Drive CAR Protocol. /// Feel the emotion. Choose the response. /// All rights reserved.</div>
+          
         </div>
       </footer>
     </div>
