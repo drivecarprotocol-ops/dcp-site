@@ -101,18 +101,22 @@ export default function FuturePage() {
       <section className="relative overflow-hidden border-b border-white/10 bg-black">
         {/* TOP IMAGE */}
         <div
-          className="absolute inset-x-0 top-0 h-1/2 bg-no-repeat bg-center bg-contain opacity-[0.85]"
+          className="absolute inset-x-0 top-0 h-1/2 bg-no-repeat opacity-[0.85]"
           style={{
             backgroundImage: "url('/images/backgrounds/DCP-coming-soon.jpg')",
+            backgroundSize: "contain",
+            backgroundPosition: "calc(50% - 10px) center",
           }}
         />
-        <div className="absolute inset-x-0 top-0 h-1/2 bg-black/60" />
+        <div className="absolute inset-x-0 top-0 h-1/2 bg-black/58" />
 
         {/* BOTTOM IMAGE */}
         <div
-          className="absolute inset-x-0 bottom-0 h-1/2 bg-no-repeat bg-center bg-contain opacity-[0.85]"
+          className="absolute inset-x-0 bottom-0 h-1/2 bg-no-repeat opacity-[0.85]"
           style={{
             backgroundImage: "url('/images/backgrounds/otter.jpg')",
+            backgroundSize: "contain",
+            backgroundPosition: "center center",
           }}
         />
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-black/58" />
@@ -120,10 +124,17 @@ export default function FuturePage() {
         {/* GLOBAL ATMOSPHERE */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_16%,rgba(59,130,246,0.14),transparent_24%),radial-gradient(circle_at_78%_18%,rgba(255,255,255,0.05),transparent_18%)]" />
 
+        {/* DCP ID */}
+        <img
+          src="/images/icons/DCP-ID.png"
+          alt="DCP"
+          className="pointer-events-none absolute right-4 top-4 z-20 w-24 opacity-25 md:right-8 md:top-8 md:w-44"
+        />
+
         <div className="relative z-10">
           {/* TOP COPY */}
-          <div className="mx-auto max-w-7xl px-5 pt-10 pb-24 md:px-8 md:pt-14 md:pb-36">
-            <div className="mb-8">
+          <div className="mx-auto max-w-7xl px-5 pt-8 pb-20 md:px-8 md:pt-12 md:pb-28">
+            <div className="mb-6">
               <Link
                 href="/"
                 className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-white/70 transition hover:text-white"
@@ -171,10 +182,10 @@ export default function FuturePage() {
           </div>
 
           {/* CENTER SPACER */}
-          <div className="h-56 md:h-72 lg:h-80" />
+          <div className="h-40 md:h-56 lg:h-64" />
 
           {/* BOTTOM COPY */}
-          <div className="mx-auto max-w-7xl px-5 pt-16 pb-20 md:px-8 md:pt-24 md:pb-28">
+          <div className="mx-auto max-w-7xl px-5 pt-10 pb-16 md:px-8 md:pt-16 md:pb-22">
             <div className="max-w-4xl">
               <div className="text-sm uppercase tracking-[0.25em] text-white/50">
                 Natural Signal
