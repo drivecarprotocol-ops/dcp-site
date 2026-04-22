@@ -305,7 +305,7 @@ if (progress < 0.03) {
             <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
               <div className="text-lg font-medium">Emotion is inevitable</div>
               <p className="mt-3 leading-7 text-white/80">
-                Emotion is natural. The issue is what happens next.
+                When events occur the issue is what happens next.
               </p>
             </div>
 
@@ -388,7 +388,8 @@ if (progress < 0.03) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
-              >
+    
+          >
                 <img
                   src="/images/icons/icon-x.png"
                   alt="X"
