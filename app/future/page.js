@@ -197,7 +197,7 @@ export default function FuturePage() {
                 <p className="mt-5 max-w-4xl text-lg leading-8 text-white/82">
                   Future development should remain grounded in pattern
                   recognition, timing, attention, and response within real
-                  conditions.
+                  conditions. Always moving. Always flowing.
                 </p>
               </div>
             </div>
