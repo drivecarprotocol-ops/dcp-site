@@ -82,7 +82,7 @@ export default function FuturePage() {
           className="absolute inset-x-0 top-0 h-1/2 bg-no-repeat opacity-95"
           style={{
             backgroundImage: "url('/images/backgrounds/DCP-coming-soon.jpg')",
-            backgroundSize: "90% auto",
+            backgroundSize: "50% auto",
             backgroundPosition: "center 46%",
           }}
         />
@@ -93,7 +93,7 @@ export default function FuturePage() {
           className="absolute inset-x-0 bottom-0 h-1/2 bg-no-repeat opacity-95"
           style={{
             backgroundImage: "url('/images/backgrounds/otter.jpg')",
-            backgroundSize: "90% auto",
+            backgroundSize: "50% auto",
             backgroundPosition: "center 54%",
           }}
         />
