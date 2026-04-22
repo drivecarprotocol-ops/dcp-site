@@ -129,21 +129,31 @@ export default function FuturePage() {
               </Link>
             </div>
 
-            <div className="max-w-5xl">
-              <div className="text-sm uppercase tracking-[0.25em] text-white/50">
-                Future Direction
+            <div className="max-w-5xl rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-8 backdrop-blur">
+              <div className="grid grid-cols-[1fr_0.9fr] gap-10">
+                <div>
+                  <div className="text-sm uppercase tracking-[0.25em] text-white/50">
+                    Future Direction
+                  </div>
+
+                  <h1 className="mt-4 text-7xl font-semibold leading-[0.95] tracking-tight">
+                    <span className="text-orange-400">DCP</span> is independent
+                    from <span className="text-blue-400">technology</span>.
+                  </h1>
+                </div>
+
+                <div>
+                  <div className="text-sm uppercase tracking-[0.25em] text-white/55">
+                    What’s to Come
+                  </div>
+
+                  <p className="mt-5 text-lg leading-8 text-white/82">
+                    Future interfaces may help make patterns more visible,
+                    interactive, and easier to navigate. They do not replace
+                    awareness, accountability, or responsibility.
+                  </p>
+                </div>
               </div>
-
-              <h1 className="mt-4 text-7xl font-semibold leading-[0.95] tracking-tight">
-                <span className="text-orange-400">DCP</span> is independent from{" "}
-                <span className="text-blue-400">technology</span>.
-              </h1>
-
-              <p className="mt-6 max-w-4xl text-2xl leading-8 text-white/84">
-                Future interfaces may help make patterns more visible,
-                interactive, and easier to navigate. They do not replace
-                awareness, accountability, or responsibility.
-              </p>
             </div>
 
             <div className="h-[10vh]" />
