@@ -129,7 +129,7 @@ export default function FuturePage() {
             </div>
 
             <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl md:text-7xl">
-              DCP works without{" "}
+              DCP is independant from{" "}
               <span className="text-blue-400">technology</span>.
             </h1>
 
