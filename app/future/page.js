@@ -170,7 +170,7 @@ export default function FuturePage() {
             <div className="h-[10vh]" />
 
 <div className="max-w-5xl rounded-[2rem] border border-orange-400/20 bg-orange-500/[0.08] p-8 backdrop-blur-[2px]">
-              <div className="text-sm uppercase tracking-[0.25em] text-white/55">
+<div className="text-sm uppercase tracking-[0.25em] text-orange-400">
                 Natural Signal
               </div>
 
