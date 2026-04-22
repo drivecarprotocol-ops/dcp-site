@@ -71,7 +71,7 @@ useEffect(() => {
 } else {
   const fadeOut = 1 - (progress - 0.9) / 0.1;
   setScrollCueOpacity(Math.max(fadeOut * 0.35, 0));
-};
+}
 
   handleScroll();
   window.addEventListener("scroll", handleScroll, { passive: true });
