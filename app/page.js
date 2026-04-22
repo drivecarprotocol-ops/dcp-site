@@ -229,19 +229,20 @@ export default function DCPWebsiteV2() {
 
       {/* CAR */}
       <section className="relative overflow-hidden border-y border-white/10">
-        {/* Mobile background */}
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-90 md:hidden"
-          style={{
-            backgroundImage: "url('/images/backgrounds/traffic-light-mobile.jpg')",
-          }}
-        />
+<div
+  className="absolute inset-0 bg-no-repeat opacity-90 md:hidden"
+  style={{
+    backgroundImage: "url('/images/backgrounds/traffic-light-mobile.jpg')",
+    backgroundSize: "85%",
+    backgroundPosition: "center 75%",
+  }}
+/>
 
         {/* Desktop / tablet background */}
         <div
-          className="absolute inset-0 hidden bg-cover bg-[position:82%_36%] opacity-90 md:block"
+          className="absolute inset-0 hidden bg-cover opacity-90 md:block"
           style={{
-            backgroundImage: "url('/images/backgrounds/traffic-light-angled.jpg')",
+            backgroundImage: "url('/images/backgrounds/traffic-light-angled.jpg')", bg-position:82%_36%,
           }}
         />
 
