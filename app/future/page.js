@@ -97,32 +97,32 @@ export default function FuturePage() {
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-blue-500/25 selection:text-white">
-      {/* COMBINED HERO + NATURAL SIGNAL VISUAL STACK */}
+      {/* COMBINED HERO + NATURAL SIGNAL */}
       <section className="relative overflow-hidden border-b border-white/10 bg-black">
         {/* TOP IMAGE */}
         <div
-          className="absolute left-0 top-0 h-1/2 w-full bg-cover bg-center opacity-[0.85]"
+          className="absolute inset-x-0 top-0 h-1/2 bg-no-repeat bg-center bg-contain opacity-[0.85]"
           style={{
             backgroundImage: "url('/images/backgrounds/DCP-coming-soon.jpg')",
           }}
         />
-        <div className="absolute left-0 top-0 h-1/2 w-full bg-black/58" />
+        <div className="absolute inset-x-0 top-0 h-1/2 bg-black/60" />
 
         {/* BOTTOM IMAGE */}
         <div
-          className="absolute bottom-0 left-0 h-1/2 w-full bg-cover bg-center opacity-[0.85]"
+          className="absolute inset-x-0 bottom-0 h-1/2 bg-no-repeat bg-center bg-contain opacity-[0.85]"
           style={{
             backgroundImage: "url('/images/backgrounds/otter.jpg')",
           }}
         />
-        <div className="absolute bottom-0 left-0 h-1/2 w-full bg-black/60" />
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-black/58" />
 
-        {/* GLOBAL VIGNETTE */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_18%,rgba(59,130,246,0.14),transparent_26%),radial-gradient(circle_at_78%_20%,rgba(255,255,255,0.06),transparent_18%)]" />
+        {/* GLOBAL ATMOSPHERE */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_16%,rgba(59,130,246,0.14),transparent_24%),radial-gradient(circle_at_78%_18%,rgba(255,255,255,0.05),transparent_18%)]" />
 
         <div className="relative z-10">
           {/* TOP COPY */}
-          <div className="mx-auto max-w-7xl px-5 pt-10 pb-28 md:px-8 md:pt-14 md:pb-40">
+          <div className="mx-auto max-w-7xl px-5 pt-10 pb-24 md:px-8 md:pt-14 md:pb-36">
             <div className="mb-8">
               <Link
                 href="/"
@@ -170,8 +170,8 @@ export default function FuturePage() {
             </div>
           </div>
 
-          {/* SPACER TO LET TOP IMAGE BREATHE */}
-          <div className="h-48 md:h-72" />
+          {/* CENTER SPACER */}
+          <div className="h-56 md:h-72 lg:h-80" />
 
           {/* BOTTOM COPY */}
           <div className="mx-auto max-w-7xl px-5 pt-16 pb-20 md:px-8 md:pt-24 md:pb-28">
