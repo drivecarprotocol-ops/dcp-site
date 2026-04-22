@@ -137,7 +137,7 @@ export default function FuturePage() {
               </div>
 
               <h1 className="mt-4 text-7xl font-semibold leading-[0.95] tracking-tight">
-                DCP is independent from{" "}
+                <span className="text-orange-400">DCP</span> is independent from{" "}
                 <span className="text-blue-400">technology</span>.
               </h1>
 
