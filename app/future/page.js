@@ -84,7 +84,6 @@ export default function FuturePage() {
     <div className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-blue-500/25 selection:text-white">
       {/* FIXED BACKGROUND STAGE */}
       <div className="fixed inset-0 z-0 pointer-events-none bg-black">
-        {/* TOP IMAGE */}
         <div
           className="absolute inset-x-0 top-0 h-1/2 bg-no-repeat opacity-95"
           style={{
@@ -95,7 +94,6 @@ export default function FuturePage() {
         />
         <div className="absolute inset-x-0 top-0 h-1/2 bg-black/54" />
 
-        {/* BOTTOM IMAGE */}
         <div
           className="absolute inset-x-0 bottom-0 h-1/2 bg-no-repeat opacity-95"
           style={{
@@ -287,31 +285,33 @@ export default function FuturePage() {
                       <ExternalLink className="h-4 w-4" />
                     </a>
 
-                    <a
-                      href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-                      download
-                      className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
-                    >
-                      Download PDF
-                      <img
-                        src="/images/icons/3arrow-scroller.png"
-                        alt=""
-                        className="h-4 w-auto object-contain"
-                      />
-                    </a>
-
-                    <div className="flex items-center gap-3">
-                      <img
-                        src="/images/icons/3arrow-scroller.png"
-                        alt=""
-                        className="h-6 w-auto object-contain rotate-180"
-                      />
-                      <Link
-                        href="/"
-                        className="inline-flex items-center rounded-2xl border border-orange-400/40 px-6 py-3 text-orange-400 transition hover:bg-orange-400/10"
+                    <div className="flex items-center gap-6">
+                      <a
+                        href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
+                        download
+                        className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
                       >
-                        Return to QuickStart
-                      </Link>
+                        Download PDF
+                        <img
+                          src="/images/icons/3arrow-scroller.png"
+                          alt=""
+                          className="h-4 w-auto object-contain"
+                        />
+                      </a>
+
+                      <div className="flex items-center gap-3">
+                        <img
+                          src="/images/icons/3arrow-scroller.png"
+                          alt=""
+                          className="h-6 w-auto object-contain rotate-180"
+                        />
+                        <Link
+                          href="/"
+                          className="inline-flex items-center rounded-2xl border border-orange-400/40 px-6 py-3 text-orange-400 transition hover:bg-orange-400/10"
+                        >
+                          Return to QuickStart
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
