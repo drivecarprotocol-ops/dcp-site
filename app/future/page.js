@@ -26,12 +26,7 @@ const futureCards = [
 // VISUAL ALIGNMENT CONTROLS
 const TOP_IMAGE_SIZE = "50% auto";
 const BOTTOM_IMAGE_SIZE = "50% auto";
-
-// Nudge this left/right only.
-// Negative = left, positive = right.
 const TOP_IMAGE_X_OFFSET = -18;
-
-// Keep vertical anchors as you already had them.
 const TOP_IMAGE_Y = "49%";
 const BOTTOM_IMAGE_Y = "54%";
 
@@ -121,86 +116,78 @@ export default function FuturePage() {
         className="pointer-events-none fixed right-8 top-8 z-20 w-44 opacity-25"
       />
 
+      {/* CONTENT */}
       <div className="relative z-10">
-        {/* HERO + NATURAL SIGNAL OVER STAGE */}
-        <section className="relative border-b border-white/10">
-          <div className="min-h-[118vh]">
-            {/* TOP COPY */}
-            <div className="mx-auto max-w-7xl px-8 pt-12">
-              <div className="mb-6">
+        <div className="mx-auto max-w-7xl px-8">
+          {/* HERO + NATURAL SIGNAL */}
+          <section className="pt-12 pb-10">
+            <div className="mb-6">
+              <Link
+                href="/"
+                className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-white/70 transition hover:text-white"
+              >
+                <ChevronLeft className="h-4 w-4" />
+                Back
+              </Link>
+            </div>
+
+            <div className="max-w-5xl">
+              <div className="text-sm uppercase tracking-[0.25em] text-white/50">
+                Future Direction
+              </div>
+
+              <h1 className="mt-4 text-7xl font-semibold leading-[0.95] tracking-tight">
+                DCP is independent from{" "}
+                <span className="text-blue-400">technology</span>.
+              </h1>
+
+              <p className="mt-6 max-w-4xl text-2xl leading-8 text-white/84">
+                Future interfaces may help make patterns more visible,
+                interactive, and easier to navigate. They do not replace
+                awareness, accountability, or responsibility.
+              </p>
+
+              <div className="mt-8 flex flex-wrap items-center gap-4">
+                <a
+                  href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-white/5 px-6 py-3 text-white transition hover:bg-white/10"
+                >
+                  Read Full White Paper
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+
                 <Link
                   href="/"
-                  className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-white/70 transition hover:text-white"
+                  className="inline-flex items-center rounded-2xl border border-blue-400/40 px-6 py-3 text-blue-300 transition hover:bg-blue-400/10"
                 >
-                  <ChevronLeft className="h-4 w-4" />
-                  Back
+                  Return to QuickStart
                 </Link>
               </div>
-
-              <div className="max-w-5xl">
-                <div className="text-sm uppercase tracking-[0.25em] text-white/50">
-                  Future Direction
-                </div>
-
-                <h1 className="mt-4 text-7xl font-semibold leading-[0.95] tracking-tight">
-                  DCP is independent from{" "}
-                  <span className="text-blue-400">technology</span>.
-                </h1>
-
-                <p className="mt-6 max-w-4xl text-2xl leading-8 text-white/84">
-                  Future interfaces may help make patterns more visible,
-                  interactive, and easier to navigate. They do not replace
-                  awareness, accountability, or responsibility.
-                </p>
-
-                <div className="mt-8 flex flex-wrap items-center gap-4">
-                  <a
-                    href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-white/5 px-6 py-3 text-white transition hover:bg-white/10"
-                  >
-                    Read Full White Paper
-                    <ExternalLink className="h-4 w-4" />
-                  </a>
-
-                  <Link
-                    href="/"
-                    className="inline-flex items-center rounded-2xl border border-blue-400/40 px-6 py-3 text-blue-300 transition hover:bg-blue-400/10"
-                  >
-                    Return to QuickStart
-                  </Link>
-                </div>
-              </div>
             </div>
 
-            {/* TIGHT GAP TO SECOND IMAGE */}
-            <div className="h-[12vh]" />
+            <div className="h-[10vh]" />
 
-            {/* NATURAL SIGNAL */}
-            <div className="mx-auto max-w-7xl px-8 pb-12">
-              <div className="max-w-5xl rounded-[2rem] border border-white/10 bg-black/28 p-8 backdrop-blur-[2px]">
-                <div className="text-sm uppercase tracking-[0.25em] text-white/55">
-                  Natural Signal
-                </div>
-
-                <h2 className="mt-4 text-6xl font-semibold leading-[0.98] tracking-tight">
-                  Stay aware of what is crossing in front of you.
-                </h2>
-
-                <p className="mt-5 max-w-4xl text-xl leading-8 text-white/82">
-                  Future development should remain grounded in pattern
-                  recognition, timing, attention, and response within real
-                  conditions.
-                </p>
+            <div className="max-w-5xl rounded-[2rem] border border-white/10 bg-black/28 p-8 backdrop-blur-[2px]">
+              <div className="text-sm uppercase tracking-[0.25em] text-white/55">
+                Natural Signal
               </div>
-            </div>
-          </div>
-        </section>
 
-        {/* CONCEPTUAL DIRECTION */}
-        <section className="relative px-8 pt-10 pb-8">
-          <div className="mx-auto max-w-7xl">
+              <h2 className="mt-4 text-6xl font-semibold leading-[0.98] tracking-tight">
+                Stay aware of what is crossing in front of you.
+              </h2>
+
+              <p className="mt-5 max-w-4xl text-xl leading-8 text-white/82">
+                Future development should remain grounded in pattern
+                recognition, timing, attention, and response within real
+                conditions.
+              </p>
+            </div>
+          </section>
+
+          {/* EVERYTHING BELOW NOW FLOWS DIRECTLY UNDER NATURAL SIGNAL */}
+          <section className="pb-12">
             <div className="max-w-5xl">
               <div className="text-sm uppercase tracking-[0.25em] text-white/45">
                 Conceptual Direction
@@ -228,13 +215,8 @@ export default function FuturePage() {
                 </div>
               ))}
             </div>
-          </div>
-        </section>
 
-        {/* CORE PRINCIPLE */}
-        <section className="relative px-8 pt-8 pb-8">
-          <div className="mx-auto max-w-7xl">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="mt-8 grid grid-cols-2 gap-6">
               <div className="rounded-[1.75rem] border border-blue-500/20 bg-blue-500/[0.08] p-8">
                 <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
                   Core Principle
@@ -264,13 +246,8 @@ export default function FuturePage() {
                 </p>
               </div>
             </div>
-          </div>
-        </section>
 
-        {/* FRAMING */}
-        <section className="relative px-8 pt-8 pb-12">
-          <div className="mx-auto max-w-7xl">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="mt-8 grid grid-cols-2 gap-6">
               <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6">
                 <div className="text-sm uppercase tracking-[0.25em] text-white/45">
                   Systems Lens
@@ -299,62 +276,62 @@ export default function FuturePage() {
                 awareness alone.
               </p>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* CONTACT */}
-        <section className="mx-auto max-w-7xl px-8 py-12">
-          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8">
-            <div className="grid grid-cols-[1.15fr_0.85fr] items-center gap-8">
-              <div>
-                <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-                  Contact / Follow
+          {/* CONTACT */}
+          <section className="py-12">
+            <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8">
+              <div className="grid grid-cols-[1.15fr_0.85fr] items-center gap-8">
+                <div>
+                  <div className="text-sm uppercase tracking-[0.25em] text-white/45">
+                    Contact / Follow
+                  </div>
+
+                  <h2 className="mt-4 text-5xl font-semibold tracking-tight">
+                    Stay close to the core.
+                  </h2>
+
+                  <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
+                    Optional extension is only useful if the foundation stays
+                    clean.
+                  </p>
                 </div>
 
-                <h2 className="mt-4 text-5xl font-semibold tracking-tight">
-                  Stay close to the core.
-                </h2>
-
-                <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
-                  Optional extension is only useful if the foundation stays
-                  clean.
-                </p>
-              </div>
-
-              <div className="space-y-4 rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
-                <a
-                  href="mailto:drivecarprotocol@gmail.com"
-                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
-                >
-                  <Mail className="h-5 w-5 text-orange-300" />
-                  <div>
-                    <div className="text-sm text-white/55">Email</div>
-                    <div className="text-white">
-                      drivecarprotocol@gmail.com
+                <div className="space-y-4 rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
+                  <a
+                    href="mailto:drivecarprotocol@gmail.com"
+                    className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
+                  >
+                    <Mail className="h-5 w-5 text-orange-300" />
+                    <div>
+                      <div className="text-sm text-white/55">Email</div>
+                      <div className="text-white">
+                        drivecarprotocol@gmail.com
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
 
-                <a
-                  href="https://x.com/D_C_Protocol"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
-                >
-                  <img
-                    src="/images/icons/icon-x.png"
-                    alt="X"
-                    className="h-5 w-5 object-contain"
-                  />
-                  <div>
-                    <div className="text-sm text-white/55">X</div>
-                    <div className="text-white">@D_C_Protocol</div>
-                  </div>
-                </a>
+                  <a
+                    href="https://x.com/D_C_Protocol"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
+                  >
+                    <img
+                      src="/images/icons/icon-x.png"
+                      alt="X"
+                      className="h-5 w-5 object-contain"
+                    />
+                    <div>
+                      <div className="text-sm text-white/55">X</div>
+                      <div className="text-white">@D_C_Protocol</div>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
         {/* SCROLL CUE */}
         <div
