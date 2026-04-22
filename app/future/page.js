@@ -146,35 +146,16 @@ export default function FuturePage() {
                 interactive, and easier to navigate. They do not replace
                 awareness, accountability, or responsibility.
               </p>
-
-              <div className="mt-8 flex flex-wrap items-center gap-4">
-                <a
-                  href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-white/5 px-6 py-3 text-white transition hover:bg-white/10"
-                >
-                  Read Full White Paper
-                  <ExternalLink className="h-4 w-4" />
-                </a>
-
-                <Link
-                  href="/"
-                  className="inline-flex items-center rounded-2xl border border-blue-400/40 px-6 py-3 text-blue-300 transition hover:bg-blue-400/10"
-                >
-                  Return to QuickStart
-                </Link>
-              </div>
             </div>
 
             <div className="h-[10vh]" />
 
-<div className="max-w-5xl rounded-[2rem] border border-orange-400/20 bg-orange-500/[0.08] p-8 backdrop-blur-[2px]">
-<div className="text-sm uppercase tracking-[0.25em] text-orange-400">
+            <div className="max-w-5xl rounded-[2rem] border border-orange-400/20 bg-orange-500/[0.08] p-8 backdrop-blur-[2px]">
+              <div className="text-sm uppercase tracking-[0.25em] text-orange-400">
                 Natural Signal
               </div>
 
-              <h2 className="mt-4 text-6xl font-semibold leading-[0.98] tracking-tight">
+              <h2 className="mt-4 text-5xl font-semibold leading-[0.98] tracking-tight">
                 Stay aware of what is crossing in front of you.
               </h2>
 
@@ -193,8 +174,8 @@ export default function FuturePage() {
                 Conceptual Direction
               </div>
 
-              <h2 className="mt-4 text-6xl font-semibold leading-[0.98] tracking-tight">
-                Visualization could amplify awareness.
+              <h2 className="mt-4 text-5xl font-semibold leading-[0.98] tracking-tight">
+                <span className="text-orange-400">Visualization</span> could amplify awareness.
               </h2>
 
               <p className="mt-5 max-w-5xl text-xl leading-8 text-white/80">
@@ -216,39 +197,38 @@ export default function FuturePage() {
               ))}
             </div>
 
-            <div className="mt-8 grid grid-cols-2 gap-6">
-              <div className="rounded-[1.75rem] border border-blue-500/20 bg-blue-500/[0.08] p-8">
-                <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
-                  Core Principle
+            {/* MERGED CORE PRINCIPLE + HUMAN FIRST */}
+            <div className="mt-8 rounded-[1.75rem] border border-blue-500/20 bg-blue-500/[0.08] p-8">
+              <div className="grid grid-cols-[1fr_0.9fr] gap-10">
+                <div>
+                  <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
+                    Core Principle
+                  </div>
+
+                  <h2 className="mt-4 text-5xl font-semibold tracking-tight">
+                    The system still works without any of this.
+                  </h2>
+
+                  <p className="mt-5 text-lg leading-8 text-white/82">
+                    DCP remains a direct, repeatable framework.
+                  </p>
                 </div>
 
-                <h2 className="mt-4 text-5xl font-semibold tracking-tight">
-                  The system still works without any of this.
-                </h2>
+                <div>
+                  <div className="text-sm uppercase tracking-[0.25em] text-white/55">
+                    Human First
+                  </div>
 
-                <p className="mt-5 text-lg leading-8 text-white/82">
-                  DCP remains a direct, repeatable framework:
-                </p>
-
-                <div className="mt-6 text-3xl font-medium text-white">
-                  Feel the emotion. Choose the response.
+                  <p className="mt-5 text-lg leading-8 text-white/82">
+                    Technology does not define the system. The individual does.
+                    The future layer is support, not replacement.
+                  </p>
                 </div>
-              </div>
-
-              <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-8">
-                <div className="text-sm uppercase tracking-[0.25em] text-white/45">
-                  Human First
-                </div>
-
-                <p className="mt-5 text-lg leading-8 text-white/82">
-                  Technology does not define the system. The individual does.
-                  The future layer is support, not replacement.
-                </p>
               </div>
             </div>
 
             <div className="mt-8 grid grid-cols-2 gap-6">
-              <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6">
+              <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6 backdrop-blur">
                 <div className="text-sm uppercase tracking-[0.25em] text-white/45">
                   Systems Lens
                 </div>
@@ -257,7 +237,7 @@ export default function FuturePage() {
                 </p>
               </div>
 
-              <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6">
+              <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6 backdrop-blur">
                 <div className="text-sm uppercase tracking-[0.25em] text-white/45">
                   Conceptual Framing
                 </div>
@@ -281,7 +261,7 @@ export default function FuturePage() {
           {/* CONTACT */}
           <section className="py-12">
             <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8">
-              <div className="grid grid-cols-[1.15fr_0.85fr] items-center gap-8">
+              <div className="grid grid-cols-[1.15fr_0.85fr] items-start gap-8">
                 <div>
                   <div className="text-sm uppercase tracking-[0.25em] text-white/45">
                     Contact / Follow
@@ -295,6 +275,45 @@ export default function FuturePage() {
                     Optional extension is only useful if the foundation stays
                     clean.
                   </p>
+
+                  <div className="mt-8 flex flex-col items-start gap-4">
+                    <a
+                      href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-2xl bg-blue-500 px-6 py-3 text-white transition hover:bg-blue-500/90"
+                    >
+                      Read Full White Paper
+                      <ExternalLink className="h-4 w-4" />
+                    </a>
+
+                    <a
+                      href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
+                      download
+                      className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
+                    >
+                      Download PDF
+                      <img
+                        src="/images/icons/3arrow-scroller.png"
+                        alt=""
+                        className="h-4 w-auto object-contain"
+                      />
+                    </a>
+
+                    <div className="flex items-center gap-3">
+                      <img
+                        src="/images/icons/3arrow-scroller.png"
+                        alt=""
+                        className="h-6 w-auto object-contain rotate-180"
+                      />
+                      <Link
+                        href="/"
+                        className="inline-flex items-center rounded-2xl border border-orange-400/40 px-6 py-3 text-orange-400 transition hover:bg-orange-400/10"
+                      >
+                        Return to QuickStart
+                      </Link>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="space-y-4 rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
