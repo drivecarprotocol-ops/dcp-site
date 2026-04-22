@@ -111,7 +111,7 @@ export default function DCPWebsiteV2() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div
-          className="absolute inset-0 bg-cover opacity-80 bg-[position:80%_center] md:bg-center"
+          className="absolute inset-0 bg-cover bg-[position:80%_center] opacity-80 md:bg-center"
           style={{
             backgroundImage: "url('/images/backgrounds/hero-main.jpg')",
           }}
@@ -174,7 +174,7 @@ export default function DCPWebsiteV2() {
       {/* WHAT DCP IS */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
-          className="absolute inset-0 bg-cover opacity-85 bg-[position:22%_center] md:bg-[position:20%_center]"
+          className="absolute inset-0 bg-cover bg-[position:22%_center] opacity-85 md:bg-[position:20%_center]"
           style={{
             backgroundImage: "url('/images/backgrounds/lit-cones.jpg')",
           }}
@@ -229,12 +229,22 @@ export default function DCPWebsiteV2() {
 
       {/* CAR */}
       <section className="relative overflow-hidden border-y border-white/10">
+        {/* Mobile background */}
         <div
-          className="absolute inset-0 bg-cover opacity-90 bg-[position:78%_34%] md:bg-[position:82%_36%]"
+          className="absolute inset-0 bg-cover bg-center opacity-90 md:hidden"
+          style={{
+            backgroundImage: "url('/images/backgrounds/traffic-light-mobile.jpg')",
+          }}
+        />
+
+        {/* Desktop / tablet background */}
+        <div
+          className="absolute inset-0 hidden bg-cover bg-[position:82%_36%] opacity-90 md:block"
           style={{
             backgroundImage: "url('/images/backgrounds/traffic-light-angled.jpg')",
           }}
         />
+
         <div className="absolute inset-0 bg-black/35" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
