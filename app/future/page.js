@@ -187,7 +187,7 @@ export default function FuturePage() {
           </section>
 
           {/* EVERYTHING BELOW NOW FLOWS DIRECTLY UNDER NATURAL SIGNAL */}
-          <section className="pb-12">
+          <section className="mt-16 pb-12">
             <div className="max-w-5xl">
               <div className="text-sm uppercase tracking-[0.25em] text-white/45">
                 Conceptual Direction
