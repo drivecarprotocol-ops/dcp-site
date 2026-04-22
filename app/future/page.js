@@ -161,8 +161,6 @@ export default function FuturePage() {
         </div>
       </section>
 
-</section>
-
       {/* OTTER IMAGE SECTION */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
@@ -365,8 +363,8 @@ export default function FuturePage() {
       <footer className="border-t border-white/10 px-5 py-8 md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
           <div>
-            © 2026 Drive CAR Protocol. /// DCP works without technology. ///
-            All rights reserved.
+            © 2026 Drive CAR Protocol. /// DCP is independent from technology.
+            /// All rights reserved.
           </div>
         </div>
       </footer>
