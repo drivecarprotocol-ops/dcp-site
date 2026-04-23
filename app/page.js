@@ -11,21 +11,21 @@ const carCards = [
     outcome: "Awareness",
     titleColor: "text-red-300",
     prompt: "What is happening?",
-    text: "See the moment clearly before you act.",
+    text: "See the moment clearly before you act. This is where reaction is recognized before it becomes behavior.",
   },
   {
     title: "Accountability",
     outcome: "Ownership",
     titleColor: "text-yellow-200",
     prompt: "What is my role?",
-    text: "Own your part in what happens next.",
+    text: "Own your part in what happens next. This is where direction begins to take shape.",
   },
   {
     title: "Reason",
     outcome: "Direction",
     titleColor: "text-green-300",
     prompt: "What is the best response?",
-    text: "Choose direction instead of defaulting to impulse.",
+    text: "Shape it before you express it. Choose direction instead of defaulting to impulse.",
   },
 ];
 
@@ -142,7 +142,9 @@ export default function DCPWebsiteV2() {
 
             <p className="mt-5 max-w-3xl text-base leading-7 text-white/82 sm:text-lg md:mt-6 md:text-2xl md:leading-8">
               A human decision architecture applied in REAL time
-            </p>
+            </p><p className="mt-3 max-w-3xl text-base leading-7 text-white/70 sm:text-lg md:text-xl">
+  DCP gives structure to the exact moment where emotion becomes action.
+</p>
 
             <div className="mt-10 max-w-3xl rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-5 backdrop-blur md:mt-12 md:p-6">
               <div className="text-xs uppercase tracking-[0.25em] text-white/55 md:text-sm">
@@ -150,10 +152,10 @@ export default function DCPWebsiteV2() {
               </div>
 
               <p className="mt-3 text-sm leading-6 text-white/70">
-                DCP operates within the existing sequence.
-                <br />
-                Called in when there is an awareness of emotion.
-              </p>
+                DCP operates within the existing sequence. Called in when there is an awareness of emotion.
+  		<br />
+  		Not to remove, but to structure what happens next.
+	</p>
 
               <div className="mt-6">
                 <img
@@ -191,6 +193,10 @@ export default function DCPWebsiteV2() {
               Without structure, behavior stays automatic. With structure, it
               becomes intentional.
             </p>
+<p className="mt-3 text-lg leading-8 text-white/70">
+  DCP does not replace behavior. It structures it in the moment it matters. It is not designed to manage people. It helps people manage themselves.
+  You do not control the field. You control how you respond within it.
+</p>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -206,6 +212,9 @@ export default function DCPWebsiteV2() {
               <p className="mt-4 leading-7 text-white/75">
                 When an event occurs, emotion moves directly towards reaction.
               </p>
+<p className="mt-3 leading-7 text-white/65">
+  Without awareness, reaction becomes behavior.
+</p>
             </div>
 
             <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 backdrop-blur">
@@ -215,9 +224,12 @@ export default function DCPWebsiteV2() {
 
               <div className="mt-3 text-2xl font-medium">CAR → Response</div>
 
-              <p className="mt-4 leading-7 text-white/75">
-                When emotion strikes, CAR engages creating a response.
-              </p>
+<p className="mt-4 leading-7 text-white/75">
+  When emotion strikes, CAR processes reaction into a response.
+</p>
+<p className="mt-3 leading-7 text-white/65">
+  With awareness, reaction can be directed.
+</p>
             </div>
           </div>
         </div>
@@ -268,14 +280,14 @@ export default function DCPWebsiteV2() {
 
                 <p className="mt-4 max-w-md text-base leading-7 text-white/75 md:text-lg">
                   CAR engages within that brief space of time to form a better
-                  response before it is expressed.
+                  response before it is expressed. It acts as a filter, not a delay.
                 </p>
 
                 <div className="mt-6">
                   <img
                     src="/images/models/car-aid.png"
                     alt="CAR Aid Model"
-                    className="w-full max-w-sm rounded-xl border border-white/10 bg-black/30 object-contain opacity-[0.74]"
+                    className="w-full max-w-sm rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.67]"
                   />
                 </div>
               </div>
@@ -329,7 +341,7 @@ export default function DCPWebsiteV2() {
             <p className="mt-5 text-lg leading-8 text-white/82">
               People often know something is wrong while it is happening and
               still proceed the same way. DCP provides structure to act during
-              the moment, not after it.
+              the moment, not after it. This is the gap between recognizing and choosing.
             </p>
           </div>
 
@@ -352,7 +364,7 @@ export default function DCPWebsiteV2() {
             <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
               <div className="text-lg font-medium">Response is chosen</div>
               <p className="mt-3 leading-7 text-white/80">
-                Reaction is processed into a choice you own.
+                Reaction is processed into a choice you own and are responsible for.
               </p>
             </div>
           </div>
