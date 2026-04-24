@@ -566,4 +566,3 @@ CAR determines what follows.`}
     </div>
   );
 }
-```
