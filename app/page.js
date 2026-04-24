@@ -204,7 +204,7 @@ backgroundSize: "80% auto",
           className="absolute inset-0 bg-cover bg-no-repeat opacity-85 md:hidden"
           style={{
             backgroundImage: "url('/images/backgrounds/lit-cones-mobile.jpg')",
-            backgroundPosition: "center 72%",
+            backgroundPosition: "center 95%",
           }}
         />
         <div className="absolute inset-0 bg-black/62" />
@@ -298,8 +298,9 @@ backgroundSize: "90% auto",
   style={{
     backgroundImage:
       "url('/images/backgrounds/traffic-light-mobile.jpg')",
-    backgroundSize: "78% auto",
-    backgroundPosition: "right -1rem top 6rem",
+    backgroundImage: "url('/images/backgrounds/traffic-light-mobile.jpg')",
+backgroundSize: "85% auto",
+backgroundPosition: "calc(50% + 40px) calc(100% - 150px)",
   }}
 />
 
@@ -437,13 +438,27 @@ backgroundSize: "90% auto",
 
       {/* FULL PDF + CONTACT */}
       <section className="relative mx-auto max-w-7xl overflow-hidden px-5 py-16 md:px-8 md:py-20">
-        <div
-          className="absolute inset-0 bg-no-repeat opacity-85"
-          style={{
-            backgroundImage: "url('/images/backgrounds/futures.jpg')",
-            backgroundSize: "92% auto", backgroundPosition: "center center",
-          }}
-        />
+        
+{/* DESKTOP */}
+<div
+  className="absolute inset-0 hidden md:block bg-no-repeat opacity-85"
+  style={{
+    backgroundImage: "url('/images/backgrounds/futures.jpg')",
+    backgroundSize: "92% auto",
+    backgroundPosition: "center center",
+  }}
+/>
+
+{/* MOBILE */}
+<div
+  className="absolute inset-0 md:hidden bg-no-repeat opacity-85"
+  style={{
+    backgroundImage: "url('/images/backgrounds/futures-mobile.jpg')",
+    backgroundSize: "100% auto",
+    backgroundPosition: "center center",
+  }}
+/>
+
         <div className="absolute inset-0 bg-black/70" />
 
         <div className="relative z-10">
