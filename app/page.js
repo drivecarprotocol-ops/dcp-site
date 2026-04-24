@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { ExternalLink, Mail } from "lucide-react";
+import Link from "next/link";
 
 const carCards = [
   {
@@ -62,6 +62,7 @@ export default function DCPWebsiteV2() {
         } else if (mouseY >= upperBufferZone) {
           const zoneProgress =
             (mouseY - upperBufferZone) / (lowerZoneStart - upperBufferZone);
+
           targetOpacity = Math.max(0.18, zoneProgress * 0.55);
         }
       }
@@ -72,8 +73,10 @@ export default function DCPWebsiteV2() {
 
       if (docHeight > 0) {
         const progress = scrollTop / docHeight;
+
         if (progress > 0.92) {
           const fadeOut = 1 - (progress - 0.92) / 0.08;
+
           targetOpacity = Math.min(
             targetOpacity,
             Math.max(fadeOut * 0.55, 0)
@@ -86,7 +89,7 @@ export default function DCPWebsiteV2() {
 
     const handleScroll = () => updateCue();
     const handleResize = () => updateCue();
-    const handleMouseMove = (e) => updateCue(e.clientY);
+    const handleMouseMove = (event) => updateCue(event.clientY);
 
     updateCue();
 
@@ -106,7 +109,7 @@ export default function DCPWebsiteV2() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div
-          className="absolute inset-0 bg-cover opacity-80 bg-[position:80%_center] md:bg-center"
+          className="absolute inset-0 bg-cover bg-[position:80%_center] opacity-80 md:bg-center"
           style={{
             backgroundImage: "url('/images/backgrounds/hero-main.jpg')",
           }}
@@ -125,7 +128,7 @@ export default function DCPWebsiteV2() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45 }}
-            className="max-w-5xl"
+            className="max-w-6xl"
           >
             <div className="mb-6">
               <img
@@ -141,28 +144,55 @@ export default function DCPWebsiteV2() {
             </h1>
 
             <p className="mt-5 max-w-3xl text-base leading-7 text-white/82 sm:text-lg md:mt-6 md:text-2xl md:leading-8">
-              A human decision architecture applied in REAL time
-            </p><p className="mt-3 max-w-3xl text-base leading-7 text-white/70 sm:text-lg md:text-xl">
-  DCP gives structure to the exact moment where emotion becomes action.
-</p>
+              A human decision architecture applied in{" "}
+              <span className="font-medium text-orange-400/80">REAL</span>{" "}
+              time
+            </p>
 
-            <div className="mt-10 max-w-3xl rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-5 backdrop-blur md:mt-12 md:p-6">
-              <div className="text-xs uppercase tracking-[0.25em] text-white/55 md:text-sm">
-                Core Behavioral Model
-              </div>
+            <p className="mt-3 max-w-3xl text-base leading-7 text-white/70 sm:text-lg md:text-xl">
+              DCP gives structure at that exact moment where emotion becomes
+              action.
+            </p>
 
-              <p className="mt-3 text-sm leading-6 text-white/70">
-                DCP operates within the existing sequence. Called in when there is an awareness of emotion.
-  		<br />
-  		Not to remove, but to structure what happens next.
-	</p>
+            <div className="mt-10 rounded-[1.75rem] border border-blue-500/20 bg-blue-500/[0.08] p-6 md:mt-12 md:p-8">
+              <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr]">
+                <div>
+                  <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
+                    Core Behavioral Model
+                  </div>
 
-              <div className="mt-6">
-                <img
-                  src="/images/models/core-model.png"
-                  alt="Core Behavioral Model Diagram"
-                  className="w-full max-w-2xl rounded-xl border border-white/10 bg-black/30 object-contain"
-                />
+                  <p className="mt-5 text-base leading-7 text-white/82 md:text-lg md:leading-8">
+                    DCP operates within the existing sequence. Called in when
+                    there is an awareness of emotion. Not to remove, but to
+                    structure what happens next.
+                  </p>
+
+                  <div className="mt-6">
+                    <img
+                      src="/images/models/core-model.png"
+                      alt="Core Behavioral Model Diagram"
+                      className="w-full max-w-2xl rounded-xl border border-white/10 bg-black/30 object-contain"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
+                    Why This Matters
+                  </div>
+
+                  <p className="mt-5 text-base leading-7 text-white/82 md:text-lg md:leading-8">
+                    What you say or don’t say, what you do or don’t do... it’s
+                    all a choice within emotion. All of it carries direction.
+                  </p>
+
+                  <p className="mt-5 whitespace-pre-line text-base leading-7 text-white/82 md:text-lg md:leading-8">
+                    {`Words, actions, and inaction can create conflict or clarity depending on how they are delivered. What you place in your field matters.
+Attention determines input.
+Input determines emotion.
+CAR determines what follows.`}
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -172,7 +202,7 @@ export default function DCPWebsiteV2() {
       {/* WHAT DCP IS */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
-          className="absolute inset-0 bg-cover opacity-85 bg-[position:22%_center] md:bg-[position:20%_center]"
+          className="absolute inset-0 bg-cover bg-[position:22%_center] opacity-85 md:bg-[position:20%_center]"
           style={{
             backgroundImage: "url('/images/backgrounds/lit-cones.jpg')",
           }}
@@ -193,10 +223,15 @@ export default function DCPWebsiteV2() {
               Without structure, behavior stays automatic. With structure, it
               becomes intentional.
             </p>
-<p className="mt-3 text-lg leading-8 text-white/70">
-  DCP does not replace behavior. It structures it in the moment it matters. It is not designed to manage people. It helps people manage themselves.
-  You do not control the field. You control how you respond within it.
-</p>
+
+            <p className="mt-3 text-lg leading-8 text-white/70">
+              DCP does not replace behavior. It structures it in the moment it
+              matters. It is not designed to manage people. It helps people
+              manage themselves. You do not control the field. You control how
+              you respond within it. DCP applies across the full spectrum of
+              behavior — from everyday reactions to high-stakes, destructive
+              patterns.
+            </p>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -205,16 +240,16 @@ export default function DCPWebsiteV2() {
                 Automatic
               </div>
 
-              <div className="mt-3 text-2xl font-medium">
-                Emotion → Reaction
-              </div>
+              <h3 className="mt-3 text-2xl font-medium">Emotion → Reaction</h3>
 
-              <p className="mt-4 leading-7 text-white/75">
-                When an event occurs, emotion moves directly towards reaction.
-              </p>
-<p className="mt-3 leading-7 text-white/65">
-  Without awareness, reaction becomes behavior.
-</p>
+              <ul className="ml-4 mt-4 list-inside list-disc space-y-2 text-white/75">
+                <li className="leading-7">
+                  When an event occurs, emotion moves directly towards reaction.
+                </li>
+                <li className="leading-7 text-white/65">
+                  Without awareness, reaction becomes behavior.
+                </li>
+              </ul>
             </div>
 
             <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 backdrop-blur">
@@ -222,14 +257,16 @@ export default function DCPWebsiteV2() {
                 Intentional
               </div>
 
-              <div className="mt-3 text-2xl font-medium">CAR → Response</div>
+              <h3 className="mt-3 text-2xl font-medium">CAR → Response</h3>
 
-<p className="mt-4 leading-7 text-white/75">
-  When emotion strikes, CAR processes reaction into a response.
-</p>
-<p className="mt-3 leading-7 text-white/65">
-  With awareness, reaction can be directed.
-</p>
+              <ul className="ml-4 mt-4 list-inside list-disc space-y-2 text-white/75">
+                <li className="leading-7">
+                  When emotion strikes, CAR processes reaction into a response.
+                </li>
+                <li className="leading-7 text-white/65">
+                  With awareness, reaction can be directed.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -240,16 +277,18 @@ export default function DCPWebsiteV2() {
         <div
           className="absolute inset-0 bg-no-repeat opacity-60 md:hidden"
           style={{
-            backgroundImage: "url('/images/backgrounds/traffic-light-mobile.jpg')",
-            backgroundSize: "105%",
+            backgroundImage:
+              "url('/images/backgrounds/traffic-light-mobile.jpg')",
             backgroundPosition: "center 85%",
+            backgroundSize: "105%",
           }}
         />
 
         <div
           className="absolute inset-0 hidden bg-cover opacity-60 md:block"
           style={{
-            backgroundImage: "url('/images/backgrounds/traffic-light-angled.jpg')",
+            backgroundImage:
+              "url('/images/backgrounds/traffic-light-angled.jpg')",
             backgroundPosition: "82% 36%",
           }}
         />
@@ -270,7 +309,9 @@ export default function DCPWebsiteV2() {
 
                 <p className="mt-3 max-w-md text-lg leading-7 text-white/85 md:text-xl">
                   sculpts{" "}
-                  <span className="font-medium text-blue-400/80">emotion</span>{" "}
+                  <span className="font-medium text-blue-400/80">
+                    emotion
+                  </span>{" "}
                   into an{" "}
                   <span className="font-medium text-orange-400/80">
                     intentional response
@@ -280,14 +321,20 @@ export default function DCPWebsiteV2() {
 
                 <p className="mt-4 max-w-md text-base leading-7 text-white/75 md:text-lg">
                   CAR engages within that brief space of time to form a better
-                  response before it is expressed. It acts as a filter, not a delay.
+                  response before it is expressed. It acts as a filter, not a
+                  delay.
+                </p>
+
+                <p className="mt-5 max-w-md text-base leading-7 text-white/75 md:text-lg">
+                  Thought and emotion move together, creating form. They shape
+                  each other in real time. CAR determines what they become.
                 </p>
 
                 <div className="mt-6">
                   <img
                     src="/images/models/car-aid.png"
                     alt="CAR Aid Model"
-                    className="w-full max-w-sm rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.67]"
+                    className="w-full max-w-md rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.85]"
                   />
                 </div>
               </div>
@@ -297,7 +344,7 @@ export default function DCPWebsiteV2() {
               {carCards.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-[1.75rem] border border-white/10 bg-black/45 p-6 backdrop-blur"
+                  className="rounded-[1.75rem] border border-white/10 bg-[linear-gradient(90deg,rgba(37,99,235,0.22)_0%,rgba(37,99,235,0.12)_22%,rgba(37,99,235,0.04)_38%,rgba(0,0,0,0.55)_62%,rgba(0,0,0,0.78)_100%)] p-6 backdrop-blur"
                 >
                   <div className="text-sm uppercase tracking-[0.25em]">
                     <span className={item.titleColor}>{item.title}</span>
@@ -339,22 +386,25 @@ export default function DCPWebsiteV2() {
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-white/82">
-              People often know something is wrong while it is happening and
-              still proceed the same way. DCP provides structure to act during
-              the moment, not after it. This is the gap between recognizing and choosing.
+              Recognition does not equal correction. People often know something
+              is wrong while it is happening and still proceed the same way. DCP
+              provides structure to act during the moment, not after it. This is
+              the gap between recognizing and choosing.
             </p>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
-              <div className="text-lg font-medium">Emotion is inevitable</div>
+              <h3 className="text-lg font-medium">Emotion is inevitable</h3>
+
               <p className="mt-3 leading-7 text-white/80">
                 When events occur the issue is what happens next.
               </p>
             </div>
 
             <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
-              <div className="text-lg font-medium">Reaction is automatic</div>
+              <h3 className="text-lg font-medium">Reaction is automatic</h3>
+
               <p className="mt-3 leading-7 text-white/80">
                 Without structure, reaction tends to repeat and reinforce
                 itself.
@@ -362,9 +412,11 @@ export default function DCPWebsiteV2() {
             </div>
 
             <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
-              <div className="text-lg font-medium">Response is chosen</div>
+              <h3 className="text-lg font-medium">Response is chosen</h3>
+
               <p className="mt-3 leading-7 text-white/80">
-                Reaction is processed into a choice you own and are responsible for.
+                Reaction is processed into a choice you own and are responsible
+                for.
               </p>
             </div>
           </div>
@@ -372,9 +424,9 @@ export default function DCPWebsiteV2() {
       </section>
 
       {/* FULL PDF + CONTACT */}
-      <section className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
+      <section className="relative mx-auto max-w-7xl overflow-hidden px-5 py-16 md:px-8 md:py-20">
         <div
-          className="absolute inset-0 bg-cover opacity-[0.85] bg-[position:calc(50%-316px)_center]"
+          className="absolute inset-0 bg-cover bg-[position:calc(50%-316px)_center] opacity-[0.85]"
           style={{
             backgroundImage: "url('/images/backgrounds/futures.jpg')",
           }}
@@ -382,7 +434,7 @@ export default function DCPWebsiteV2() {
         <div className="absolute inset-0 bg-black/70" />
 
         <div className="relative z-10">
-          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-8 md:p-10">
+          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-6 md:p-10">
             <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
               <div>
                 <div className="text-sm uppercase tracking-[0.25em] text-white/45">
@@ -393,70 +445,86 @@ export default function DCPWebsiteV2() {
                   Go deeper if you want the full framework.
                 </h2>
 
-                <div className="mt-8">
+                <p className="mt-5 text-lg leading-8 text-white/80">
+                  DCP belongs to the individual. When integrated into future
+                  systems, it becomes a continuity layer — allowing those
+                  systems to align with established patterns without replacing
+                  personal agency.
+                </p>
+
+                <div className="mt-4">
                   <a
                     href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-2xl bg-orange-500 px-6 py-3 text-white transition hover:bg-orange-500/90"
+                    className="inline-flex items-center gap-2 rounded-2xl bg-orange-500 px-6 py-3 text-white transition hover:bg-orange-500/90 focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2 focus:ring-offset-black"
                   >
                     Read Full White Paper
-                    <ExternalLink className="h-4 w-4" />
+                    <ExternalLink className="h-4 w-4" aria-hidden="true" />
                   </a>
                 </div>
               </div>
 
-              <div className="space-y-4 self-start rounded-[1.75rem] border border-white/10 bg-black/50 p-6">
+              <address className="space-y-4 self-start rounded-[1.75rem] border border-white/10 bg-black/50 p-6 not-italic">
                 <a
                   href="mailto:drivecarprotocol@gmail.com"
-                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
+                  className="flex min-w-0 items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08] focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-black"
                 >
-                  <Mail className="h-5 w-5 text-orange-300" />
-                  <div className="text-white">drivecarprotocol@gmail.com</div>
+                  <Mail
+                    className="h-5 w-5 shrink-0 text-orange-300"
+                    aria-hidden="true"
+                  />
+                  <span className="break-all text-white">
+                    drivecarprotocol@gmail.com
+                  </span>
                 </a>
 
                 <a
                   href="https://x.com/D_C_Protocol"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08]"
+                  aria-label="Drive CAR Protocol on X"
+                  className="flex min-w-0 items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08] focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-black"
                 >
                   <img
                     src="/images/icons/icon-x.png"
-                    alt="X"
-                    className="h-5 w-5 object-contain"
+                    alt=""
+                    aria-hidden="true"
+                    className="h-5 w-5 shrink-0 object-contain"
                   />
-                  <div className="text-white">@D_C_Protocol</div>
+                  <span className="text-white">@D_C_Protocol</span>
                 </a>
-              </div>
+              </address>
             </div>
 
-            <div className="mt-8 grid items-center lg:grid-cols-[1.15fr_0.85fr]">
+            <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-[1.15fr_0.85fr]">
               <div className="flex items-center">
                 <a
                   href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
                   download
-                  className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
+                  className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-black"
                 >
                   Download PDF
                   <img
                     src="/images/icons/3arrow-scroller.png"
                     alt=""
+                    aria-hidden="true"
                     className="h-4 w-auto object-contain brightness-0 invert"
                   />
                 </a>
               </div>
 
-              <div className="flex items-center justify-end">
+              <div className="flex items-center md:justify-end">
                 <Link
                   href="/future"
-                  className="inline-flex items-center gap-3 rounded-2xl border border-blue-400/40 px-6 py-3 text-blue-300 transition hover:bg-blue-400/10"
+                  className="inline-flex items-center gap-3 rounded-2xl border border-blue-400/40 px-6 py-3 text-blue-300 transition hover:bg-blue-400/10 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-black"
                 >
                   Future Direction
                   <img
                     src="/images/icons/3arrow-scroller.png"
                     alt=""
-                    className="h-4 w-auto object-contain -rotate-90 brightness-0 saturate-100 [filter:invert(59%)_sepia(89%)_saturate(1991%)_hue-rotate(196deg)_brightness(103%)_contrast(101%)]"
+                    aria-hidden="true"
+                    className="h-4 w-auto -rotate-90 object-contain brightness-0 saturate-100 [filter:invert(59%)_sepia(89%)_saturate(1991%)_hue-rotate(196deg)_brightness(103%)_contrast(101%)]"
                   />
                 </Link>
               </div>
@@ -472,6 +540,7 @@ export default function DCPWebsiteV2() {
         <img
           src="/images/icons/3arrow-scroller.png"
           alt=""
+          aria-hidden="true"
           className={`w-12 object-contain transition-transform duration-300 md:w-16 ${
             scrollDirection === "up" ? "rotate-180" : "rotate-0"
           }`}
