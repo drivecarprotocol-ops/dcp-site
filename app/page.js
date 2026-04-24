@@ -275,17 +275,25 @@ CAR determines what follows.`}
       {/* CAR */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
-          className="absolute inset-0 bg-no-repeat opacity-60 md:hidden"
+          className="absolute inset-0 bg-no-repeat opacity-50 xl:hidden"
           style={{
             backgroundImage:
               "url('/images/backgrounds/traffic-light-mobile.jpg')",
-            backgroundPosition: "center 85%",
-            backgroundSize: "105%",
+            backgroundPosition: "center 82%",
+            backgroundSize: "110%",
           }}
         />
 
         <div
-          className="absolute inset-0 hidden bg-cover opacity-60 md:block"
+          className="pointer-events-none absolute inset-0 bg-no-repeat opacity-[0.58] xl:hidden portrait:[background-position:right_-1.75rem_top_7.5rem] portrait:[background-size:78%_auto] landscape:[background-position:right_1rem_top_2rem] landscape:[background-size:38%_auto] md:portrait:[background-position:right_-2rem_top_8rem] md:portrait:[background-size:58%_auto] md:landscape:[background-position:right_2rem_top_3rem] md:landscape:[background-size:36%_auto]"
+          style={{
+            backgroundImage:
+              "url('/images/backgrounds/traffic-light-angled.jpg')",
+          }}
+        />
+
+        <div
+          className="absolute inset-0 hidden bg-cover opacity-60 xl:block"
           style={{
             backgroundImage:
               "url('/images/backgrounds/traffic-light-angled.jpg')",
