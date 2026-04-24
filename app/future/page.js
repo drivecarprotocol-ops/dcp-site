@@ -102,7 +102,7 @@ export default function FuturePage() {
       <img
         src="/images/icons/DCP-ID.png"
         alt="DCP"
-        className="pointer-events-none fixed right-4 top-4 z-20 hidden w-28 opacity-25 md:block md:right-6 md:top-6 md:w-36 lg:right-8 lg:top-8 lg:w-44"
+        className="pointer-events-none fixed right-4 top-4 z-20 hidden w-28 opacity-25 landscape:block sm:right-6 sm:top-6 sm:w-36 lg:right-8 lg:top-8 lg:w-44"
       />
 
       {/* CONTENT */}
