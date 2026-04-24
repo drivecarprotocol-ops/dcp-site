@@ -1,8 +1,3 @@
-You proceed by pasting **this entire file** over `page.js`.
-
-This is your latest file, preserved, with the **one actual fix applied**: the mobile/tablet traffic light no longer uses `contain`; it uses a controlled size so it stops blowing up on tablet rotation. 
-
-```jsx
 "use client";
 
 import React, { useEffect, useState } from "react";
