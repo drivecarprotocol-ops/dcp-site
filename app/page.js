@@ -275,18 +275,17 @@ CAR determines what follows.`}
       {/* CAR */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
-          className="absolute inset-0 bg-no-repeat opacity-50 xl:hidden"
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-[38%] bg-no-repeat opacity-40 xl:hidden"
           style={{
             backgroundImage:
               "url('/images/backgrounds/traffic-light-mobile.jpg')",
-            backgroundRepeat: "no-repeat",
-	    backgroundPosition: "center bottom",
-            backgroundSize: "",
+            backgroundPosition: "center bottom",
+            backgroundSize: "contain",
           }}
         />
 
         <div
-          className="pointer-events-none absolute inset-0 bg-no-repeat opacity-[0.58] xl:hidden portrait:[background-position:right_-3.25rem_top_6.5rem] portrait:[background-size:100%_auto] landscape:[background-position:right_0_top_1.25rem] landscape:[background-size:48%_auto] md:portrait:[background-position:right_-3rem_top_7rem] md:portrait:[background-size:75%_auto] md:landscape:[background-position:right_1rem_top_2.25rem] md:landscape:[background-size:46%_auto]"
+          className="pointer-events-none absolute inset-0 bg-no-repeat opacity-[0.58] xl:hidden portrait:[background-position:right_-2.5rem_top_6.5rem] portrait:[background-size:95%_auto] landscape:[background-position:right_1rem_center] landscape:[background-size:42%_auto] md:portrait:[background-position:right_-2.5rem_top_7rem] md:portrait:[background-size:68%_auto] md:landscape:[background-position:right_2rem_center] md:landscape:[background-size:38%_auto]"
           style={{
             backgroundImage:
               "url('/images/backgrounds/thinking-statue-mobile.jpg')",
