@@ -88,7 +88,7 @@ export default function FuturePage() {
   className="absolute inset-0 bg-no-repeat opacity-100 md:hidden"
   style={{
     backgroundImage: "url('/images/backgrounds/DCP-future-mobile.jpg')",
-    backgroundSize: "100% auto",
+    backgroundSize: "contain",
     backgroundPosition: "center center",
   }}
 />
