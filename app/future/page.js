@@ -76,7 +76,7 @@ export default function FuturePage() {
 {/* FIXED BACKGROUND STAGE */}
 <div className="pointer-events-none fixed inset-0 z-0 bg-black">
    <div
-  className="absolute inset-0 hidden bg-no-repeat opacity-100 md:block"
+  className="absolute inset-0 hidden bg-no-repeat opacity-100 sm:block"
   style={{
     backgroundImage: "url('/images/backgrounds/DCP-future.jpg')",
     backgroundSize: "67% auto",
@@ -85,7 +85,7 @@ export default function FuturePage() {
 />
 
 <div
-  className="absolute inset-0 bg-no-repeat opacity-100 md:hidden"
+  className="absolute inset-0 bg-no-repeat opacity-100 sm:hidden"
   style={{
     backgroundImage: "url('/images/backgrounds/DCP-future-mobile.jpg')",
     backgroundSize: "contain",
