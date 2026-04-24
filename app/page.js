@@ -102,12 +102,12 @@ export default function DCPWebsiteV2() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div
-  className="absolute inset-0 bg-cover bg-no-repeat opacity-85"
-  style={{
-    backgroundImage: "url('/images/backgrounds/hero-main.jpg')",
-    backgroundPosition: "72% center",
-  }}
-/>
+          className="absolute inset-0 bg-cover bg-no-repeat opacity-85"
+          style={{
+            backgroundImage: "url('/images/backgrounds/hero-main.jpg')",
+            backgroundPosition: "72% center",
+          }}
+        />
         <div className="absolute inset-0 bg-black/55" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(59,130,246,0.14),transparent_28%),radial-gradient(circle_at_75%_18%,rgba(249,115,22,0.16),transparent_24%)]" />
 
@@ -181,8 +181,11 @@ export default function DCPWebsiteV2() {
                   </p>
 
                   <p className="mt-5 text-base leading-7 text-white/82 md:text-lg md:leading-8">
-  Words, actions, and inaction can create conflict or clarity depending on how they are delivered. What you place in your field matters. Attention determines input. Input determines emotion. CAR determines what follows.
-</p>
+                    Words, actions, and inaction can create conflict or clarity
+                    depending on how they are delivered. What you place in your
+                    field matters. Attention determines input. Input determines
+                    emotion. CAR determines what follows.
+                  </p>
                 </div>
               </div>
             </div>
@@ -196,8 +199,8 @@ export default function DCPWebsiteV2() {
           className="absolute inset-0 hidden bg-cover bg-no-repeat opacity-85 md:block"
           style={{
             backgroundImage: "url('/images/backgrounds/lit-cones.jpg')",
-backgroundPosition: "center 60%",
-backgroundSize: "80% auto",
+            backgroundPosition: "center 60%",
+            backgroundSize: "80% auto",
           }}
         />
         <div
@@ -205,7 +208,7 @@ backgroundSize: "80% auto",
           style={{
             backgroundImage: "url('/images/backgrounds/lit-cones-mobile.jpg')",
             backgroundSize: "85% auto",
-backgroundPosition: "center calc(100% + 175px)",
+            backgroundPosition: "center calc(100% + 175px)",
           }}
         />
         <div className="absolute inset-0 bg-black/62" />
@@ -275,43 +278,32 @@ backgroundPosition: "center calc(100% + 175px)",
 
       {/* CAR */}
       <section className="relative overflow-hidden border-y border-white/10">
+        {/* DESKTOP ONLY */}
         <div
-          className="absolute inset-0 hidden bg-no-repeat opacity-65 xl:block"
+          className="car-bg-desktop pointer-events-none absolute inset-0 bg-no-repeat"
           style={{
-            backgroundImage: "url('/images/backgrounds/statue-traffic-light.jpg')",
-backgroundPosition: "calc(50% + 150px) calc(50% + 50px)",
-backgroundSize: "90% auto",
+            backgroundImage:
+              "url('/images/backgrounds/statue-traffic-light.jpg')",
           }}
         />
 
+        {/* MOBILE / TABLET STATUE ONLY */}
         <div
-          className="pointer-events-none absolute inset-0 bg-no-repeat opacity-55 xl:hidden"
+          className="car-bg-statue-mobile pointer-events-none absolute inset-0 bg-no-repeat"
           style={{
             backgroundImage:
               "url('/images/backgrounds/thinking-statue-mobile.jpg')",
-            backgroundSize: "72% auto",
-            backgroundPosition: "right -2rem top 5rem",
           }}
         />
 
-        {/* MOBILE LANDSCAPE FIX */}
-<div
-  className="pointer-events-none absolute inset-0 hidden bg-no-repeat opacity-60 landscape:block lg:hidden"
-  style={{
-    backgroundImage: "url('/images/backgrounds/statue-traffic-light.jpg')",
-    backgroundSize: "55% auto",
-    backgroundPosition: "center center",
-  }}
-/>
-
+        {/* MOBILE / TABLET TRAFFIC LIGHT ONLY */}
         <div
-  className="pointer-events-none absolute inset-x-0 bottom-0 h-[55%] bg-no-repeat opacity-67 xl:hidden"
-  style={{
-    backgroundImage: "url('/images/backgrounds/traffic-light-mobile.jpg')",
-    backgroundSize: "75% auto",
-    backgroundPosition: "calc(50% + 40px) calc(100% - 120px)",
-  }}
-/>
+          className="car-bg-light-mobile pointer-events-none absolute inset-x-0 bottom-0 bg-no-repeat"
+          style={{
+            backgroundImage:
+              "url('/images/backgrounds/traffic-light-mobile.jpg')",
+          }}
+        />
 
         <div className="absolute inset-0 bg-black/42" />
 
@@ -354,7 +346,7 @@ backgroundSize: "90% auto",
                   <img
                     src="/images/models/car-aid.png"
                     alt="CAR Aid Model"
-                    className="w-full max-w-full rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.80] sm:opacity-[.65]"
+                    className="car-aid-image w-full max-w-full rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.80] sm:opacity-[.65]"
                   />
                 </div>
               </div>
@@ -384,6 +376,67 @@ backgroundSize: "90% auto",
             </div>
           </div>
         </div>
+
+        <style jsx>{`
+          .car-bg-desktop {
+            display: none;
+            opacity: 0.65;
+            background-size: 74% auto;
+            background-position: calc(50% + 150px) calc(50% + 50px);
+          }
+
+          .car-bg-statue-mobile {
+            display: block;
+            opacity: 0.55;
+            background-size: 68% auto;
+            background-position: right -2rem top 4rem;
+          }
+
+          .car-bg-light-mobile {
+            display: block;
+            height: 55%;
+            opacity: 0.65;
+            background-size: 70% auto;
+            background-position: calc(50% + 40px) calc(100% - 110px);
+          }
+
+          @media (min-width: 1024px) {
+            .car-bg-desktop {
+              display: block;
+            }
+
+            .car-bg-statue-mobile,
+            .car-bg-light-mobile {
+              display: none;
+            }
+          }
+
+          @media (max-width: 1023px) and (orientation: landscape) {
+            .car-bg-desktop {
+              display: none;
+            }
+
+            .car-bg-statue-mobile {
+              display: block;
+              opacity: 0.45;
+              background-size: 38% auto;
+              background-position: right 4rem center;
+            }
+
+            .car-bg-light-mobile {
+              display: block;
+              height: 100%;
+              opacity: 0.45;
+              background-size: 38% auto;
+              background-position: center bottom;
+            }
+
+            .car-aid-image {
+              max-width: 50%;
+              opacity: 0.85;
+            }
+          }
+        `}</style>
       </section>
 
       {/* WHY IT MATTERS */}
@@ -447,26 +500,25 @@ backgroundSize: "90% auto",
 
       {/* FULL PDF + CONTACT */}
       <section className="relative mx-auto max-w-7xl overflow-hidden px-5 py-16 md:px-8 md:py-20">
-        
-{/* DESKTOP */}
-<div
-  className="absolute inset-0 hidden md:block bg-no-repeat opacity-85"
-  style={{
-    backgroundImage: "url('/images/backgrounds/futures.jpg')",
-    backgroundSize: "70% auto",
-    backgroundPosition: "center center",
-  }}
-/>
+        {/* DESKTOP */}
+        <div
+          className="absolute inset-0 hidden bg-no-repeat opacity-85 md:block"
+          style={{
+            backgroundImage: "url('/images/backgrounds/futures.jpg')",
+            backgroundSize: "70% auto",
+            backgroundPosition: "center center",
+          }}
+        />
 
-{/* MOBILE */}
-<div
-  className="absolute inset-0 md:hidden bg-no-repeat opacity-95"
-  style={{
-    backgroundImage: "url('/images/backgrounds/futures-mobile.jpg')",
-    backgroundSize: "100% auto",
-backgroundPosition: "center calc(50% + 100px)",
-  }}
-/>
+        {/* MOBILE */}
+        <div
+          className="absolute inset-0 bg-no-repeat opacity-95 md:hidden"
+          style={{
+            backgroundImage: "url('/images/backgrounds/futures-mobile.jpg')",
+            backgroundSize: "100% auto",
+            backgroundPosition: "center calc(50% + 100px)",
+          }}
+        />
 
         <div className="absolute inset-0 bg-black/45" />
 
