@@ -87,7 +87,7 @@ export default function FuturePage() {
 <div
   className="absolute inset-0 bg-no-repeat opacity-100 md:hidden"
   style={{
-    backgroundImage: "url('/images/backgrounds/DCP-Future-mobile.jpg')",
+    backgroundImage: "url('/images/backgrounds/DCP-future-mobile.jpg')",
     backgroundSize: "100% auto",
     backgroundPosition: "center center",
   }}
