@@ -187,10 +187,7 @@ export default function DCPWebsiteV2() {
                   </p>
 
                   <p className="mt-5 whitespace-pre-line text-base leading-7 text-white/82 md:text-lg md:leading-8">
-                    {`Words, actions, and inaction can create conflict or clarity depending on how they are delivered. What you place in your field matters.
-Attention determines input.
-Input determines emotion.
-CAR determines what follows.`}
+                    {`Words, actions, and inaction can create conflict or clarity depending on how they are delivered. What you place in your field matters. Attention determines input. Input determines emotion. CAR determines what follows.`}
                   </p>
                 </div>
               </div>
