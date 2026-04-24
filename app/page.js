@@ -344,7 +344,7 @@ backgroundSize: "90% auto",
                   <img
                     src="/images/models/car-aid.png"
                     alt="CAR Aid Model"
-                    className="w-full max-w-full rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.85] sm:max-w-md"
+                    className="w-full max-w-full rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.65] sm:max-w-md"
                   />
                 </div>
               </div>
