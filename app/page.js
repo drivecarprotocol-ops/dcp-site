@@ -187,7 +187,10 @@ export default function DCPWebsiteV2() {
                   </p>
 
                   <p className="mt-5 whitespace-pre-line text-base leading-7 text-white/82 md:text-lg md:leading-8">
-                    {`Words, actions, and inaction can create conflict or clarity depending on how they are delivered. What you place in your field matters. Attention determines input. Input determines emotion. CAR determines what follows.`}
+                    {`Words, actions, and inaction can create conflict or clarity depending on how they are delivered. What you place in your field matters.
+Attention determines input.
+Input determines emotion.
+CAR determines what follows.`}
                   </p>
                 </div>
               </div>
@@ -276,8 +279,8 @@ export default function DCPWebsiteV2() {
           style={{
             backgroundImage:
               "url('/images/backgrounds/traffic-light-mobile.jpg')",
-            backgroundPosition: "center bottom",
-            backgroundSize: "120%",
+            backgroundPosition: "center 85%",
+            backgroundSize: "105%",
           }}
         />
 
@@ -293,14 +296,14 @@ export default function DCPWebsiteV2() {
         <div className="absolute inset-0 bg-black/35" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
-          <div className="grid min-w-0 gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-            <div className="min-w-0">
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+            <div>
               <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
                 C.A.R.
               </div>
 
-              <div className="mt-4 min-w-0">
-                <h2 className="max-w-full text-4xl font-semibold tracking-tight md:text-6xl">
+              <div className="mt-4">
+                <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">
                   The Decision Engine
                 </h2>
 
@@ -327,7 +330,7 @@ export default function DCPWebsiteV2() {
                   each other in real time. CAR determines what they become.
                 </p>
 
-                <div className="mt-6 min-w-0">
+                <div className="mt-6">
                   <img
                     src="/images/models/car-aid.png"
                     alt="CAR Aid Model"
@@ -337,19 +340,19 @@ export default function DCPWebsiteV2() {
               </div>
             </div>
 
-            <div className="grid min-w-0 gap-5">
+            <div className="grid gap-5">
               {carCards.map((item) => (
                 <div
                   key={item.title}
-                  className="min-w-0 rounded-[1.75rem] border border-white/10 bg-[linear-gradient(90deg,rgba(37,99,235,0.22)_0%,rgba(37,99,235,0.12)_22%,rgba(37,99,235,0.04)_38%,rgba(0,0,0,0.55)_62%,rgba(0,0,0,0.78)_100%)] p-6 backdrop-blur"
+                  className="rounded-[1.75rem] border border-white/10 bg-[linear-gradient(90deg,rgba(37,99,235,0.22)_0%,rgba(37,99,235,0.12)_22%,rgba(37,99,235,0.04)_38%,rgba(0,0,0,0.55)_62%,rgba(0,0,0,0.78)_100%)] p-6 backdrop-blur"
                 >
-                  <div className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1 text-xs uppercase tracking-[0.22em] sm:text-sm sm:tracking-[0.25em]">
+                  <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs uppercase tracking-[0.22em] sm:text-sm sm:tracking-[0.25em]">
                     <span className={item.titleColor}>{item.title}</span>
                     <span className="text-white">→</span>
                     <span className="text-white">{item.outcome}</span>
                   </div>
 
-                  <h3 className="mt-3 text-xl font-medium leading-tight sm:text-2xl">
+                  <h3 className="mt-3 text-xl font-medium sm:text-2xl">
                     {item.prompt}
                   </h3>
 
@@ -435,7 +438,7 @@ export default function DCPWebsiteV2() {
         <div className="relative z-10">
           <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-6 md:p-10">
             <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
-              <div>
+              <div className="lg:col-start-1 lg:row-start-1">
                 <div className="text-sm uppercase tracking-[0.25em] text-white/45">
                   Full White Paper
                 </div>
@@ -464,7 +467,23 @@ export default function DCPWebsiteV2() {
                 </div>
               </div>
 
-              <address className="space-y-4 self-start rounded-[1.75rem] border border-white/10 bg-black/50 p-6 not-italic">
+              <div className="flex items-center lg:col-start-1 lg:row-start-2">
+                <a
+                  href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
+                  download
+                  className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-black"
+                >
+                  Download PDF
+                  <img
+                    src="/images/icons/3arrow-scroller.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="h-4 w-auto object-contain brightness-0 invert"
+                  />
+                </a>
+              </div>
+
+              <address className="space-y-4 self-start rounded-[1.75rem] border border-white/10 bg-black/50 p-6 not-italic lg:col-start-2 lg:row-start-1">
                 <a
                   href="mailto:drivecarprotocol@gmail.com"
                   className="flex min-w-0 items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:bg-white/[0.08] focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-black"
@@ -494,26 +513,8 @@ export default function DCPWebsiteV2() {
                   <span className="text-white">@D_C_Protocol</span>
                 </a>
               </address>
-            </div>
 
-            <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-[1.15fr_0.85fr]">
-              <div className="flex items-center">
-                <a
-                  href="/docs/DRIVE-CAR-Protocol-White-Paper.pdf"
-                  download
-                  className="inline-flex items-center gap-3 rounded-2xl border border-white/20 bg-transparent px-6 py-3 text-white transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-black"
-                >
-                  Download PDF
-                  <img
-                    src="/images/icons/3arrow-scroller.png"
-                    alt=""
-                    aria-hidden="true"
-                    className="h-4 w-auto object-contain brightness-0 invert"
-                  />
-                </a>
-              </div>
-
-              <div className="flex items-center md:justify-end">
+              <div className="flex items-center lg:col-start-2 lg:row-start-2 lg:justify-end">
                 <Link
                   href="/future"
                   className="inline-flex items-center gap-3 rounded-2xl border border-blue-400/40 px-6 py-3 text-blue-300 transition hover:bg-blue-400/10 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-black"
