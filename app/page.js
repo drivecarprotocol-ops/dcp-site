@@ -460,7 +460,7 @@ backgroundPosition: "center calc(50% + 100px)",
   }}
 />
 
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/45" />
 
         <div className="relative z-10">
           <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.03] p-6 md:p-10">
