@@ -299,6 +299,67 @@ export default function FuturePage() {
               </div>
             </div>
 
+{/* DCP THREE-LAYER STRUCTURE */}
+<div className="mt-10">
+  <div className="max-w-5xl">
+    <p className="text-lg leading-8 text-white/80 sm:text-xl">
+      DCP operates across multiple layers depending on context. These are not
+      separate systems—they are different expressions of the same underlying
+      structure.
+    </p>
+  </div>
+
+  <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+    {/* DRIVE–CAR PROTOCOL */}
+    <div className="rounded-[1.75rem] border border-blue-500/20 bg-blue-500/[0.08] p-6 backdrop-blur">
+      <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
+        Human Layer
+      </div>
+
+      <h3 className="mt-4 text-2xl font-semibold tracking-tight">
+        Drive CAR Protocol
+      </h3>
+
+      <p className="mt-4 text-lg leading-7 text-white/[0.82]">
+        A system that gives structure to the exact moment where emotion becomes
+        action.
+      </p>
+    </div>
+
+    {/* DIGITAL CONSTITUTION PASSPORT */}
+    <div className="rounded-[1.75rem] border border-blue-500/20 bg-blue-500/[0.08] p-6 backdrop-blur">
+      <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
+        Identity Layer
+      </div>
+
+      <h3 className="mt-4 text-2xl font-semibold tracking-tight">
+        Digital Constitution Passport
+      </h3>
+
+      <p className="mt-4 text-lg leading-7 text-white/[0.82]">
+        A portable representation of how an individual governs their behavior
+        across environments.
+      </p>
+    </div>
+
+    {/* DATA COMPATIBILITY PLATFORM */}
+    <div className="rounded-[1.75rem] border border-blue-500/20 bg-blue-500/[0.08] p-6 backdrop-blur">
+      <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
+        Systems Layer
+      </div>
+
+      <h3 className="mt-4 text-2xl font-semibold tracking-tight">
+        Data Compatibility Platform
+      </h3>
+
+      <p className="mt-4 text-lg leading-7 text-white/[0.82]">
+        Enables alignment between human behavior and digital systems without
+        requiring uniformity.
+      </p>
+    </div>
+  </div>
+</div>
+
             <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
               {/* HUMAN CONTINUITY */}
               <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.05] p-6 backdrop-blur">
