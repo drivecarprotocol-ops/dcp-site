@@ -281,7 +281,7 @@ CAR determines what follows.`}
               "url('/images/backgrounds/traffic-light-mobile.jpg')",
             backgroundRepeat: "no-repeat",
 	    backgroundPosition: "center bottom",
-            backgroundSize: "88%",
+            backgroundSize: "",
           }}
         />
 
@@ -297,10 +297,8 @@ CAR determines what follows.`}
           className="absolute inset-0 hidden bg-cover opacity-60 xl:block"
           style={{
             backgroundImage:
-              "url('/images/backgrounds/thinking-statue-mobile.jpg')",
-            backgroundRepeat: "no-repeat",
-	    backgroundPosition: "right center",
-	    backgroundSize: "78%",
+              "url('/images/backgrounds/traffic-light-angled.jpg')",
+            backgroundPosition: "82% 36%",
           }}
         />
 
