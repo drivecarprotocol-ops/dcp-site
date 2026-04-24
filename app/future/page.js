@@ -24,11 +24,6 @@ const futureCards = [
 ];
 
 // VISUAL ALIGNMENT CONTROLS
-const TOP_IMAGE_SIZE = typeof window !== "undefined" && window.innerWidth >= 1024 ? "50% auto" : "cover";
-const BOTTOM_IMAGE_SIZE = typeof window !== "undefined" && window.innerWidth >= 1024 ? "50% auto" : "cover";
-const TOP_IMAGE_X_OFFSET = -8;
-const TOP_IMAGE_Y = "49%";
-const BOTTOM_IMAGE_Y = "54%";
 
 export default function FuturePage() {
   const [scrollCueOpacity, setScrollCueOpacity] = useState(0);
@@ -77,30 +72,22 @@ export default function FuturePage() {
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-blue-500/25 selection:text-white">
-      {/* FIXED BACKGROUND STAGE */}
-      <div className="pointer-events-none fixed inset-0 z-0 bg-black">
-        <div
-          className="absolute inset-x-0 top-0 h-1/2 bg-no-repeat opacity-95"
-          style={{
-            backgroundImage: "url('/images/backgrounds/DCP-coming-soon.jpg')",
-            backgroundPosition: `calc(50% + ${TOP_IMAGE_X_OFFSET}px) ${TOP_IMAGE_Y}`,
-            backgroundSize: TOP_IMAGE_SIZE,
-          }}
-        />
-        <div className="absolute inset-x-0 top-0 h-1/2 bg-black/[0.54]" />
 
-        <div
-          className="absolute inset-x-0 bottom-0 h-1/2 bg-no-repeat opacity-95"
-          style={{
-            backgroundImage: "url('/images/backgrounds/otter.jpg')",
-            backgroundPosition: `center ${BOTTOM_IMAGE_Y}`,
-            backgroundSize: BOTTOM_IMAGE_SIZE,
-          }}
-        />
-        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-black/[0.54]" />
+{/* FIXED BACKGROUND STAGE */}
+<div className="pointer-events-none fixed inset-0 z-0 bg-black">
+   <div
+  className="absolute inset-0 bg-no-repeat opacity-100"
+  style={{
+    backgroundImage: "url('/images/backgrounds/DCP-future.jpg')",
+    backgroundSize: "67% auto",
+    backgroundPosition: "center 8%",
+  }}
+/>
 
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_16%,rgba(59,130,246,0.14),transparent_24%),radial-gradient(circle_at_78%_18%,rgba(255,255,255,0.05),transparent_18%)]" />
-      </div>
+  <div className="absolute inset-0 bg-black/[0.38]" />
+
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_16%,rgba(59,130,246,0.14),transparent_24%),radial-gradient(circle_at_78%_18%,rgba(255,255,255,0.05),transparent_18%)]" />
+</div>
 
       {/* DCP ID */}
       <img

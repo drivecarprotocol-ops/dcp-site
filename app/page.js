@@ -41,11 +41,8 @@ export default function DCPWebsiteV2() {
       const docHeight =
         document.documentElement.scrollHeight - window.innerHeight;
 
-      if (scrollTop > lastScrollY) {
-        setScrollDirection("down");
-      } else if (scrollTop < lastScrollY) {
-        setScrollDirection("up");
-      }
+      if (scrollTop > lastScrollY) setScrollDirection("down");
+      if (scrollTop < lastScrollY) setScrollDirection("up");
 
       lastScrollY = scrollTop;
 
@@ -76,11 +73,7 @@ export default function DCPWebsiteV2() {
 
         if (progress > 0.92) {
           const fadeOut = 1 - (progress - 0.92) / 0.08;
-
-          targetOpacity = Math.min(
-            targetOpacity,
-            Math.max(fadeOut * 0.55, 0)
-          );
+          targetOpacity = Math.min(targetOpacity, Math.max(fadeOut * 0.55, 0));
         }
       }
 
@@ -109,9 +102,10 @@ export default function DCPWebsiteV2() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div
-          className="absolute inset-0 bg-cover bg-[position:80%_center] opacity-80 md:bg-center"
+          className="absolute inset-0 bg-cover bg-no-repeat opacity-85"
           style={{
             backgroundImage: "url('/images/backgrounds/hero-main.jpg')",
+            backgroundPosition: "center center",
           }}
         />
         <div className="absolute inset-0 bg-black/55" />
@@ -186,9 +180,9 @@ export default function DCPWebsiteV2() {
                     all a choice within emotion. All of it carries direction.
                   </p>
 
-                  <p className="mt-5 whitespace-pre-line text-base leading-7 text-white/82 md:text-lg md:leading-8">
-                    {`Words, actions, and inaction can create conflict or clarity depending on how they are delivered. What you place in your field matters. Attention determines input. Input determines emotion. CAR determines what follows.`}
-                  </p>
+                  <p className="mt-5 text-base leading-7 text-white/82 md:text-lg md:leading-8">
+  Words, actions, and inaction can create conflict or clarity depending on how they are delivered. What you place in your field matters. Attention determines input. Input determines emotion. CAR determines what follows.
+</p>
                 </div>
               </div>
             </div>
@@ -199,9 +193,17 @@ export default function DCPWebsiteV2() {
       {/* WHAT DCP IS */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
-          className="absolute inset-0 bg-cover bg-[position:22%_center] opacity-85 md:bg-[position:20%_center]"
+          className="absolute inset-0 hidden bg-cover bg-no-repeat opacity-85 md:block"
           style={{
             backgroundImage: "url('/images/backgrounds/lit-cones.jpg')",
+            backgroundPosition: "center center",
+          }}
+        />
+        <div
+          className="absolute inset-0 bg-cover bg-no-repeat opacity-85 md:hidden"
+          style={{
+            backgroundImage: "url('/images/backgrounds/lit-cones-mobile.jpg')",
+            backgroundPosition: "center center",
           }}
         />
         <div className="absolute inset-0 bg-black/62" />
@@ -272,33 +274,35 @@ export default function DCPWebsiteV2() {
       {/* CAR */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
-          className="pointer-events-none absolute inset-x-0 bottom-0 hidden h-[34%] bg-no-repeat opacity-35 portrait:block xl:hidden"
+          className="absolute inset-0 hidden bg-cover bg-no-repeat opacity-65 xl:block"
           style={{
             backgroundImage:
-              "url('/images/backgrounds/traffic-light-mobile.jpg')",
-            backgroundPosition: "center bottom",
-            backgroundSize: "68% auto",
+              "url('/images/backgrounds/statue-traffic-light.jpg')",
+            backgroundPosition: "center center",
           }}
         />
 
         <div
-          className="pointer-events-none absolute inset-0 bg-no-repeat opacity-[0.58] xl:hidden portrait:[background-position:right_-2.5rem_top_6.5rem] portrait:[background-size:95%_auto] landscape:[background-position:right_3rem_center] landscape:[background-size:30%_auto] md:portrait:[background-position:right_-2.5rem_top_7rem] md:portrait:[background-size:68%_auto] md:landscape:[background-position:right_4rem_center] md:landscape:[background-size:26%_auto]"
+          className="pointer-events-none absolute inset-0 bg-no-repeat opacity-55 xl:hidden"
           style={{
             backgroundImage:
               "url('/images/backgrounds/thinking-statue-mobile.jpg')",
+            backgroundSize: "72% auto",
+            backgroundPosition: "right -2rem top 5rem",
           }}
         />
 
         <div
-          className="absolute inset-0 hidden bg-cover opacity-60 xl:block"
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-[34%] bg-no-repeat opacity-35 xl:hidden"
           style={{
             backgroundImage:
-              "url('/images/backgrounds/traffic-light-angled.jpg')",
-            backgroundPosition: "82% 36%",
+              "url('/images/backgrounds/traffic-light-mobile.jpg')",
+            backgroundSize: "66% auto",
+            backgroundPosition: "center bottom",
           }}
         />
 
-        <div className="absolute inset-0 bg-black/35" />
+        <div className="absolute inset-0 bg-black/42" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
@@ -374,7 +378,7 @@ export default function DCPWebsiteV2() {
       {/* WHY IT MATTERS */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-80"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
           style={{
             backgroundImage:
               "url('/images/backgrounds/section-bg-pressure.jpg')",
@@ -433,9 +437,10 @@ export default function DCPWebsiteV2() {
       {/* FULL PDF + CONTACT */}
       <section className="relative mx-auto max-w-7xl overflow-hidden px-5 py-16 md:px-8 md:py-20">
         <div
-          className="absolute inset-0 bg-cover bg-[position:calc(50%-316px)_center] opacity-[0.85]"
+          className="absolute inset-0 bg-cover bg-no-repeat opacity-85"
           style={{
             backgroundImage: "url('/images/backgrounds/futures.jpg')",
+            backgroundPosition: "center center",
           }}
         />
         <div className="absolute inset-0 bg-black/70" />
