@@ -102,12 +102,12 @@ export default function DCPWebsiteV2() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div
-          className="absolute inset-0 bg-cover bg-no-repeat opacity-85"
-          style={{
-            backgroundImage: "url('/images/backgrounds/hero-main.jpg')",
-            backgroundPosition: "center center",
-          }}
-        />
+  className="absolute inset-0 bg-cover bg-no-repeat opacity-85"
+  style={{
+    backgroundImage: "url('/images/backgrounds/hero-main.jpg')",
+    backgroundPosition: "72% center",
+  }}
+/>
         <div className="absolute inset-0 bg-black/55" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(59,130,246,0.14),transparent_28%),radial-gradient(circle_at_75%_18%,rgba(249,115,22,0.16),transparent_24%)]" />
 
@@ -196,7 +196,7 @@ export default function DCPWebsiteV2() {
           className="absolute inset-0 hidden bg-cover bg-no-repeat opacity-85 md:block"
           style={{
             backgroundImage: "url('/images/backgrounds/lit-cones.jpg')",
-backgroundPosition: "center center",
+backgroundPosition: "center 60%",
 backgroundSize: "80% auto",
           }}
         />
@@ -204,7 +204,7 @@ backgroundSize: "80% auto",
           className="absolute inset-0 bg-cover bg-no-repeat opacity-85 md:hidden"
           style={{
             backgroundImage: "url('/images/backgrounds/lit-cones-mobile.jpg')",
-            backgroundPosition: "center center",
+            backgroundPosition: "center 72%",
           }}
         />
         <div className="absolute inset-0 bg-black/62" />
@@ -294,14 +294,14 @@ backgroundSize: "90% auto",
         />
 
         <div
-          className="pointer-events-none absolute inset-x-0 bottom-0 h-[34%] bg-no-repeat opacity-35 xl:hidden"
-          style={{
-            backgroundImage:
-              "url('/images/backgrounds/traffic-light-mobile.jpg')",
-            backgroundSize: "66% auto",
-            backgroundPosition: "center bottom",
-          }}
-        />
+  className="pointer-events-none absolute inset-x-0 bottom-0 h-[34%] bg-no-repeat opacity-35 xl:hidden"
+  style={{
+    backgroundImage:
+      "url('/images/backgrounds/traffic-light-mobile.jpg')",
+    backgroundSize: "78% auto",
+    backgroundPosition: "right -1rem top 6rem",
+  }}
+/>
 
         <div className="absolute inset-0 bg-black/42" />
 
@@ -344,7 +344,7 @@ backgroundSize: "90% auto",
                   <img
                     src="/images/models/car-aid.png"
                     alt="CAR Aid Model"
-                    className="w-full max-w-full rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.65] sm:max-w-md"
+                    className="w-full max-w-full rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.55] sm:opacity-[.65]"
                   />
                 </div>
               </div>
@@ -438,10 +438,10 @@ backgroundSize: "90% auto",
       {/* FULL PDF + CONTACT */}
       <section className="relative mx-auto max-w-7xl overflow-hidden px-5 py-16 md:px-8 md:py-20">
         <div
-          className="absolute inset-0 bg-cover bg-no-repeat opacity-85"
+          className="absolute inset-0 bg-no-repeat opacity-85"
           style={{
             backgroundImage: "url('/images/backgrounds/futures.jpg')",
-            backgroundPosition: "center center",
+            backgroundSize: "92% auto", backgroundPosition: "center center",
           }}
         />
         <div className="absolute inset-0 bg-black/70" />
