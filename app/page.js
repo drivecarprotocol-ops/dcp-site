@@ -288,7 +288,7 @@ CAR determines what follows.`}
           className="pointer-events-none absolute inset-0 bg-no-repeat opacity-[0.58] xl:hidden portrait:[background-position:right_-1.75rem_top_7.5rem] portrait:[background-size:78%_auto] landscape:[background-position:right_1rem_top_2rem] landscape:[background-size:38%_auto] md:portrait:[background-position:right_-2rem_top_8rem] md:portrait:[background-size:58%_auto] md:landscape:[background-position:right_2rem_top_3rem] md:landscape:[background-size:36%_auto]"
           style={{
             backgroundImage:
-              "url('/images/backgrounds/traffic-light-angled.jpg')",
+              "url('/images/backgrounds/thinking-statue-mobile.jpg')",
           }}
         />
 
