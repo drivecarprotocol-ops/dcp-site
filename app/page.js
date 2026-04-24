@@ -276,8 +276,8 @@ export default function DCPWebsiteV2() {
           style={{
             backgroundImage:
               "url('/images/backgrounds/traffic-light-mobile.jpg')",
-            backgroundPosition: "center 85%",
-            backgroundSize: "105%",
+            backgroundPosition: "center bottom",
+            backgroundSize: "120%",
           }}
         />
 
@@ -293,18 +293,18 @@ export default function DCPWebsiteV2() {
         <div className="absolute inset-0 bg-black/35" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
-          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-            <div>
+          <div className="grid min-w-0 gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+            <div className="min-w-0">
               <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
                 C.A.R.
               </div>
 
-              <div className="mt-4">
-                <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">
+              <div className="mt-4 min-w-0">
+                <h2 className="max-w-full text-4xl font-semibold tracking-tight md:text-6xl">
                   The Decision Engine
                 </h2>
 
-                <p className="mt-3 max-w-md text-lg leading-7 text-white/85 md:text-xl">
+                <p className="mt-3 w-full max-w-md text-lg leading-7 text-white/85 md:text-xl">
                   sculpts{" "}
                   <span className="font-medium text-blue-400/80">
                     emotion
@@ -316,42 +316,44 @@ export default function DCPWebsiteV2() {
                   .
                 </p>
 
-                <p className="mt-4 max-w-md text-base leading-7 text-white/75 md:text-lg">
+                <p className="mt-4 w-full max-w-md text-base leading-7 text-white/75 md:text-lg">
                   CAR engages within that brief space of time to form a better
                   response before it is expressed. It acts as a filter, not a
                   delay.
                 </p>
 
-                <p className="mt-5 max-w-md text-base leading-7 text-white/75 md:text-lg">
+                <p className="mt-5 w-full max-w-md text-base leading-7 text-white/75 md:text-lg">
                   Thought and emotion move together, creating form. They shape
                   each other in real time. CAR determines what they become.
                 </p>
 
-                <div className="mt-6">
+                <div className="mt-6 min-w-0">
                   <img
                     src="/images/models/car-aid.png"
                     alt="CAR Aid Model"
-                    className="w-full max-w-md rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.85]"
+                    className="w-full max-w-full rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.85] sm:max-w-md"
                   />
                 </div>
               </div>
             </div>
 
-            <div className="grid gap-5">
+            <div className="grid min-w-0 gap-5">
               {carCards.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-[1.75rem] border border-white/10 bg-[linear-gradient(90deg,rgba(37,99,235,0.22)_0%,rgba(37,99,235,0.12)_22%,rgba(37,99,235,0.04)_38%,rgba(0,0,0,0.55)_62%,rgba(0,0,0,0.78)_100%)] p-6 backdrop-blur"
+                  className="min-w-0 rounded-[1.75rem] border border-white/10 bg-[linear-gradient(90deg,rgba(37,99,235,0.22)_0%,rgba(37,99,235,0.12)_22%,rgba(37,99,235,0.04)_38%,rgba(0,0,0,0.55)_62%,rgba(0,0,0,0.78)_100%)] p-6 backdrop-blur"
                 >
-                  <div className="text-sm uppercase tracking-[0.25em]">
+                  <div className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1 text-xs uppercase tracking-[0.22em] sm:text-sm sm:tracking-[0.25em]">
                     <span className={item.titleColor}>{item.title}</span>
-                    <span className="px-2 text-white">→</span>
+                    <span className="text-white">→</span>
                     <span className="text-white">{item.outcome}</span>
                   </div>
 
-                  <h3 className="mt-3 text-2xl font-medium">{item.prompt}</h3>
+                  <h3 className="mt-3 text-xl font-medium leading-tight sm:text-2xl">
+                    {item.prompt}
+                  </h3>
 
-                  <p className="mt-4 text-lg leading-7 text-white/80">
+                  <p className="mt-4 text-base leading-7 text-white/80 sm:text-lg">
                     {item.text}
                   </p>
                 </div>
