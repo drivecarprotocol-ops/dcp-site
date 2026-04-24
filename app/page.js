@@ -275,21 +275,23 @@ CAR determines what follows.`}
       {/* CAR */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
-          className="pointer-events-none absolute inset-x-0 bottom-0 hidden h-[34%] bg-no-repeat opacity-35 portrait:block xl:hidden"
-          style={{
-            backgroundImage:
-              "url('/images/backgrounds/traffic-light-mobile.jpg')",
-            backgroundPosition: "center bottom",
-            backgroundSize: "68% auto",
-          }}
+  className="pointer-events-none absolute inset-0 bg-no-repeat opacity-[0.6] xl:hidden"
+  style={{
+    backgroundImage: "url('/images/backgrounds/traffic-light-mobile.jpg')",
+    backgroundPosition: "center bottom",
+    backgroundSize: "80%",
+  }}
+/>
         />
 
         <div
-          className="pointer-events-none absolute inset-0 bg-no-repeat opacity-[0.58] xl:hidden portrait:[background-position:right_-2.5rem_top_6.5rem] portrait:[background-size:95%_auto] landscape:[background-position:right_3rem_center] landscape:[background-size:30%_auto] md:portrait:[background-position:right_-2.5rem_top_7rem] md:portrait:[background-size:68%_auto] md:landscape:[background-position:right_4rem_center] md:landscape:[background-size:26%_auto]"
-          style={{
-            backgroundImage:
-              "url('/images/backgrounds/thinking-statue-mobile.jpg')",
-          }}
+  className="pointer-events-none absolute inset-0 bg-no-repeat opacity-[0.55] xl:hidden"
+  style={{
+    backgroundImage: "url('/images/backgrounds/thinking-statue-mobile.jpg')",
+    backgroundPosition: "center 55%",
+    backgroundSize: "75%",
+  }}
+/>
         />
 
         <div
