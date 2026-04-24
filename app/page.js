@@ -204,7 +204,8 @@ backgroundSize: "80% auto",
           className="absolute inset-0 bg-cover bg-no-repeat opacity-85 md:hidden"
           style={{
             backgroundImage: "url('/images/backgrounds/lit-cones-mobile.jpg')",
-            backgroundPosition: "center 95%",
+            backgroundSize: "85% auto",
+backgroundPosition: "center calc(100% + 175px)",
           }}
         />
         <div className="absolute inset-0 bg-black/62" />
@@ -294,13 +295,13 @@ backgroundSize: "90% auto",
         />
 
         <div
-  className="pointer-events-none absolute inset-x-0 bottom-0 h-[34%] bg-no-repeat opacity-35 xl:hidden"
+  className="pointer-events-none absolute inset-x-0 bottom-0 h-[34%] bg-no-repeat opacity-67 xl:hidden"
   style={{
     backgroundImage:
       "url('/images/backgrounds/traffic-light-mobile.jpg')",
     backgroundImage: "url('/images/backgrounds/traffic-light-mobile.jpg')",
 backgroundSize: "85% auto",
-backgroundPosition: "calc(50% + 40px) calc(100% - 150px)",
+backgroundPosition: "calc(50% + 40px) calc(100% - 100px)",
   }}
 />
 
@@ -345,7 +346,7 @@ backgroundPosition: "calc(50% + 40px) calc(100% - 150px)",
                   <img
                     src="/images/models/car-aid.png"
                     alt="CAR Aid Model"
-                    className="w-full max-w-full rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.55] sm:opacity-[.65]"
+                    className="w-full max-w-full rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.80] sm:opacity-[.65]"
                   />
                 </div>
               </div>
@@ -451,11 +452,11 @@ backgroundPosition: "calc(50% + 40px) calc(100% - 150px)",
 
 {/* MOBILE */}
 <div
-  className="absolute inset-0 md:hidden bg-no-repeat opacity-85"
+  className="absolute inset-0 md:hidden bg-no-repeat opacity-95"
   style={{
     backgroundImage: "url('/images/backgrounds/futures-mobile.jpg')",
     backgroundSize: "100% auto",
-    backgroundPosition: "center center",
+backgroundPosition: "center calc(50% + 100px)",
   }}
 />
 
