@@ -196,7 +196,8 @@ export default function DCPWebsiteV2() {
           className="absolute inset-0 hidden bg-cover bg-no-repeat opacity-85 md:block"
           style={{
             backgroundImage: "url('/images/backgrounds/lit-cones.jpg')",
-            backgroundPosition: "center center",
+backgroundPosition: "center center",
+backgroundSize: "80% auto",
           }}
         />
         <div
@@ -276,9 +277,9 @@ export default function DCPWebsiteV2() {
         <div
           className="absolute inset-0 hidden bg-cover bg-no-repeat opacity-65 xl:block"
           style={{
-            backgroundImage:
-              "url('/images/backgrounds/statue-traffic-light.jpg')",
-            backgroundPosition: "center center",
+            backgroundImage: "url('/images/backgrounds/statue-traffic-light.jpg')",
+backgroundPosition: "calc(50% + 150px) calc(50% + 50px)",
+backgroundSize: "90% auto",
           }}
         />
 
