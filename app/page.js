@@ -294,6 +294,16 @@ backgroundSize: "90% auto",
           }}
         />
 
+        {/* MOBILE LANDSCAPE FIX */}
+<div
+  className="pointer-events-none absolute inset-0 hidden bg-no-repeat opacity-60 landscape:block lg:hidden"
+  style={{
+    backgroundImage: "url('/images/backgrounds/statue-traffic-light.jpg')",
+    backgroundSize: "55% auto",
+    backgroundPosition: "center center",
+  }}
+/>
+
         <div
   className="pointer-events-none absolute inset-x-0 bottom-0 h-[55%] bg-no-repeat opacity-67 xl:hidden"
   style={{
