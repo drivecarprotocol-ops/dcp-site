@@ -279,8 +279,8 @@ CAR determines what follows.`}
           style={{
             backgroundImage:
               "url('/images/backgrounds/traffic-light-mobile.jpg')",
-            backgroundPosition: "center 84%",
-            backgroundSize: "120%",
+            backgroundPosition: "center 92%",
+            backgroundSize: "105%",
           }}
         />
 
