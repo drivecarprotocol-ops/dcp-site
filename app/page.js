@@ -276,7 +276,7 @@ backgroundPosition: "center calc(100% + 175px)",
       {/* CAR */}
       <section className="relative overflow-hidden border-y border-white/10">
         <div
-          className="absolute inset-0 hidden bg-cover bg-no-repeat opacity-65 xl:block"
+          className="absolute inset-0 hidden bg-no-repeat opacity-65 xl:block"
           style={{
             backgroundImage: "url('/images/backgrounds/statue-traffic-light.jpg')",
 backgroundPosition: "calc(50% + 150px) calc(50% + 50px)",
@@ -295,13 +295,11 @@ backgroundSize: "90% auto",
         />
 
         <div
-  className="pointer-events-none absolute inset-x-0 bottom-0 h-[34%] bg-no-repeat opacity-67 xl:hidden"
+  className="pointer-events-none absolute inset-x-0 bottom-0 h-[55%] bg-no-repeat opacity-67 xl:hidden"
   style={{
-    backgroundImage:
-      "url('/images/backgrounds/traffic-light-mobile.jpg')",
     backgroundImage: "url('/images/backgrounds/traffic-light-mobile.jpg')",
-backgroundSize: "85% auto",
-backgroundPosition: "calc(50% + 40px) calc(100% - 100px)",
+    backgroundSize: "75% auto",
+    backgroundPosition: "calc(50% + 40px) calc(100% - 120px)",
   }}
 />
 
@@ -445,7 +443,7 @@ backgroundPosition: "calc(50% + 40px) calc(100% - 100px)",
   className="absolute inset-0 hidden md:block bg-no-repeat opacity-85"
   style={{
     backgroundImage: "url('/images/backgrounds/futures.jpg')",
-    backgroundSize: "92% auto",
+    backgroundSize: "70% auto",
     backgroundPosition: "center center",
   }}
 />
