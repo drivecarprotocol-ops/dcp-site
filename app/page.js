@@ -204,13 +204,13 @@ export default function DCPWebsiteV2() {
           }}
         />
         <div
-          className="absolute inset-0 bg-cover bg-no-repeat opacity-85 md:hidden"
-          style={{
-            backgroundImage: "url('/images/backgrounds/lit-cones-mobile.jpg')",
-            backgroundSize: "85% auto",
-            backgroundPosition: "center calc(100% + 175px)",
-          }}
-        />
+  className="absolute inset-0 bg-no-repeat opacity-75 md:hidden"
+  style={{
+    backgroundImage: "url('/images/backgrounds/lit-cones.jpg')",
+    backgroundSize: "95% auto",
+    backgroundPosition: "center calc(100% - 40px)",
+  }}
+/>
         <div className="absolute inset-0 bg-black/62" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
