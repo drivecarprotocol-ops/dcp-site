@@ -512,8 +512,8 @@ export default function DCPWebsiteV2() {
   className="futures-bg-mobile absolute inset-0 bg-no-repeat opacity-95 lg:hidden"
   style={{
     backgroundImage: "url('/images/backgrounds/futures-mobile.jpg')",
-    backgroundSize: "120% auto",
-    backgroundPosition: "center calc(50% - 350px)",
+    backgroundSize: "contain",
+    backgroundPosition: "center center",
   }}
 />
 
