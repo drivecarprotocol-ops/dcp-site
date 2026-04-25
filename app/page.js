@@ -410,12 +410,12 @@ export default function DCPWebsiteV2() {
     display: none;
   }
 
-  .car-bg-statue-mobile {
-    display: block;
-    opacity: 0.5;
-    background-size: 58% auto;
-    background-position: right -2.5rem top 0.75rem;
-  }
+.car-bg-statue-mobile {
+  display: block;
+  opacity: 0.5;
+  background-size: 58% auto;
+  background-position: right -5rem top -3.75rem;
+}
 
   .car-bg-light-mobile {
     display: block;
