@@ -430,6 +430,20 @@ export default function DCPWebsiteV2() {
     opacity: 0.85;
   }
 }
+
+@media (max-width: 1023px) and (orientation: landscape) {
+  .futures-bg-desktop {
+    display: none;
+  }
+
+  .futures-bg-mobile {
+    display: block;
+    background-size: contain !important;
+    background-position: center center !important;
+    opacity: 0.7;
+  }
+}
+
   `}</style>
 </section>
 
@@ -496,23 +510,23 @@ export default function DCPWebsiteV2() {
       <section className="relative mx-auto max-w-7xl overflow-hidden px-5 py-16 md:px-8 md:py-20">
         {/* DESKTOP */}
         <div
-          className="absolute inset-0 hidden bg-no-repeat opacity-85 md:block"
-          style={{
-            backgroundImage: "url('/images/backgrounds/futures.jpg')",
-            backgroundSize: "70% auto",
-            backgroundPosition: "center center",
-          }}
-        />
+  className="futures-bg-desktop absolute inset-0 hidden bg-no-repeat opacity-85 md:block"
+  style={{
+    backgroundImage: "url('/images/backgrounds/futures.jpg')",
+    backgroundSize: "70% auto",
+    backgroundPosition: "center center",
+  }}
+/>
 
         {/* MOBILE */}
         <div
-          className="absolute inset-0 bg-no-repeat opacity-95 md:hidden"
-          style={{
-            backgroundImage: "url('/images/backgrounds/futures-mobile.jpg')",
-            backgroundSize: "100% auto",
-            backgroundPosition: "center calc(50% + 100px)",
-          }}
-        />
+  className="futures-bg-mobile absolute inset-0 bg-no-repeat opacity-95 md:hidden"
+  style={{
+    backgroundImage: "url('/images/backgrounds/futures-mobile.jpg')",
+    backgroundSize: "100% auto",
+    backgroundPosition: "center calc(50% + 100px)",
+  }}
+/>
 
         <div className="absolute inset-0 bg-black/45" />
 
