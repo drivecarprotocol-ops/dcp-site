@@ -414,17 +414,15 @@ export default function DCPWebsiteV2() {
     display: block;
     opacity: 0.5;
     background-size: 58% auto;
-    /* push UP + RIGHT aggressively but safely */
-    background-position: right 1.5rem top 1.5rem;
+    background-position: right -2.5rem top 0.75rem;
   }
 
   .car-bg-light-mobile {
     display: block;
     height: 100%;
     opacity: 0.58;
-    background-size: 57% auto; /* unchanged feel */
-    /* move DOWN ~50px ONLY */
-    background-position: calc(50% + 200px) calc(50% + 170px);
+    background-size: 57% auto;
+    background-position: calc(50% + 200px) calc(50% + 290px);
   }
 
   .car-aid-image {
