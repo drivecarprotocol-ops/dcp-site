@@ -102,19 +102,21 @@ export default function DCPWebsiteV2() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div
-          className="absolute inset-0 bg-cover bg-no-repeat opacity-85"
+          className="hero-adjust absolute inset-0 bg-cover bg-no-repeat opacity-85"
           style={{
             backgroundImage: "url('/images/backgrounds/hero-main.jpg')",
             backgroundPosition: "72% center",
           }}
         />
+
         <div className="absolute inset-0 bg-black/55" />
+
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(59,130,246,0.14),transparent_28%),radial-gradient(circle_at_75%_18%,rgba(249,115,22,0.16),transparent_24%)]" />
 
         <img
           src="/images/icons/DCP-ID.png"
           alt="DCP"
-          className="pointer-events-none absolute right-4 top-4 z-20 w-24 opacity-25 md:right-8 md:top-8 md:w-44"
+          className="pointer-events-none absolute right-4 top-4 z-20 hidden w-24 opacity-25 landscape:block md:block md:right-8 md:top-8 md:w-44"
         />
 
         <div className="relative mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
@@ -203,6 +205,7 @@ export default function DCPWebsiteV2() {
             backgroundSize: "80% auto",
           }}
         />
+
         <div
           className="absolute inset-0 bg-cover bg-no-repeat opacity-85 md:hidden"
           style={{
@@ -211,6 +214,7 @@ export default function DCPWebsiteV2() {
             backgroundPosition: "center 62%",
           }}
         />
+
         <div className="absolute inset-0 bg-black/62" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
@@ -276,165 +280,171 @@ export default function DCPWebsiteV2() {
         </div>
       </section>
 
-{/* CAR */}
-<section className="relative overflow-hidden border-y border-white/10">
-  {/* DESKTOP ONLY */}
-  <div
-    className="car-bg-desktop pointer-events-none absolute inset-0 bg-no-repeat"
-    style={{
-      backgroundImage: "url('/images/backgrounds/statue-traffic-light.jpg')",
-    }}
-  />
+      {/* CAR */}
+      <section className="relative overflow-hidden border-y border-white/10">
+        <div
+          className="car-bg-desktop pointer-events-none absolute inset-0 bg-no-repeat"
+          style={{
+            backgroundImage:
+              "url('/images/backgrounds/statue-traffic-light.jpg')",
+          }}
+        />
 
-  {/* MOBILE / TABLET STATUE ONLY */}
-  <div
-    className="car-bg-statue-mobile pointer-events-none absolute inset-0 bg-no-repeat"
-    style={{
-      backgroundImage: "url('/images/backgrounds/thinking-statue-mobile.jpg')",
-    }}
-  />
+        <div
+          className="car-bg-statue-mobile pointer-events-none absolute inset-0 bg-no-repeat"
+          style={{
+            backgroundImage:
+              "url('/images/backgrounds/thinking-statue-mobile.jpg')",
+          }}
+        />
 
-  {/* MOBILE / TABLET TRAFFIC LIGHT ONLY */}
-  <div
-    className="car-bg-light-mobile pointer-events-none absolute inset-x-0 bottom-0 bg-no-repeat"
-    style={{
-      backgroundImage: "url('/images/backgrounds/traffic-light-mobile.jpg')",
-    }}
-  />
+        <div
+          className="car-bg-light-mobile pointer-events-none absolute inset-x-0 bottom-0 bg-no-repeat"
+          style={{
+            backgroundImage:
+              "url('/images/backgrounds/traffic-light-mobile.jpg')",
+          }}
+        />
 
-  <div className="absolute inset-0 bg-black/42" />
+        <div className="absolute inset-0 bg-black/42" />
 
-  <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
-    <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-      <div>
-        <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
-          C.A.R.
-        </div>
+        <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+            <div>
+              <div className="text-sm uppercase tracking-[0.25em] text-blue-300">
+                C.A.R.
+              </div>
 
-        <div className="mt-4">
-          <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">
-            The Decision Engine
-          </h2>
+              <div className="mt-4">
+                <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">
+                  The Decision Engine
+                </h2>
 
-          <p className="mt-3 w-full max-w-md text-lg leading-7 text-white/85 md:text-xl">
-            sculpts{" "}
-            <span className="font-medium text-blue-400/80">emotion</span>{" "}
-            into an{" "}
-            <span className="font-medium text-orange-400/80">
-              intentional response
-            </span>
-            .
-          </p>
+                <p className="mt-3 w-full max-w-md text-lg leading-7 text-white/85 md:text-xl">
+                  sculpts{" "}
+                  <span className="font-medium text-blue-400/80">
+                    emotion
+                  </span>{" "}
+                  into an{" "}
+                  <span className="font-medium text-orange-400/80">
+                    intentional response
+                  </span>
+                  .
+                </p>
 
-          <p className="mt-4 w-full max-w-md text-base leading-7 text-white/75 md:text-lg">
-            CAR engages within that brief space of time to form a better
-            response before it is expressed. It acts as a filter, not a delay.
-          </p>
+                <p className="mt-4 w-full max-w-md text-base leading-7 text-white/75 md:text-lg">
+                  CAR engages within that brief space of time to form a better
+                  response before it is expressed. It acts as a filter, not a
+                  delay.
+                </p>
 
-          <p className="mt-5 w-full max-w-md text-base leading-7 text-white/75 md:text-lg">
-            Thought and emotion move together, creating form. They shape each
-            other in real time. CAR determines what they become.
-          </p>
+                <p className="mt-5 w-full max-w-md text-base leading-7 text-white/75 md:text-lg">
+                  Thought and emotion move together, creating form. They shape
+                  each other in real time. CAR determines what they become.
+                </p>
 
-          <div className="mt-6">
-            <img
-              src="/images/models/car-aid.png"
-              alt="CAR Aid Model"
-              className="car-aid-image w-full max-w-full rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.80] sm:opacity-[.65]"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div className="grid gap-5">
-        {carCards.map((item) => (
-          <div
-            key={item.title}
-            className="rounded-[1.75rem] border border-white/10 bg-[linear-gradient(90deg,rgba(37,99,235,0.22)_0%,rgba(37,99,235,0.12)_22%,rgba(37,99,235,0.04)_38%,rgba(0,0,0,0.55)_62%,rgba(0,0,0,0.78)_100%)] p-6 backdrop-blur"
-          >
-            <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs uppercase tracking-[0.22em] sm:text-sm sm:tracking-[0.25em]">
-              <span className={item.titleColor}>{item.title}</span>
-              <span className="text-white">→</span>
-              <span className="text-white">{item.outcome}</span>
+                <div className="mt-6">
+                  <img
+                    src="/images/models/car-aid.png"
+                    alt="CAR Aid Model"
+                    className="car-aid-image w-full max-w-full rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.80] sm:opacity-[.65]"
+                  />
+                </div>
+              </div>
             </div>
 
-            <h3 className="mt-3 text-xl font-medium sm:text-2xl">
-              {item.prompt}
-            </h3>
+            <div className="grid gap-5">
+              {carCards.map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-[1.75rem] border border-white/10 bg-[linear-gradient(90deg,rgba(37,99,235,0.22)_0%,rgba(37,99,235,0.12)_22%,rgba(37,99,235,0.04)_38%,rgba(0,0,0,0.55)_62%,rgba(0,0,0,0.78)_100%)] p-6 backdrop-blur"
+                >
+                  <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs uppercase tracking-[0.22em] sm:text-sm sm:tracking-[0.25em]">
+                    <span className={item.titleColor}>{item.title}</span>
+                    <span className="text-white">→</span>
+                    <span className="text-white">{item.outcome}</span>
+                  </div>
 
-            <p className="mt-4 text-base leading-7 text-white/80 sm:text-lg">
-              {item.text}
-            </p>
+                  <h3 className="mt-3 text-xl font-medium sm:text-2xl">
+                    {item.prompt}
+                  </h3>
+
+                  <p className="mt-4 text-base leading-7 text-white/80 sm:text-lg">
+                    {item.text}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
-      </div>
-    </div>
-  </div>
+        </div>
 
-  <style jsx>{`
-    .car-bg-desktop {
-      display: none;
-      opacity: 0.65;
-      background-size: 74% auto;
-      background-position: calc(50% + 150px) calc(50% + 50px);
-    }
+        <style jsx global>{`
+          @media (max-width: 768px) and (orientation: portrait) {
+            .hero-adjust {
+              background-position: 58% center !important;
+            }
+          }
 
-    .car-bg-statue-mobile {
-      display: block;
-      opacity: 0.55;
-      background-size: 70% auto;
-      background-position: right -2.25rem top 5.5rem;
-    }
+          .car-bg-desktop {
+            display: none;
+            opacity: 0.65;
+            background-size: 74% auto;
+            background-position: calc(50% + 150px) calc(50% + 50px);
+          }
 
-    .car-bg-light-mobile {
-      display: block;
-      height: 62%;
-      opacity: 0.68;
-      background-size: 88% auto;
-      background-position: calc(50% + 78px) calc(100% - 40px);
-    }
+          .car-bg-statue-mobile {
+            display: block;
+            opacity: 0.55;
+            background-size: 70% auto;
+            background-position: right -2.25rem top 5.5rem;
+          }
 
-    @media (min-width: 1024px) {
-      .car-bg-desktop {
-        display: block;
-      }
+          .car-bg-light-mobile {
+            display: block;
+            height: 62%;
+            opacity: 0.68;
+            background-size: 88% auto;
+            background-position: calc(50% + 78px) calc(100% - 40px);
+          }
 
-      .car-bg-statue-mobile,
-      .car-bg-light-mobile {
-        display: none;
-      }
-    }
+          @media (min-width: 1024px) {
+            .car-bg-desktop {
+              display: block;
+            }
 
-@media (max-width: 1023px) and (orientation: landscape) {
-  .car-bg-desktop {
-    display: none;
-  }
+            .car-bg-statue-mobile,
+            .car-bg-light-mobile {
+              display: none;
+            }
+          }
 
-.car-bg-statue-mobile {
-  display: block;
-  opacity: 0.5;
-  background-size: 58% auto;
-  background-position: right -5rem top -3.75rem;
-}
+          @media (max-width: 1023px) and (orientation: landscape) {
+            .car-bg-desktop {
+              display: none;
+            }
 
-  .car-bg-light-mobile {
-    display: block;
-    height: 100%;
-    opacity: 0.58;
-    background-size: 57% auto;
-    background-position: calc(50% + 200px) calc(50% + 290px);
-  }
+            .car-bg-statue-mobile {
+              display: block;
+              opacity: 0.5;
+              background-size: 58% auto;
+              background-position: right -5rem top -3.75rem;
+            }
 
-  .car-aid-image {
-    max-width: 50%;
-    opacity: 0.85;
-  }
-}
+            .car-bg-light-mobile {
+              display: block;
+              height: 100%;
+              opacity: 0.58;
+              background-size: 57% auto;
+              background-position: calc(50% + 200px) calc(50% + 290px);
+            }
 
-
-
-  `}</style>
-</section>
+            .car-aid-image {
+              max-width: 50%;
+              opacity: 0.85;
+            }
+          }
+        `}</style>
+      </section>
 
       {/* WHY IT MATTERS */}
       <section className="relative overflow-hidden border-y border-white/10">
@@ -445,6 +455,7 @@ export default function DCPWebsiteV2() {
               "url('/images/backgrounds/section-bg-pressure.jpg')",
           }}
         />
+
         <div className="absolute inset-0 bg-black/62" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
@@ -497,25 +508,23 @@ export default function DCPWebsiteV2() {
 
       {/* FULL PDF + CONTACT */}
       <section className="relative mx-auto max-w-7xl overflow-hidden px-5 py-16 md:px-8 md:py-20">
-        {/* DESKTOP */}
         <div
-  className="futures-bg-desktop absolute inset-0 hidden bg-no-repeat opacity-85 lg:block"
-  style={{
-    backgroundImage: "url('/images/backgrounds/futures.jpg')",
-    backgroundSize: "70% auto",
-    backgroundPosition: "center center",
-  }}
-/>
+          className="futures-bg-desktop absolute inset-0 hidden bg-no-repeat opacity-85 lg:block"
+          style={{
+            backgroundImage: "url('/images/backgrounds/futures.jpg')",
+            backgroundSize: "70% auto",
+            backgroundPosition: "center center",
+          }}
+        />
 
-        {/* MOBILE */}
         <div
-  className="futures-bg-mobile absolute inset-0 bg-no-repeat opacity-95 lg:hidden"
-  style={{
-    backgroundImage: "url('/images/backgrounds/futures-mobile.jpg')",
-    backgroundSize: "contain",
-    backgroundPosition: "center center",
-  }}
-/>
+          className="futures-bg-mobile absolute inset-0 bg-no-repeat opacity-95 lg:hidden"
+          style={{
+            backgroundImage: "url('/images/backgrounds/futures-mobile.jpg')",
+            backgroundSize: "contain",
+            backgroundPosition: "center center",
+          }}
+        />
 
         <div className="absolute inset-0 bg-black/45" />
 
