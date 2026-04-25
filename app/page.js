@@ -306,6 +306,24 @@ export default function DCPWebsiteV2() {
           }}
         />
 
+{/* TABLET LANDSCAPE */}
+<div
+  className="car-bg-tablet-landscape pointer-events-none absolute inset-0 bg-no-repeat"
+  style={{
+    backgroundImage:
+      "url('/images/backgrounds/traffic-light-tablet-landscape.jpg')",
+  }}
+/>
+
+{/* TABLET PORTRAIT */}
+<div
+  className="car-bg-tablet-portrait pointer-events-none absolute inset-0 bg-no-repeat"
+  style={{
+    backgroundImage:
+      "url('/images/backgrounds/traffic-light-tablet-portrait.jpg')",
+  }}
+/>
+
         <div className="absolute inset-0 bg-black/42" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
@@ -445,23 +463,52 @@ export default function DCPWebsiteV2() {
   }
 }
 
-/* TABLET TOUCH ONLY — USE REGULAR COMBINED CAR BACKGROUND */
-@media (hover: none) and (pointer: coarse) and (min-width: 768px) and (max-width: 1366px) {
-  .car-bg-desktop {
-    display: block;
-    opacity: 0.62;
-    background-size: 82% auto;
-    background-position: center calc(50% + 80px);
-  }
+.car-bg-tablet-landscape,
+.car-bg-tablet-portrait {
+  display: none;
+}
 
+/* TABLET — FORCE TABLET IMAGES */
+@media (hover: none) and (pointer: coarse) and (min-width: 768px) and (max-width: 1366px) {
+  .car-bg-desktop,
   .car-bg-statue-mobile,
   .car-bg-light-mobile {
     display: none;
   }
 
+  .car-bg-tablet-landscape {
+    display: block;
+    opacity: 0.65;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .car-bg-tablet-portrait {
+    display: none;
+  }
+
   .car-aid-image {
-    max-width: 62%;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
     opacity: 0.82;
+  }
+} 
+
+/* TABLET PORTRAIT */
+@media (hover: none) and (pointer: coarse) and (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
+  .car-bg-tablet-landscape {
+    display: none;
+  }
+
+  .car-bg-tablet-portrait {
+    display: block;
+    opacity: 0.65;
+    background-size: cover;
+    background-position: center center;
+  }
+	.car-aid-image {
+  	max-width: 420px;
   }
 }
         `}</style>
