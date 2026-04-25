@@ -445,12 +445,12 @@ export default function DCPWebsiteV2() {
   }
 }
 
-/* TABLET PORTRAIT + LANDSCAPE ONLY */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* TABLET TOUCH ONLY — USE REGULAR COMBINED CAR BACKGROUND */
+@media (hover: none) and (pointer: coarse) and (min-width: 768px) and (max-width: 1366px) {
   .car-bg-desktop {
     display: block;
     opacity: 0.62;
-    background-size: 92% auto;
+    background-size: 82% auto;
     background-position: center calc(50% + 80px);
   }
 
@@ -460,7 +460,7 @@ export default function DCPWebsiteV2() {
   }
 
   .car-aid-image {
-    max-width: 70%;
+    max-width: 62%;
     opacity: 0.82;
   }
 }
