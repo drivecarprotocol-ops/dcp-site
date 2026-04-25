@@ -426,8 +426,11 @@ export default function DCPWebsiteV2() {
 }
 
 @media (min-width: 1024px) {
-  .car-bg-desktop {
-    display: block;
+  /* ONLY DESKTOP (NOT TABLET) */
+  @media (min-width: 1367px) {
+    .car-bg-desktop {
+      display: block;
+    }
   }
 
   .car-bg-statue-mobile,
