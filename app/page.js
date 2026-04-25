@@ -451,7 +451,7 @@ export default function DCPWebsiteV2() {
     display: block;
     opacity: 0.62;
     background-size: 92% auto;
-    background-position: center center;
+    background-position: center calc(50% + 80px);
   }
 
   .car-bg-statue-mobile,
