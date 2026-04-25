@@ -405,31 +405,31 @@ export default function DCPWebsiteV2() {
       }
     }
 
-    @media (max-width: 1023px) and (orientation: landscape) {
-      .car-bg-desktop {
-        display: none;
-      }
+@media (max-width: 1023px) and (orientation: landscape) {
+  .car-bg-desktop {
+    display: none;
+  }
 
-      .car-bg-statue-mobile {
-        display: block;
-        opacity: 0.5;
-        background-size: 58% auto;
-        background-position: right 3.25rem top 4.25rem;
-      }
+  .car-bg-statue-mobile {
+    display: block;
+    opacity: 0.5;
+    background-size: 58% auto;
+    background-position: right 2rem top 2rem;
+  }
 
-      .car-bg-light-mobile {
-        display: block;
-        height: 100%;
-        opacity: 0.58;
-        background-size: 62% auto;
-        background-position: calc(50% + 205px) calc(50% + 122px);
-      }
+  .car-bg-light-mobile {
+    display: block;
+    height: 100%;
+    opacity: 0.58;
+    background-size: 57% auto;
+    background-position: calc(50% + 200px) calc(50% + 220px);
+  }
 
-      .car-aid-image {
-        max-width: 50%;
-        opacity: 0.85;
-      }
-    }
+  .car-aid-image {
+    max-width: 50%;
+    opacity: 0.85;
+  }
+}
   `}</style>
 </section>
 
