@@ -495,17 +495,17 @@ export default function DCPWebsiteV2() {
   }
 }
 
-/* TABLET PORTRAIT — FORCE TABLET IMAGE */
+/* TABLET PORTRAIT — FORCE ONLY TABLET IMAGE */
 @media (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
   .car-bg-desktop,
   .car-bg-statue-mobile,
   .car-bg-light-mobile,
   .car-bg-tablet-landscape {
-    display: none;
+    display: none !important;
   }
 
   .car-bg-tablet-portrait {
-    display: block;
+    display: block !important;
     opacity: 0.65;
     background-size: cover;
     background-position: center center;
