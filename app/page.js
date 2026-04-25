@@ -199,7 +199,7 @@ export default function DCPWebsiteV2() {
           className="absolute inset-0 hidden bg-cover bg-no-repeat opacity-85 md:block"
           style={{
             backgroundImage: "url('/images/backgrounds/lit-cones.jpg')",
-            backgroundPosition: "center 60%",
+            backgroundPosition: "center calc(50% + 120px)",
             backgroundSize: "80% auto",
           }}
         />
