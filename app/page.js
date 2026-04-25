@@ -380,69 +380,97 @@ export default function DCPWebsiteV2() {
 
         <style jsx global>{`
           @media (max-width: 768px) and (orientation: portrait) {
-            .hero-adjust {
-              background-position: 58% center !important;
-            }
-          }
+  .hero-adjust {
+    background-position: 58% center !important;
+  }
+}
 
-          .car-bg-desktop {
-            display: none;
-            opacity: 0.65;
-            background-size: 74% auto;
-            background-position: calc(50% + 150px) calc(50% + 50px);
-          }
+.car-bg-desktop {
+  display: none;
+  opacity: 0.65;
+  background-size: 74% auto;
+  background-position: calc(50% + 150px) calc(50% + 50px);
+}
 
-          .car-bg-statue-mobile {
-            display: block;
-            opacity: 0.55;
-            background-size: 70% auto;
-            background-position: right -2.25rem top 5.5rem;
-          }
+.car-bg-statue-mobile {
+  display: block;
+  opacity: 0.55;
+  background-size: 70% auto;
+  background-position: right -2.25rem top 5.5rem;
+}
 
-          .car-bg-light-mobile {
-            display: block;
-            height: 62%;
-            opacity: 0.68;
-            background-size: 88% auto;
-            background-position: calc(50% + 78px) calc(100% - 40px);
-          }
+.car-bg-light-mobile {
+  display: block;
+  height: 62%;
+  opacity: 0.68;
+  background-size: 88% auto;
+  background-position: calc(50% + 78px) calc(100% - 40px);
+}
 
-          @media (min-width: 1024px) {
-            .car-bg-desktop {
-              display: block;
-            }
+@media (min-width: 1024px) {
+  .car-bg-desktop {
+    display: block;
+  }
 
-            .car-bg-statue-mobile,
-            .car-bg-light-mobile {
-              display: none;
-            }
-          }
+  .car-bg-statue-mobile,
+  .car-bg-light-mobile {
+    display: none;
+  }
+}
 
-          @media (max-width: 1023px) and (orientation: landscape) {
-            .car-bg-desktop {
-              display: none;
-            }
+/* PHONE LANDSCAPE ONLY — keeps your phone fix untouched */
+@media (max-width: 767px) and (orientation: landscape) {
+  .car-bg-desktop {
+    display: none;
+  }
 
-            .car-bg-statue-mobile {
-              display: block;
-              opacity: 0.5;
-              background-size: 58% auto;
-              background-position: right -5rem top -3.75rem;
-            }
+  .car-bg-statue-mobile {
+    display: block;
+    opacity: 0.5;
+    background-size: 58% auto;
+    background-position: right -5rem top -3.75rem;
+  }
 
-            .car-bg-light-mobile {
-              display: block;
-              height: 100%;
-              opacity: 0.58;
-              background-size: 57% auto;
-              background-position: calc(50% + 200px) calc(50% + 290px);
-            }
+  .car-bg-light-mobile {
+    display: block;
+    height: 100%;
+    opacity: 0.58;
+    background-size: 57% auto;
+    background-position: calc(50% + 200px) calc(50% + 290px);
+  }
 
-            .car-aid-image {
-              max-width: 50%;
-              opacity: 0.85;
-            }
-          }
+  .car-aid-image {
+    max-width: 50%;
+    opacity: 0.85;
+  }
+}
+
+/* TABLET PORTRAIT + LANDSCAPE ONLY */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .car-bg-desktop {
+    display: none;
+  }
+
+  .car-bg-statue-mobile {
+    display: block;
+    opacity: 0.48;
+    background-size: 52% auto;
+    background-position: right -3rem top 2rem;
+  }
+
+  .car-bg-light-mobile {
+    display: block;
+    height: 100%;
+    opacity: 0.55;
+    background-size: 54% auto;
+    background-position: calc(50% + 145px) calc(50% + 230px);
+  }
+
+  .car-aid-image {
+    max-width: 70%;
+    opacity: 0.82;
+  }
+}
         `}</style>
       </section>
 
