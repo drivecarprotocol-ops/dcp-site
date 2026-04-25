@@ -468,11 +468,12 @@ export default function DCPWebsiteV2() {
   display: none;
 }
 
-/* TABLET — FORCE TABLET IMAGES */
-@media (hover: none) and (pointer: coarse) and (min-width: 768px) and (max-width: 1366px) {
+/* TABLET LANDSCAPE — FORCE TABLET IMAGE */
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) and (min-height: 550px) {
   .car-bg-desktop,
   .car-bg-statue-mobile,
-  .car-bg-light-mobile {
+  .car-bg-light-mobile,
+  .car-bg-tablet-portrait {
     display: none;
   }
 
@@ -481,10 +482,6 @@ export default function DCPWebsiteV2() {
     opacity: 0.65;
     background-size: cover;
     background-position: center center;
-  }
-
-  .car-bg-tablet-portrait {
-    display: none;
   }
 
   .car-aid-image {
@@ -493,10 +490,13 @@ export default function DCPWebsiteV2() {
     margin: 0 auto;
     opacity: 0.82;
   }
-} 
+}
 
-/* TABLET PORTRAIT */
-@media (hover: none) and (pointer: coarse) and (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
+/* TABLET PORTRAIT — FORCE TABLET IMAGE */
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
+  .car-bg-desktop,
+  .car-bg-statue-mobile,
+  .car-bg-light-mobile,
   .car-bg-tablet-landscape {
     display: none;
   }
@@ -507,11 +507,14 @@ export default function DCPWebsiteV2() {
     background-size: cover;
     background-position: center center;
   }
-	.car-aid-image {
-  	max-width: 420px;
+
+  .car-aid-image {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    opacity: 0.82;
   }
-}
-        `}</style>
+}        `}</style>
       </section>
 
       {/* WHY IT MATTERS */}
