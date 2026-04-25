@@ -489,9 +489,13 @@ export default function DCPWebsiteV2() {
 
   .car-aid-image {
     width: 100%;
-    max-width: 520px;
+    max-width: 420px;
     margin: 0 auto;
     opacity: 0.82;
+
+@media (max-width: 1024px) {
+  .car-aid-image {
+    max-width: 360px;
   }
 }
 
@@ -512,10 +516,8 @@ export default function DCPWebsiteV2() {
   }
 
   .car-aid-image {
-    width: 100%;
-    max-width: 420px;
-    margin: 0 auto;
-    opacity: 0.82;
+  width: 100%;
+  max-width: 360px;
   }
 }        `}</style>
       </section>
