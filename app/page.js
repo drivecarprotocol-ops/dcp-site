@@ -306,23 +306,21 @@ export default function DCPWebsiteV2() {
           }}
         />
 
-{/* TABLET LANDSCAPE */}
-<div
-  className="car-bg-tablet-landscape pointer-events-none absolute inset-0 bg-no-repeat"
-  style={{
-    backgroundImage:
-      "url('/images/backgrounds/traffic-light-tablet-landscape.jpg')",
-  }}
-/>
+        <div
+          className="car-bg-tablet-landscape pointer-events-none absolute inset-0 bg-no-repeat"
+          style={{
+            backgroundImage:
+              "url('/images/backgrounds/traffic-light-tablet-landscape.jpg')",
+          }}
+        />
 
-{/* TABLET PORTRAIT */}
-<div
-  className="car-bg-tablet-portrait pointer-events-none absolute inset-0 bg-no-repeat"
-  style={{
-    backgroundImage:
-      "url('/images/backgrounds/traffic-light-tablet-portrait.jpg')",
-  }}
-/>
+        <div
+          className="car-bg-tablet-portrait pointer-events-none absolute inset-0 bg-no-repeat"
+          style={{
+            backgroundImage:
+              "url('/images/backgrounds/traffic-light-tablet-portrait.jpg')",
+          }}
+        />
 
         <div className="absolute inset-0 bg-black/42" />
 
@@ -361,11 +359,11 @@ export default function DCPWebsiteV2() {
                   each other in real time. CAR determines what they become.
                 </p>
 
-                <div className="mt-6">
+                <div className="mt-6 flex w-full justify-center md:justify-start">
                   <img
                     src="/images/models/car-aid.png"
                     alt="CAR Aid Model"
-                    className="car-aid-image w-full max-w-full rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.80] sm:opacity-[.65]"
+                    className="car-aid-image w-full rounded-xl border border-white/10 bg-black/30 object-contain opacity-[.80] sm:opacity-[.65]"
                   />
                 </div>
               </div>
@@ -396,132 +394,115 @@ export default function DCPWebsiteV2() {
           </div>
         </div>
 
-<style jsx global>{`
+        <style jsx global>{`
+          @media (max-width: 768px) and (orientation: portrait) {
+            .hero-adjust {
+              background-position: 58% center !important;
+            }
+          }
 
-@media (max-width: 768px) and (orientation: portrait) {
-  .hero-adjust {
-    background-position: 58% center !important;
-  }
-}
+          .car-bg-desktop,
+          .car-bg-statue-mobile,
+          .car-bg-light-mobile,
+          .car-bg-tablet-landscape,
+          .car-bg-tablet-portrait {
+            display: none;
+          }
 
-.car-bg-desktop {
-  display: none;
-  opacity: 0.65;
-  background-size: 74% auto;
-  background-position: calc(50% + 150px) calc(50% + 50px);
-}
+          .car-bg-desktop {
+            opacity: 0.65;
+            background-size: 74% auto;
+            background-position: calc(50% + 150px) calc(50% + 50px);
+          }
 
-.car-bg-statue-mobile {
-  display: block;
-  opacity: 0.55;
-  background-size: 70% auto;
-  background-position: right -2.25rem top 5.5rem;
-}
+          .car-bg-statue-mobile {
+            opacity: 0.55;
+            background-size: 70% auto;
+            background-position: right -2.25rem top 5.5rem;
+          }
 
-.car-bg-light-mobile {
-  display: block;
-  height: 62%;
-  opacity: 0.68;
-  background-size: 88% auto;
-  background-position: calc(50% + 78px) calc(100% - 40px);
-}
+          .car-bg-light-mobile {
+            height: 62%;
+            opacity: 0.68;
+            background-size: 88% auto;
+            background-position: calc(50% + 78px) calc(100% - 40px);
+          }
 
-@media (min-width: 1024px) {
-  @media (min-width: 1367px) {
-    .car-bg-desktop {
-      display: block;
-    }
-  }
+          .car-bg-tablet-landscape,
+          .car-bg-tablet-portrait {
+            opacity: 0.65;
+            background-size: cover;
+            background-position: center center;
+          }
 
-  .car-bg-statue-mobile,
-  .car-bg-light-mobile {
-    display: none;
-  }
-}
+          .car-aid-image {
+            max-width: 100%;
+          }
 
-/* PHONE LANDSCAPE */
-@media (max-width: 767px) and (orientation: landscape) {
-  .car-bg-desktop {
-    display: none;
-  }
+          @media (min-width: 1367px) {
+            .car-bg-desktop {
+              display: block;
+            }
+          }
 
-  .car-bg-statue-mobile {
-    display: block;
-    opacity: 0.5;
-    background-size: 58% auto;
-    background-position: right -5rem top -3.75rem;
-  }
+          @media (max-width: 767px) {
+            .car-bg-statue-mobile {
+              display: block;
+            }
 
-  .car-bg-light-mobile {
-    display: block;
-    height: 100%;
-    opacity: 0.58;
-    background-size: 57% auto;
-    background-position: calc(50% + 200px) calc(50% + 290px);
-  }
+            .car-bg-light-mobile {
+              display: block;
+            }
 
-  .car-aid-image {
-    max-width: 50%;
-    opacity: 0.85;
-  }
-}
+            .car-aid-image {
+              max-width: 100%;
+            }
+          }
 
-/* RESET */
-.car-bg-tablet-landscape,
-.car-bg-tablet-portrait {
-  display: none;
-}
+          @media (max-width: 767px) and (orientation: landscape) {
+            .car-bg-statue-mobile {
+              opacity: 0.5;
+              background-size: 58% auto;
+              background-position: right -5rem top -3.75rem;
+            }
 
-/* TABLET LANDSCAPE */
-@media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
-  .car-bg-desktop,
-  .car-bg-statue-mobile,
-  .car-bg-light-mobile,
-  .car-bg-tablet-portrait {
-    display: none;
-  }
+            .car-bg-light-mobile {
+              height: 100%;
+              opacity: 0.58;
+              background-size: 57% auto;
+              background-position: calc(50% + 200px) calc(50% + 290px);
+            }
 
-  .car-bg-tablet-landscape {
-    display: block;
-    opacity: 0.65;
-    background-size: cover;
-    background-position: center center;
-  }
+            .car-aid-image {
+              max-width: 50%;
+              opacity: 0.85;
+            }
+          }
 
-  .car-aid-image {
-    width: 100%;
-    max-width: 420px;
-    margin: 0 auto;
-    opacity: 0.82;
-  }
-}
+          @media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
+            .car-bg-tablet-landscape {
+              display: block;
+            }
 
-/* TABLET PORTRAIT — FINAL FIX */
-@media (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
-  .car-bg-desktop,
-  .car-bg-statue-mobile,
-  .car-bg-light-mobile,
-  .car-bg-tablet-landscape {
-    display: none !important;
-  }
+            .car-aid-image {
+              max-width: 420px;
+              margin: 0 auto;
+              opacity: 0.82;
+            }
+          }
 
-  .car-bg-tablet-portrait {
-    display: block !important;
-    opacity: 0.65;
-    background-size: cover;
-    background-position: center center;
-  }
+          @media (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
+            .car-bg-tablet-portrait {
+              display: block;
+            }
 
-  .car-aid-image {
-    width: 100%;
-    max-width: 360px;
-    margin: 0 auto;
-  }
-}
-
-`}</style>
-
-
+            .car-aid-image {
+              max-width: 360px;
+              margin: 0 auto;
+              opacity: 0.82;
+            }
+          }
+        `}</style>
       </section>
 
       {/* WHY IT MATTERS */}
