@@ -396,8 +396,9 @@ export default function DCPWebsiteV2() {
           </div>
         </div>
 
-        <style jsx global>{`
-          @media (max-width: 768px) and (orientation: portrait) {
+<style jsx global>{`
+
+@media (max-width: 768px) and (orientation: portrait) {
   .hero-adjust {
     background-position: 58% center !important;
   }
@@ -426,7 +427,6 @@ export default function DCPWebsiteV2() {
 }
 
 @media (min-width: 1024px) {
-  /* ONLY DESKTOP (NOT TABLET) */
   @media (min-width: 1367px) {
     .car-bg-desktop {
       display: block;
@@ -439,7 +439,7 @@ export default function DCPWebsiteV2() {
   }
 }
 
-/* PHONE LANDSCAPE ONLY — keeps your phone fix untouched */
+/* PHONE LANDSCAPE */
 @media (max-width: 767px) and (orientation: landscape) {
   .car-bg-desktop {
     display: none;
@@ -466,13 +466,14 @@ export default function DCPWebsiteV2() {
   }
 }
 
+/* RESET */
 .car-bg-tablet-landscape,
 .car-bg-tablet-portrait {
   display: none;
 }
 
-/* TABLET LANDSCAPE — FORCE TABLET IMAGE */
-@media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) and (min-height: 550px) {
+/* TABLET LANDSCAPE */
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
   .car-bg-desktop,
   .car-bg-statue-mobile,
   .car-bg-light-mobile,
@@ -492,34 +493,35 @@ export default function DCPWebsiteV2() {
     max-width: 420px;
     margin: 0 auto;
     opacity: 0.82;
-
-@media (max-width: 1024px) {
-  .car-aid-image {
-    max-width: 360px;
   }
 }
 
-/* TABLET PORTRAIT — FORCE ONLY TABLET IMAGE */
+/* TABLET PORTRAIT */
 @media (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
   .car-bg-desktop,
   .car-bg-statue-mobile,
   .car-bg-light-mobile,
   .car-bg-tablet-landscape {
-    display: none !important;
+    display: none;
   }
 
   .car-bg-tablet-portrait {
-    display: block !important;
+    display: block;
     opacity: 0.65;
     background-size: cover;
     background-position: center center;
   }
 
   .car-aid-image {
-  width: 100%;
-  max-width: 360px;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
   }
-}        `}</style>
+}
+
+`}</style>
+
+
       </section>
 
       {/* WHY IT MATTERS */}
