@@ -448,22 +448,15 @@ export default function DCPWebsiteV2() {
 /* TABLET PORTRAIT + LANDSCAPE ONLY */
 @media (min-width: 768px) and (max-width: 1023px) {
   .car-bg-desktop {
-    display: none;
-  }
-
-  .car-bg-statue-mobile {
     display: block;
-    opacity: 0.48;
-    background-size: 52% auto;
-    background-position: right -3rem top 2rem;
+    opacity: 0.62;
+    background-size: 92% auto;
+    background-position: center center;
   }
 
+  .car-bg-statue-mobile,
   .car-bg-light-mobile {
-    display: block;
-    height: 100%;
-    opacity: 0.55;
-    background-size: 54% auto;
-    background-position: calc(50% + 145px) calc(50% + 230px);
+    display: none;
   }
 
   .car-aid-image {
