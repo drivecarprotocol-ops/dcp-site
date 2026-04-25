@@ -206,7 +206,7 @@ export default function DCPWebsiteV2() {
         <div
           className="absolute inset-0 bg-cover bg-no-repeat opacity-85 md:hidden"
           style={{
-            backgroundImage: "url('/images/backgrounds/lit-cones.jpg')",
+            backgroundImage: "url('/images/backgrounds/lit-cones-mobile.jpg')",
             backgroundSize: "85% auto",
             backgroundPosition: "center calc(100% + 175px)",
           }}
