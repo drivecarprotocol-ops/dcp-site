@@ -406,7 +406,7 @@ export default function DCPWebsiteV2() {
           .car-bg-light-mobile,
           .car-bg-tablet-landscape,
           .car-bg-tablet-portrait {
-            display: none;
+            display: none !important;
           }
 
           .car-bg-desktop {
@@ -441,17 +441,17 @@ export default function DCPWebsiteV2() {
 
           @media (min-width: 1367px) {
             .car-bg-desktop {
-              display: block;
+              display: block !important;
             }
           }
 
-          @media (max-width: 767px) {
+          @media (max-width: 599px) and (orientation: portrait) {
             .car-bg-statue-mobile {
-              display: block;
+              display: block !important;
             }
 
             .car-bg-light-mobile {
-              display: block;
+              display: block !important;
             }
 
             .car-aid-image {
@@ -461,12 +461,14 @@ export default function DCPWebsiteV2() {
 
           @media (max-width: 767px) and (orientation: landscape) {
             .car-bg-statue-mobile {
+              display: block !important;
               opacity: 0.5;
               background-size: 58% auto;
               background-position: right -5rem top -3.75rem;
             }
 
             .car-bg-light-mobile {
+              display: block !important;
               height: 100%;
               opacity: 0.58;
               background-size: 57% auto;
@@ -479,25 +481,25 @@ export default function DCPWebsiteV2() {
             }
           }
 
-          @media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
-            .car-bg-tablet-landscape {
-              display: block;
+          @media (min-width: 600px) and (max-width: 1366px) and (orientation: portrait) {
+            .car-bg-tablet-portrait {
+              display: block !important;
             }
 
             .car-aid-image {
-              max-width: 420px;
+              max-width: 360px;
               margin: 0 auto;
               opacity: 0.82;
             }
           }
 
-          @media (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
-            .car-bg-tablet-portrait {
-              display: block;
+          @media (min-width: 768px) and (max-width: 1366px) and (min-height: 600px) and (orientation: landscape) {
+            .car-bg-tablet-landscape {
+              display: block !important;
             }
 
             .car-aid-image {
-              max-width: 360px;
+              max-width: 420px;
               margin: 0 auto;
               opacity: 0.82;
             }
