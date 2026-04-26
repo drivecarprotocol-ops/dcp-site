@@ -164,8 +164,7 @@ export default function FuturePage() {
 
                   <p className="mt-5 text-lg leading-8 text-white/[0.82]">
                     <span className="text-orange-400">
-                      Regulate what you consume, or it will control what you
-                      become.
+                      What you consume shapes what you become.
                     </span>
                   </p>
                 </div>
@@ -367,13 +366,9 @@ At its core, it reflects decentralized centering. A return to self before respon
                   not dependent on technology.
                   <br />
                   <br />
-                  As systems evolve, a new layer becomes possible—one that does
-                  not replace DCP, but{" "}
-                  <span className="text-blue-400">interfaces</span> with it.
-                  <br />
-                  <br />
-                  This continuity layer allows patterns of decision-making,
-                  reflection, and growth to persist across environments—without
+                  As systems evolve, a new layer becomes possible, one that does
+                  not replace DCP, but interfaces with it; allowing patterns of decision-making,
+                  reflection, and growth to persist across environments without
                   surrendering control or identity.
                   <br />
                   <br />
@@ -390,15 +385,10 @@ At its core, it reflects decentralized centering. A return to self before respon
 
                 <p className="mt-4 text-lg leading-8 text-white/[0.82]">
                   If DCP extends beyond the individual, it requires a neutral
-                  foundation.
-                  <br />
-                  <br />
-                  XRP can serve as a decentralized trust layer-securing
+                  foundation. XRP can serve as a decentralized trust layer-securing
                   continuity without interfering with personal agency.
-                  <br />
-                  <br />
                   In this role, it does not store thoughts or control behavior.
-                  It provides:
+                  < br/>It provides:
                 </p>
 
                 <ul className="mt-4 list-disc space-y-2 pl-5 text-blue-400">
