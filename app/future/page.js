@@ -164,7 +164,7 @@ export default function FuturePage() {
 
                   <p className="mt-5 text-lg leading-8 text-white/[0.82]">
                     <span className="text-orange-400">
-                      What you consume shapes what you become.
+                      Your level of engagement determines your direction.
                     </span>
                   </p>
                 </div>
