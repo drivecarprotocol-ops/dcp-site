@@ -128,7 +128,8 @@ export default function FuturePage() {
               <h1 className="mt-4 text-5xl font-semibold leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
                 <span className="text-orange-400">DCP</span> is technology-
                 <span className="text-blue-400">independent</span>.
-              </h1>
+           oundation
+   </h1>
             </div>
 
             <div className="h-[5vh] sm:h-[6vh]" />
@@ -315,7 +316,7 @@ At its core, it reflects decentralized centering. A return to self before respon
       </h3>
 
       <p className="mt-4 text-lg leading-7 text-white/[0.82]">
-        A system that gives structure to the exact moment where emotion becomes
+        DCP is the on-ramp — the point where the system becomes usable.
         action.
       </p>
     </div>
