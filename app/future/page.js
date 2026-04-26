@@ -275,7 +275,7 @@ export default function FuturePage() {
                   </h2>
 
                   <p className="mt-5 text-lg leading-8 text-white/[0.82]">
-                    DCP is a human decision architecture applied in real time.
+                    A Human decision architecture applied in real time.
                   </p>
                 </div>
 
@@ -299,9 +299,8 @@ export default function FuturePage() {
 <div className="mt-10">
   <div className="max-w-5xl">
     <p className="text-lg leading-8 text-white/80 sm:text-xl">
-      DCP operates across multiple layers depending on context. These are not
-      separate systems—they are different expressions of the same underlying
-      structure.
+      DCP is not limited to a single definition. It is a structure that can be expressed in different ways depending on context.
+At its core, it reflects decentralized centering. A return to self before response is expressed. The layers that follow are not separate systems. They are different expressions of the same underlying structure.
     </p>
   </div>
 

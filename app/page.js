@@ -567,6 +567,15 @@ export default function DCPWebsiteV2() {
         </div>
       </section>
 
+<div className="mx-auto mt-10 max-w-2xl text-lg leading-7 text-white/80">
+  <p>
+    This is where patterns are formed. Repeated responses become patterns. Over time, they become learned habits.
+  </p>
+  <p className="mt-4">
+    DCP targets the moment that creates them. The past may explain the pattern. It does not control the chosen response.
+  </p>
+</div>
+
       {/* FULL PDF + CONTACT */}
       <section className="relative mx-auto max-w-7xl overflow-hidden px-5 py-16 md:px-8 md:py-20">
         <div
