@@ -317,7 +317,7 @@ At its core, it reflects decentralized centering. A return to self before respon
 
       <p className="mt-4 text-lg leading-7 text-white/[0.82]">
         DCP is the on-ramp — the point where the system becomes usable.
-        action.
+        
       </p>
     </div>
 
@@ -332,8 +332,7 @@ At its core, it reflects decentralized centering. A return to self before respon
       </h3>
 
       <p className="mt-4 text-lg leading-7 text-white/[0.82]">
-        A portable representation of how an individual governs their behavior
-        across environments.
+        A portable expression of awareness across environments over time.
       </p>
     </div>
 
@@ -348,8 +347,8 @@ At its core, it reflects decentralized centering. A return to self before respon
       </h3>
 
       <p className="mt-4 text-lg leading-7 text-white/[0.82]">
-        Enables alignment between human behavior and digital systems without
-        requiring uniformity.
+        Alignment between awareness and digital systems.
+Integration without requiring uniformity.
       </p>
     </div>
   </div>
