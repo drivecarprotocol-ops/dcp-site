@@ -157,7 +157,7 @@ export default function FuturePage() {
                   </div>
 
                   <p className="mt-5 text-lg leading-8 text-white/[0.82]">
-                    Future interfaces may help make patterns more visible,
+                    Evolving interfaces may help make patterns more visible,
                     interactive, and easier to navigate. They do not replace
                     awareness, accountability, or responsibility.
                   </p>
