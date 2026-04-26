@@ -128,7 +128,6 @@ export default function FuturePage() {
               <h1 className="mt-4 text-5xl font-semibold leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
                 <span className="text-orange-400">DCP</span> is technology-
                 <span className="text-blue-400">independent</span>.
-           oundation
    </h1>
             </div>
 
@@ -186,9 +185,7 @@ export default function FuturePage() {
               </h2>
 
               <p className="mt-5 max-w-5xl text-lg leading-8 text-white/80 sm:text-xl">
-                One optional direction is a behavioral mapping layer that makes
-                events, emotions, reactions, CAR processing, responses,
-                outcomes, and recurring patterns easier to see over time.
+                One optional direction is a behavioral mapping layer that makes events, emotions, and reactions easier to see—while revealing CAR engagement and its impact on responses, outcomes, and patterns over time..
               </p>
             </div>
 
@@ -218,9 +215,12 @@ export default function FuturePage() {
 
                   <p className="mt-5 text-lg leading-8 text-white/[0.82]">
                     DCP remains a direct, repeatable framework:
-                    <br /> Feel the emotion.{" "}
-                    <span className="text-blue-400">Choose the response</span>.
                   </p>
+                  
+                  <p className="mt-5 text-lg leading-8 text-white">
+ 		    Feel the emotion.{" "}
+  <span className="text-blue-400">Choose the response</span>.
+</p>
                 </div>
 
                 <div>
@@ -275,7 +275,7 @@ export default function FuturePage() {
                   </h2>
 
                   <p className="mt-5 text-lg leading-8 text-white/[0.82]">
-                    A Human decision architecture applied in real time.
+                    Human decision architecture applied in real time.
                   </p>
                 </div>
 
