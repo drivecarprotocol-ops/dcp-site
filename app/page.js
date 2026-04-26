@@ -567,7 +567,7 @@ export default function DCPWebsiteV2() {
         </div>
       </section>
 
-<div className="mx-auto mt-10 max-w-2xl text-lg leading-7 text-white/80">
+<div className="mx-auto mt-12 max-w-xl px-4 text-lg leading-7 text-white/80">
   <p>
     This is where patterns are formed. Repeated responses become patterns. Over time, they become learned habits.
   </p>
