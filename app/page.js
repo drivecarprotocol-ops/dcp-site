@@ -140,7 +140,7 @@ export default function DCPWebsiteV2() {
             </h1>
 
             <p className="mt-5 max-w-3xl text-base leading-7 text-white/82 sm:text-lg md:mt-6 md:text-2xl md:leading-8">
-              A human decision architecture applied in{" "}
+              Human decision architecture applied in{" "}
               <span className="font-medium text-orange-400/80">REAL</span>{" "}
               time
             </p>
