@@ -385,7 +385,7 @@ Integration without requiring uniformity.
 
                 <p className="mt-4 text-lg leading-8 text-white/[0.82]">
                   If DCP extends beyond the individual, it requires a neutral
-                  foundation. XRP can serve as a decentralized trust layer-securing
+                  foundation. XRP can serve as a decentralized trust layer, securing
                   continuity without interfering with personal agency.
                   In this role, it does not store thoughts or control behavior.
                   < br/>It provides:
